@@ -14,8 +14,15 @@ const Auth = (function() {
    * Initialize auth system
    */
   function init() {
-    // Check for existing token
-    authToken = localStorage.getItem(TOKEN_KEY);
+    console.log('[Auth] Initializing authentication system...');
+    
+    // Check for existing token with safety try-catch (some browsers block localStorage)
+    try {
+      authToken = localStorage.getItem(TOKEN_KEY);
+    } catch (err) {
+      console.warn('[Auth] localStorage access denied:', err);
+      authToken = null;
+    }
     
     if (authToken) {
       // Validate existing token
@@ -24,6 +31,14 @@ const Auth = (function() {
       // Show login screen
       showScreen('login');
     }
+    
+    // Global error check: if we're still on a hidden screen after a second, something failed
+    setTimeout(() => {
+      if (!currentScreen && !userData) {
+        console.error('[Auth] Initialization seems stuck. Forcing login screen.');
+        showScreen('login');
+      }
+    }, 1000);
   }
   
   /**
@@ -59,6 +74,10 @@ const Auth = (function() {
       }
     } catch (err) {
       console.error('[Auth] Validation error:', err);
+      try {
+        localStorage.removeItem(TOKEN_KEY);
+      } catch (e) {}
+      authToken = null;
       showScreen('login');
     }
   }
@@ -88,7 +107,11 @@ const Auth = (function() {
       if (data.success) {
         // Store token
         authToken = data.token;
-        localStorage.setItem(TOKEN_KEY, authToken);
+        try {
+          localStorage.setItem(TOKEN_KEY, authToken);
+        } catch (e) {
+          console.warn('[Auth] Could not save token to localStorage');
+        }
         userData = data;
         
         if (data.hasCharacter) {

@@ -20,10 +20,10 @@
   <div id="login-screen" class="auth-screen hidden">
     <div class="auth-box">
       <h1>Umbra Online</h1>
-      <form id="login-form" onsubmit="event.preventDefault(); Auth.handleLogin(
+      <form id="login-form" onsubmit="event.preventDefault(); if(typeof Auth !== 'undefined') Auth.handleLogin(
         document.getElementById('login-username').value,
         document.getElementById('login-password').value
-      );">
+      ); return false;">
         <div class="form-group">
           <label for="login-username">Username or Email</label>
           <input type="text" id="login-username" required autocomplete="username" placeholder="Enter your username or email">
@@ -36,7 +36,7 @@
         <div id="login-message" class="success-message hidden"></div>
         <button type="submit" class="btn-primary">Login</button>
       </form>
-      <p class="auth-link">Don't have an account? <a href="#" onclick="Auth.showScreen('register'); return false;">Register</a></p>
+      <p class="auth-link">Don't have an account? <a href="#" onclick="if(typeof Auth !== 'undefined') Auth.showScreen('register'); return false;">Register</a></p>
     </div>
   </div>
   
@@ -44,12 +44,12 @@
   <div id="register-screen" class="auth-screen hidden">
     <div class="auth-box">
       <h1>Create Account</h1>
-      <form id="register-form" onsubmit="event.preventDefault(); Auth.handleRegister(
+      <form id="register-form" onsubmit="event.preventDefault(); if(typeof Auth !== 'undefined') Auth.handleRegister(
         document.getElementById('register-username').value,
         document.getElementById('register-email').value,
         document.getElementById('register-password').value,
         document.getElementById('register-confirm').value
-      );">
+      ); return false;">
         <div class="form-group">
           <label for="register-username">Username</label>
           <input type="text" id="register-username" required minlength="3" maxlength="20" autocomplete="username" placeholder="3-20 characters, letters and numbers">
@@ -69,7 +69,7 @@
         <div id="register-error" class="error-message hidden"></div>
         <button type="submit" class="btn-primary">Create Account</button>
       </form>
-      <p class="auth-link">Already have an account? <a href="#" onclick="Auth.showScreen('login'); return false;">Login</a></p>
+      <p class="auth-link">Already have an account? <a href="#" onclick="if(typeof Auth !== 'undefined') Auth.showScreen('login'); return false;">Login</a></p>
     </div>
   </div>
   
