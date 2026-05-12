@@ -74,7 +74,7 @@ UmbraMMO/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/AndreplaysGamezitos/UmbraMMO.git
+git clone https://github.com/cookieukw/UmbraMMO.git
 cd UmbraMMO
 ```
 
