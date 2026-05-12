@@ -1,0 +1,59 @@
+{
+  "id": "hive_queen",
+  "name": "Hive Queen",
+  "title": "Mother of the Swarm",
+  "level": 5,
+  "biome": "grasslands",
+  "location": "K10",
+  "description": "The massive queen bee that commands all drones in the area",
+  "sprite": "🐝",
+  "spriteUrl": "assets/sprites/bosses/hive_queen.png",
+  "color": "#FFD700",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 350,
+    "stamina": 60,
+    "str": 8,
+    "vit": 10,
+    "agi": 8,
+    "dex": 8,
+    "def": 6,
+    "int": 6,
+    "end": 6
+  },
+  
+  "combat": {
+    "baseDamage": 14,
+    "armor": 8,
+    "attackSpeed": 1400,
+    "moveSpeed": 600,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "shadow", "skillId": 58, "level": 1 },
+      { "treeId": "vitality", "skillId": 19, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "shadow", "skillId": 60, "level": 1 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "summoner",
+    "aggressiveness": "hostile",
+    "pattern": "swarm"
+  },
+  
+  "rewards": {
+    "exp": 395,
+    "gold": 160
+  },
+  
+  "respawnTime": 360000,
+  
+  "drops": []
+}

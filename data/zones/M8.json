@@ -1,0 +1,53 @@
+﻿{
+    "id":  "M8",
+    "name":  "Eastern Path",
+    "coord":  "M8",
+    "biome":  "grasslands",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "M7",
+                  "east":  "N8",
+                  "south":  "M9"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/M8.jpg"
+}

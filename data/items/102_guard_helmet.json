@@ -1,0 +1,18 @@
+{
+  "id": "guard_helmet",
+  "numericId": 102,
+  "name": "Guard Helmet",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "Standard-issue militia helmet.",
+  "stats": {
+    "armor": 3
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 24,
+  "buyPrice": 60
+}

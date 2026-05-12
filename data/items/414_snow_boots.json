@@ -1,0 +1,17 @@
+{
+  "id": "snow_boots",
+  "numericId": 414,
+  "name": "Snow Boots",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Insulated boots for trekking through snow.",
+  "stats": {
+    "armor": 8
+  },
+  "levelGuide": 45,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 90
+}

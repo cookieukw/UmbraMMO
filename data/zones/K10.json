@@ -1,0 +1,56 @@
+﻿{
+    "id":  "K10",
+    "name":  "Hive Queen\u0027s Nest",
+    "coord":  "K10",
+    "biome":  "grasslands",
+    "level":  5,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "K9",
+                  "south":  "K11"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "hive_queen",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "hive",
+                        "x":  20,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/K10.jpg"
+}

@@ -1,0 +1,47 @@
+﻿{
+    "id":  "D12",
+    "name":  "Southern Bridge End",
+    "coord":  "D12",
+    "biome":  "bridge",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "D11"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "bridge_end",
+                        "x":  20,
+                        "y":  15
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D12.jpg"
+}

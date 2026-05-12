@@ -1,0 +1,18 @@
+{
+  "id": "monkey_feet",
+  "numericId": 408,
+  "name": "Monkey Feet",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "uncommon",
+  "icon": "👢",
+  "description": "Nimble footwear inspired by jungle primates.",
+  "stats": {
+    "armor": 2,
+    "dex": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 15
+}

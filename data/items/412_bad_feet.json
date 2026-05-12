@@ -1,0 +1,18 @@
+{
+  "id": "bad_feet",
+  "numericId": 412,
+  "name": "Bad Feet",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "rare",
+  "icon": "👢",
+  "description": "Crude but surprisingly sturdy boots.",
+  "stats": {
+    "armor": 7,
+    "str": 4
+  },
+  "levelGuide": 25,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 65
+}

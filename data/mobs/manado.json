@@ -1,0 +1,45 @@
+{
+  "id": "manado",
+  "name": "Manado",
+  "level": 25,
+  "biome": "desert",
+  "description": "A desert bird with stone body",
+  "sprite": "🦅",
+  "color": "#D2B48C",
+  "spriteUrl": "assets/sprites/mobs/manado.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 300,
+    "stamina": 55,
+    "str": 18,
+    "vit": 14,
+    "agi": 16,
+    "dex": 14,
+    "def": 12,
+    "int": 2,
+    "end": 10
+  },
+  "combat": {
+    "baseDamage": 36,
+    "armor": 16,
+    "attackSpeed": 1400,
+    "moveSpeed": 550,
+    "aggroRange": 6
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 290,
+    "gold": 125
+  },
+  "respawnTime": 85000,
+  "drops": [
+    {
+      "itemId": "cobra_head",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

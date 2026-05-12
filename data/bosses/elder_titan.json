@@ -1,0 +1,65 @@
+{
+  "id": "elder_titan",
+  "name": "Elder Titan",
+  "title": "Ancient of the Mountains",
+  "level": 60,
+  "biome": "snow",
+  "location": "I1",
+  "camp": "giants_camp",
+  "description": "The oldest and most powerful of the frost giants, a being that has lived for millennia",
+  "sprite": "🗿",
+  "spriteUrl": "assets/sprites/bosses/elder_titan.png",
+  "color": "#4682B4",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 18000,
+    "stamina": 180,
+    "str": 145,
+    "vit": 130,
+    "agi": 18,
+    "dex": 22,
+    "def": 115,
+    "int": 35,
+    "end": 85
+  },
+  
+  "combat": {
+    "baseDamage": 245,
+    "armor": 145,
+    "attackSpeed": 2800,
+    "moveSpeed": 1400,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 5, "_name": "Strike (titan slam)" },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 5, "_name": "Bash (earthquake)" },
+      { "treeId": "defense", "skillId": 16, "level": 5, "_name": "Stomp" },
+      { "treeId": "magic", "skillId": 40, "level": 5, "_name": "Frozen Bolt (ice breath)" }
+    ],
+    "passive": [
+      { "treeId": "defense", "skillId": 12, "level": 5, "_name": "Sturdiness" },
+      { "treeId": "vitality", "skillId": 26, "level": 5, "_name": "Giant" },
+      { "treeId": "vitality", "skillId": 20, "level": 5, "_name": "Regeneration" },
+      { "treeId": "vitality", "skillId": 21, "level": 5, "_name": "Berserk" }
+    ]
+  },
+  
+  "behavior": {
+    "type": "slow_powerful",
+    "aggressiveness": "hostile",
+    "pattern": "titan_wrath"
+  },
+  
+  "rewards": {
+    "exp": 25000,
+    "gold": 12000
+  },
+  
+  "respawnTime": 1800000,
+  
+  "drops": []
+}

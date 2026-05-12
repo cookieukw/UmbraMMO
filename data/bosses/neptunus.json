@@ -1,0 +1,65 @@
+{
+  "id": "neptunus",
+  "name": "Neptunus",
+  "title": "God-King of the Tritons",
+  "level": 60,
+  "biome": "beach",
+  "location": "O13",
+  "camp": "tritons_camp",
+  "description": "The immortal ruler of the triton kingdom, wielding a trident of divine power",
+  "sprite": "🔱",
+  "spriteUrl": "assets/sprites/bosses/neptunus.png",
+  "color": "#00CED1",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 19000,
+    "stamina": 190,
+    "str": 138,
+    "vit": 115,
+    "agi": 42,
+    "dex": 45,
+    "def": 88,
+    "int": 68,
+    "end": 72
+  },
+  
+  "combat": {
+    "baseDamage": 255,
+    "armor": 115,
+    "attackSpeed": 1800,
+    "moveSpeed": 750,
+    "aggroRange": 8
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 5, "_name": "Strike (trident thrust)" },
+      { "treeId": "magic", "skillId": 40, "level": 5, "_name": "Frozen Bolt (tidal surge)" },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 5, "_name": "Bash (whirlpool)" },
+      { "treeId": "vitality", "skillId": 19, "level": 5, "_name": "Heal (ocean's blessing)" }
+    ],
+    "passive": [
+      { "treeId": "swordsmanship", "skillId": 6, "level": 5, "_name": "Punish" },
+      { "treeId": "vitality", "skillId": 23, "level": 5, "_name": "Life Steal" },
+      { "treeId": "defense", "skillId": 12, "level": 5, "_name": "Sturdiness" },
+      { "treeId": "magic", "skillId": 39, "level": 5, "_name": "Time Bend" }
+    ]
+  },
+  
+  "behavior": {
+    "type": "divine_warrior",
+    "aggressiveness": "hostile",
+    "pattern": "sea_god"
+  },
+  
+  "rewards": {
+    "exp": 28000,
+    "gold": 14000
+  },
+  
+  "respawnTime": 2100000,
+  
+  "drops": []
+}

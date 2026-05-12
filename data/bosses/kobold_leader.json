@@ -1,0 +1,62 @@
+{
+  "id": "kobold_leader",
+  "name": "Kobold Leader",
+  "title": "Chieftain of the Tunnels",
+  "level": 30,
+  "biome": "cave",
+  "location": "I8",
+  "camp": "kobold_camp",
+  "description": "The cunning leader of all kobold tribes in the region",
+  "sprite": "👑",
+  "spriteUrl": "assets/sprites/bosses/kobold_leader.png",
+  "color": "#B8860B",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 3000,
+    "stamina": 100,
+    "str": 50,
+    "vit": 46,
+    "agi": 26,
+    "dex": 24,
+    "def": 38,
+    "int": 18,
+    "end": 32
+  },
+  
+  "combat": {
+    "baseDamage": 78,
+    "armor": 44,
+    "attackSpeed": 1500,
+    "moveSpeed": 650,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 3 },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 3 },
+      { "treeId": "roguery", "skillId": 31, "level": 3 }
+    ],
+    "passive": [
+      { "treeId": "swordsmanship", "skillId": 6, "level": 3 },
+      { "treeId": "roguery", "skillId": 35, "level": 3 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "tactical",
+    "aggressiveness": "hostile",
+    "pattern": "commander"
+  },
+  
+  "rewards": {
+    "exp": 4000,
+    "gold": 1650
+  },
+  
+  "respawnTime": 600000,
+  
+  "drops": []
+}

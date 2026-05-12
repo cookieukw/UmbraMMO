@@ -1,0 +1,12 @@
+{
+  "id": "goblin_ear",
+  "numericId": 3020,
+  "name": "Goblin Ear",
+  "type": "material",
+  "rarity": "normal",
+  "icon": "👂",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 6,
+  "description": "A pointed ear from a goblin. Proof of the kill."
+}

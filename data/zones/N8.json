@@ -1,0 +1,91 @@
+﻿{
+    "id":  "N8",
+    "name":  "Heavy Hogman Territory",
+    "coord":  "N8",
+    "biome":  "grasslands",
+    "level":  30,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "O8",
+                  "west":  "M8"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "heavy_hogman",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "heavy_hogman",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "heavy_hogman",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "heavy_hogman",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "heavy_hogman",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "heavy_hogman",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/N8.jpg"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "patched_pants",
+  "numericId": 300,
+  "name": "Patched Pants",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "normal",
+  "icon": "👖",
+  "stats": {
+    "end": 1
+  },
+  "armor": 1,
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 4
+}

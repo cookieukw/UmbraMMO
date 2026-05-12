@@ -1,0 +1,47 @@
+﻿{
+    "id":  "R6",
+    "name":  "Kong Bong\u0027s Lair",
+    "coord":  "R6",
+    "biome":  "jungle",
+    "level":  5,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "R5"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "kong_bong",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/R6.jpg"
+}

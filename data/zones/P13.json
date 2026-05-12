@@ -1,0 +1,88 @@
+﻿{
+    "id":  "P13",
+    "name":  "Triton Cavalier Grounds",
+    "coord":  "P13",
+    "biome":  "beach",
+    "level":  60,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "tritons",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "west":  "O13"
+              },
+    "entryPoints":  {
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "triton_cavalier",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "triton_cavalier",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "triton_cavalier",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "triton_cavalier",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "triton_cavalier",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "triton_cavalier",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/P13.jpg"
+}

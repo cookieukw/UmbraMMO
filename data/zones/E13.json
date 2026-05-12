@@ -1,0 +1,93 @@
+﻿{
+    "id":  "E13",
+    "name":  "War Machine Factory",
+    "coord":  "E13",
+    "biome":  "grasslands",
+    "level":  60,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "dark_knights",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "south":  "E14",
+                  "west":  "D13"
+              },
+    "entryPoints":  {
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "war_machine",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "war_machine",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "war_machine",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "war_machine",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "war_machine",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "war_machine",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/E13.jpg"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "slime_gel",
+  "numericId": 3010,
+  "name": "Slime Gel",
+  "type": "material",
+  "rarity": "normal",
+  "icon": "💧",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 4,
+  "description": "Sticky residue from a slime. Used in alchemy."
+}

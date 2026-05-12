@@ -1,0 +1,96 @@
+{
+  "rat": {
+    "id": "rat",
+    "name": "Rat",
+    "level": 1,
+    "hp": 20,
+    "damage": 2,
+    "defense": 0,
+    "expReward": 10,
+    "drops": [
+      { "itemId": "rat_tail", "chance": 60 },
+      { "itemId": "rat_meat", "chance": 40 }
+    ],
+    "sprite": "🐀",
+    "color": "#8B7355",
+    "moveSpeed": 800,
+    "aggroRange": 3,
+    "respawnTime": 30000,
+    "behavior": "wander"
+  },
+  "slime": {
+    "id": "slime",
+    "name": "Slime",
+    "level": 2,
+    "hp": 35,
+    "damage": 4,
+    "defense": 1,
+    "expReward": 18,
+    "drops": [
+      { "itemId": "slime_gel", "chance": 100 }
+    ],
+    "sprite": "🟢",
+    "color": "#32CD32",
+    "moveSpeed": 1200,
+    "aggroRange": 2,
+    "respawnTime": 45000,
+    "behavior": "wander"
+  },
+  "goblin": {
+    "id": "goblin",
+    "name": "Goblin",
+    "level": 3,
+    "hp": 50,
+    "damage": 6,
+    "defense": 2,
+    "expReward": 25,
+    "drops": [
+      { "itemId": "goblin_ear", "chance": 70 },
+      { "itemId": "goblin_tooth", "chance": 30 }
+    ],
+    "sprite": "👺",
+    "color": "#228B22",
+    "moveSpeed": 600,
+    "aggroRange": 4,
+    "respawnTime": 60000,
+    "behavior": "wander"
+  },
+  "wolf": {
+    "id": "wolf",
+    "name": "Wolf",
+    "level": 4,
+    "hp": 65,
+    "damage": 8,
+    "defense": 2,
+    "expReward": 35,
+    "drops": [
+      { "itemId": "wolf_pelt", "chance": 65 },
+      { "itemId": "wolf_fang", "chance": 35 }
+    ],
+    "sprite": "🐺",
+    "color": "#696969",
+    "moveSpeed": 500,
+    "aggroRange": 5,
+    "respawnTime": 60000,
+    "behavior": "wander"
+  },
+  "skeleton": {
+    "id": "skeleton",
+    "name": "Skeleton",
+    "level": 5,
+    "hp": 80,
+    "damage": 10,
+    "defense": 3,
+    "expReward": 45,
+    "drops": [
+      { "itemId": "bone_fragment", "chance": 60 },
+      { "itemId": "skull_shard", "chance": 40 }
+    ],
+    "sprite": "💀",
+    "color": "#F5F5DC",
+    "moveSpeed": 700,
+    "aggroRange": 4,
+    "respawnTime": 90000,
+    "behavior": "wander"
+  }
+}

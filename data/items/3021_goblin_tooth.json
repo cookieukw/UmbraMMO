@@ -1,0 +1,12 @@
+{
+  "id": "goblin_tooth",
+  "numericId": 3021,
+  "name": "Goblin Tooth",
+  "type": "material",
+  "rarity": "uncommon",
+  "icon": "🦷",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 10,
+  "description": "A sharp tooth from a goblin. Somewhat rare."
+}

@@ -1,0 +1,47 @@
+﻿{
+    "id":  "F11",
+    "name":  "Leviathan\u0027s Domain",
+    "coord":  "F11",
+    "biome":  "beach",
+    "level":  50,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "F10"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "leviathan",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/F11.jpg"
+}

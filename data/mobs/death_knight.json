@@ -1,0 +1,47 @@
+{
+  "id": "death_knight",
+  "name": "Holy Knight",
+  "level": 60,
+  "biome": "grasslands",
+  "camp": "dark_knights_camp",
+  "description": "A crooked knight with black armor",
+  "sprite": "💀",
+  "color": "#1C1C1C",
+  "spriteUrl": "assets/sprites/mobs/death_knight.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 1550,
+    "stamina": 90,
+    "str": 74,
+    "vit": 66,
+    "agi": 16,
+    "dex": 18,
+    "def": 54,
+    "int": 6,
+    "end": 46
+  },
+  
+  "combat": {
+    "baseDamage": 142,
+    "armor": 66,
+    "attackSpeed": 1700,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  
+  "rewards": {
+    "exp": 1620,
+    "gold": 860
+  },
+  
+  "respawnTime": 120000,
+  
+  "drops": []
+}

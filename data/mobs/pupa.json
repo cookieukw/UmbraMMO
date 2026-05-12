@@ -1,0 +1,45 @@
+{
+  "id": "pupa",
+  "name": "Pupa",
+  "level": 1,
+  "biome": "jungle",
+  "description": "A small orange larvae",
+  "sprite": "🐛",
+  "color": "#FFA500",
+  "spriteUrl": "assets/sprites/mobs/pupa.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 30,
+    "stamina": 30,
+    "str": 1,
+    "vit": 3,
+    "agi": 0,
+    "dex": 0,
+    "def": 2,
+    "int": 0,
+    "end": 1
+  },
+  "combat": {
+    "baseDamage": 2,
+    "armor": 2,
+    "attackSpeed": 2500,
+    "moveSpeed": 1500,
+    "aggroRange": 1
+  },
+  "behavior": {
+    "type": "stationary",
+    "aggressiveness": "passive"
+  },
+  "rewards": {
+    "exp": 8,
+    "gold": 4
+  },
+  "respawnTime": 25000,
+  "drops": [
+    {
+      "itemId": "insect_shell",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

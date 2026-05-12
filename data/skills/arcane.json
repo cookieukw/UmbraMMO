@@ -1,0 +1,119 @@
+{
+  "tree": {
+    "id": "arcane",
+    "name": "Arcane",
+    "icon": "🔮",
+    "unlockLevel": 30,
+    "description": "Advanced abilities and unique effects"
+  },
+  "skills": [
+    {
+      "id": 64,
+      "name": "Mirror Strike",
+      "type": "active",
+      "staminaCost": 16,
+      "cooldown": 12000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Stun both yourself and the enemy for {value1}s.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "mirror_strike"
+    },
+    {
+      "id": 65,
+      "name": "Banish",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "If the enemy has 100% HP, increase your damage by {value1}%.",
+      "scaling": {
+        "value1": { "base": 200, "perLevel": 100 }
+      },
+      "effect": "banish"
+    },
+    {
+      "id": 66,
+      "name": "Normalize",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "At battle start, reduce enemy's highest stat by {value1}%.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "normalize"
+    },
+    {
+      "id": 67,
+      "name": "Light Missile",
+      "type": "active",
+      "staminaCost": 7,
+      "cooldown": 2000,
+      "initialCooldown": 2000,
+      "maxLevel": 5,
+      "description": "Deal {value1} true damage.",
+      "scaling": {
+        "value1": { "base": 5, "perLevel": 2.5 }
+      },
+      "effect": "light_missile"
+    },
+    {
+      "id": 68,
+      "name": "Blessing",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Using an active skill heals {value1} HP.",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "blessing"
+    },
+    {
+      "id": 69,
+      "name": "Illuminate",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Permanently reduce enemy dodge by {value1}%.",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "illuminate"
+    },
+    {
+      "id": 70,
+      "name": "Avatar",
+      "type": "active",
+      "staminaCost": 35,
+      "cooldown": 15000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "+{value1}% to all base attributes for the rest of the battle.",
+      "scaling": {
+        "value1": { "base": 5, "perLevel": 2.5 }
+      },
+      "effect": "avatar"
+    },
+    {
+      "id": 71,
+      "name": "Reactivation",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "{value1}% chance to cast a skill twice when used (uses Stamina twice).",
+      "scaling": {
+        "value1": { "base": 6, "perLevel": 3 }
+      },
+      "effect": "reactivation"
+    },
+    {
+      "id": 72,
+      "name": "Momentum",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Each consecutive hit increases attack speed by {value1}%.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "momentum"
+    }
+  ]
+}

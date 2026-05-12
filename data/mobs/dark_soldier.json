@@ -1,0 +1,46 @@
+{
+  "id": "dark_soldier",
+  "name": "Angel Soldier",
+  "level": 55,
+  "biome": "grasslands",
+  "camp": "dark_knights_camp",
+  "description": "A crooked soldier with steel armor",
+  "sprite": "⚔️",
+  "color": "#2F2F2F",
+  "spriteUrl": "assets/sprites/mobs/dark_soldier.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1300,
+    "stamina": 85,
+    "str": 62,
+    "vit": 58,
+    "agi": 16,
+    "dex": 18,
+    "def": 48,
+    "int": 4,
+    "end": 40
+  },
+  "combat": {
+    "baseDamage": 118,
+    "armor": 58,
+    "attackSpeed": 1600,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1280,
+    "gold": 650
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "blessed_sword",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

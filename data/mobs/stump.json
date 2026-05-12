@@ -1,0 +1,45 @@
+{
+  "id": "stump",
+  "name": "Stump",
+  "level": 5,
+  "biome": "jungle",
+  "description": "Tree stump with face, hands and feet",
+  "sprite": "🪵",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/stump.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 75,
+    "stamina": 35,
+    "str": 5,
+    "vit": 5,
+    "agi": 1,
+    "dex": 1,
+    "def": 5,
+    "int": 0,
+    "end": 3
+  },
+  "combat": {
+    "baseDamage": 8,
+    "armor": 6,
+    "attackSpeed": 2400,
+    "moveSpeed": 1400,
+    "aggroRange": 3
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 40,
+    "gold": 18
+  },
+  "respawnTime": 50000,
+  "drops": [
+    {
+      "itemId": "bark_armor",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

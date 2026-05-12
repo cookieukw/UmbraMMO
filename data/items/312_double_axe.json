@@ -1,0 +1,18 @@
+{
+  "id": "double_axe",
+  "numericId": 312,
+  "name": "Double-Axe",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "common",
+  "icon": "🪓",
+  "description": "A brutal double-bladed axe.",
+  "stats": {
+    "str": 16
+  },
+  "levelGuide": 50,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 100
+}

@@ -1,0 +1,730 @@
+{
+  "globalStylePrefix": "Orthographic top-down battlemap, 2d game map, Hyper Light Drifter, raster graphics, sharp details,",
+  "globalStyleSuffix": "distinct ground texture, scattered small details, no characters, no monsters, no UI, no HUD, game background asset, consistent lighting",
+  "negativePrompt": "3d render, isometric, perspective, horizon, sky, vanishing point, close-up, macro, blur, depth of field, bokeh, character, ui, text, vector art, smooth, painting, blurry, low quality, realistic photo, people, monsters, watermark, signature, frame, border, side view, first person, low resolution, jpeg artifacts",
+  "settings": {
+    "width": 1024,
+    "height": 768,
+    "steps": 30,
+    "cfg": 7.5,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras"
+  },
+  "zones": {
+    "B1": {
+      "biome": "Cave",
+      "connections": { "south": "B2 (Grasslands)" },
+      "description": "Dark underground cavern with slime pools, glowing mushrooms, stalactites, wet rocky surfaces, eerie green glow, boss lair atmosphere. Exit path on the bottom edge leading to grassy outdoors with visible daylight"
+    },
+    "D1": {
+      "biome": "Grasslands",
+      "connections": { "south": "D2 (Grasslands)" },
+      "description": "Grasslands zone with a goblin camp, wooden palisades, crude tents, campfires, scattered bones, tribal totems, war drums. Dirt path exit on the bottom edge leading to more grasslands"
+    },
+    "F1": {
+      "biome": "Snow",
+      "connections": { "south": "F2 (Snow)" },
+      "description": "Snowy mountain camp, fur tents, smoking chimneys, frozen pines, supply crates, traveler's rest stop, cozy outpost. Snowy trail exit on the bottom edge continuing into frozen tundra"
+    },
+    "I1": {
+      "biome": "Snow",
+      "connections": { "south": "I2 (Snow)" },
+      "description": "Massive frozen giant's fortress, colossal stone pillars, ice-covered ruins, ancient titan statues, blizzard atmosphere, epic boss arena. Icy path exit on the bottom edge leading to snowy grounds"
+    },
+    "L1": {
+      "biome": "Cave",
+      "connections": { "south": "L2 (Snow)" },
+      "description": "Dragon's volcanic lair, molten lava pools, obsidian formations, treasure hoards, scorched bones, ominous red glow, epic dungeon. Cave mouth exit on the bottom edge opening to snowy exterior"
+    },
+    "N1": {
+      "biome": "Snow",
+      "connections": { "south": "N2 (Snow)" },
+      "description": "Peaceful snowy passage, snow-covered pines, gentle snowfall, frozen stream, untouched wilderness, serene winter landscape. Snowy path exit on the bottom edge continuing south"
+    },
+    "Q1": {
+      "biome": "Jungle",
+      "connections": { "south": "Q2 (Jungle)" },
+      "description": "Dense tropical jungle clearing, massive cocoon structure, silk webs, exotic flowers, mysterious ancient ruins, humid atmosphere. Jungle trail exit on the bottom edge leading deeper into forest"
+    },
+    "A2": {
+      "biome": "Grasslands",
+      "connections": { "east": "B2 (Grasslands)" },
+      "description": "Open grasslands with a menacing dead tree, bird nests, scattered feathers, ominous atmosphere, boss encounter area. Dirt path exit on the right edge leading to peaceful meadows"
+    },
+    "B2": {
+      "biome": "Grasslands",
+      "connections": { "north": "B1 (Cave)", "south": "B3 (Grasslands/City)", "west": "A2 (Grasslands)" },
+      "description": "Peaceful rolling meadow, colorful wildflowers, gentle slopes, small pond, butterflies, sunny pastoral scene, starter area. Cave entrance on the top edge, dirt path exit on the bottom edge leading to a village, dirt path on the left edge to open fields"
+    },
+    "D2": {
+      "biome": "Grasslands",
+      "connections": { "north": "D1 (Grasslands)", "south": "D3 (Grasslands)" },
+      "description": "Goblin-infested grasslands, crude watchtowers, patrol paths, warning signs, goblin graffiti, fortified camp perimeter. Dirt paths on both top and bottom edges connecting to grasslands"
+    },
+    "F2": {
+      "biome": "Snow",
+      "connections": { "north": "F1 (Snow)", "east": "G2 (Snow)" },
+      "description": "Empty frozen tundra, snow drifts, distant mountains, icy wind effects, barren winter wasteland, travel path. Snowy trail on top edge to camp, snowy path on right edge to giant territory"
+    },
+    "G2": {
+      "biome": "Snow",
+      "connections": { "east": "H2 (Snow)", "west": "F2 (Snow)" },
+      "description": "Giant's hunting grounds, massive footprints, mammoth bones, hunting trophies, oversized weapons stuck in ground. Snowy paths on both left and right edges connecting frozen territories"
+    },
+    "H2": {
+      "biome": "Snow",
+      "connections": { "east": "I2 (Snow)", "south": "H3 (Snow)", "west": "G2 (Snow)" },
+      "description": "Giant's gathering camp, huge woven baskets, harvested ice blocks, primitive giant tools, massive fire pits. Snowy paths on left, right, and bottom edges connecting to icy territories"
+    },
+    "I2": {
+      "biome": "Snow",
+      "connections": { "north": "I1 (Snow)", "east": "J2 (Snow)", "west": "H2 (Snow)" },
+      "description": "Giant military outpost, massive stone fortifications, giant-sized barracks, war banners, training dummies, patrol grounds. Icy path on top edge to fortress, snowy paths on left and right edges"
+    },
+    "J2": {
+      "biome": "Snow",
+      "connections": { "east": "K2 (Snow)", "south": "J3 (Snow)", "west": "I2 (Snow)" },
+      "description": "Frozen mountain pass, narrow snow path, ice walls, howling wind effects, treacherous crossing, scenic vista. Snowy trails on left, right, and bottom edges through frozen mountains"
+    },
+    "K2": {
+      "biome": "Snow",
+      "connections": { "east": "L2 (Snow)", "west": "J2 (Snow)" },
+      "description": "Dragon cult territory, dragon statues, ritual altars, dragon scale decorations, fanatical shrine, ominous totems. Snowy paths on left and right edges connecting to dragon territory"
+    },
+    "L2": {
+      "biome": "Snow",
+      "connections": { "north": "L1 (Cave)", "east": "M2 (Snow)", "south": "L3 (Snow)", "west": "K2 (Snow)" },
+      "description": "Dragon nesting grounds, massive claw marks, scorched snow patches, dragon eggs, treasure scattered, dangerous territory. Cave entrance on top edge, snowy paths on left, right, and bottom edges"
+    },
+    "M2": {
+      "biome": "Snow",
+      "connections": { "east": "N2 (Snow)", "south": "M3 (Snow)", "west": "L2 (Snow)" },
+      "description": "High mountain plateau, pristine snow, aurora borealis effects, ancient frozen ruins, mystical atmosphere. Snowy trails on left, right, and bottom edges"
+    },
+    "N2": {
+      "biome": "Snow",
+      "connections": { "north": "N1 (Snow)", "west": "M2 (Snow)" },
+      "description": "Mountain traveler's camp, warm tents, supply wagons, guide posts, safe haven markers, friendly outpost. Snowy path on top edge, snowy trail on left edge"
+    },
+    "Q2": {
+      "biome": "Jungle",
+      "connections": { "north": "Q1 (Jungle)", "east": "R2 (Cave)", "south": "Q3 (Jungle)" },
+      "description": "Jungle nursery area, large leaf canopy, cocoon pods hanging, larvae trails, humid swamp, exotic insects. Jungle paths on top and bottom edges, cave entrance on right edge"
+    },
+    "R2": {
+      "biome": "Cave",
+      "connections": { "west": "Q2 (Jungle)" },
+      "description": "Volcanic cave entrance, lava flows, ember particles, moth nests, glowing crystals, dangerous heat, boss lair. Cave exit on left edge opening to jungle"
+    },
+    "B3": {
+      "biome": "Grasslands",
+      "connections": { "north": "B2 (Grasslands)", "east": "C3 (Grasslands)", "south": "B4 (Grasslands)" },
+      "description": "Charming medieval starting village, cobblestone streets, thatched roof houses, market stalls, fountain plaza, warm welcoming town, safe haven. City gate on top edge to meadows, eastern road on right edge to farmlands, southern gate on bottom edge to fields"
+    },
+    "C3": {
+      "biome": "Grasslands",
+      "connections": { "east": "D3 (Grasslands)", "west": "B3 (Grasslands/City)" },
+      "description": "Village outskirts, farmlands, wooden fences, haystacks, dirt road leading to city, pastoral countryside. Road on left edge leading to city, dirt path on right edge to wilderness"
+    },
+    "D3": {
+      "biome": "Grasslands",
+      "connections": { "north": "D2 (Grasslands)", "east": "E3 (Cave)", "south": "D4 (Grasslands)", "west": "C3 (Grasslands)" },
+      "description": "Goblin scout territory, hidden watch posts, trap markers, goblin tracks, forest edge, early danger zone. Dirt paths on top, bottom, and left edges to grasslands, dark cave entrance on right edge"
+    },
+    "E3": {
+      "biome": "Cave",
+      "connections": { "west": "D3 (Grasslands)" },
+      "description": "Spider-infested cavern, thick webs everywhere, cocooned victims, poison pools, glowing spider eyes, dark atmosphere, boss lair. Cave exit on left edge showing daylight and grass"
+    },
+    "H3": {
+      "biome": "Snow",
+      "connections": { "north": "H2 (Snow)", "south": "H4 (Grasslands)" },
+      "description": "Giant patrol grounds, massive footprints, broken trees, giant-sized patrol markers, intimidating territory. Snowy path on top edge, transition path on bottom edge where snow meets grasslands"
+    },
+    "J3": {
+      "biome": "Snow",
+      "connections": { "north": "J2 (Snow)" },
+      "description": "Wyrm tunnels in snow, serpentine tracks, ice burrows, frozen prey remains, dangerous hunting grounds. Snowy path exit on top edge only, dead end zone"
+    },
+    "L3": {
+      "biome": "Snow",
+      "connections": { "north": "L2 (Snow)", "east": "M3 (Snow)" },
+      "description": "Penguin colony territory, ice formations, fish bones, territorial markers, frozen shoreline, arctic atmosphere. Snowy paths on top and right edges"
+    },
+    "M3": {
+      "biome": "Snow",
+      "connections": { "north": "M2 (Snow)", "south": "M4 (Grasslands)", "west": "L3 (Snow)" },
+      "description": "Polar bear hunting grounds, claw marks on ice, seal breathing holes, dangerous predator territory. Snowy paths on top and left edges, transition on bottom edge where snow meets grass"
+    },
+    "Q3": {
+      "biome": "Jungle",
+      "connections": { "north": "Q2 (Jungle)", "south": "Q4 (Jungle/City)" },
+      "description": "Jungle path to city, ancient stone road, overgrown ruins, exotic birds, safe travel route through dense forest. Jungle trail on top edge, stone road on bottom edge leading to jungle city"
+    },
+    "B4": {
+      "biome": "Grasslands",
+      "connections": { "north": "B3 (Grasslands/City)", "south": "B5 (Grasslands)" },
+      "description": "Quiet grasslands with scattered bushes, mouse holes in the ground, peaceful meadow, starter mob area. Dirt path on top edge leading to city gates, dirt path on bottom edge to more fields"
+    },
+    "D4": {
+      "biome": "Grasslands",
+      "connections": { "north": "D3 (Grasslands)", "south": "D5 (Desert)" },
+      "description": "Goblin raider boss territory, fortified goblin stronghold, siege weapons, war banners, skull totems, dangerous camp. Dirt path on top edge from grasslands, sandy transition path on bottom edge to desert"
+    },
+    "F4": {
+      "biome": "Desert",
+      "connections": { "east": "G4 (Grasslands)", "south": "F5 (Desert)" },
+      "description": "Rocky desert with stone bird statues, ancient ruins, sand dunes, harsh sun, desert wildlife territory. Sandy path on right edge transitioning to grass, sandy trail on bottom edge continuing south"
+    },
+    "G4": {
+      "biome": "Grasslands",
+      "connections": { "east": "H4 (Grasslands)", "west": "F4 (Desert)" },
+      "description": "Dry grasslands with giant anteater mounds, termite hills, sparse vegetation, transitional zone. Path on left edge from desert, dirt road on right edge to crossroads"
+    },
+    "H4": {
+      "biome": "Grasslands",
+      "connections": { "north": "H3 (Snow)", "east": "I4 (Grasslands)", "west": "G4 (Grasslands)" },
+      "description": "Central crossroads, signposts pointing multiple directions, worn dirt roads, travelers' rest stones, junction hub. Snowy transition on top edge, dirt roads on left and right edges"
+    },
+    "I4": {
+      "biome": "Grasslands",
+      "connections": { "south": "I5 (Grasslands)", "west": "H4 (Grasslands)" },
+      "description": "Haunted grasslands with animated armor remains, old battlefield, rusted weapons in ground, eerie mist. Dirt path on left edge, road on bottom edge toward capital"
+    },
+    "K4": {
+      "biome": "Capital City",
+      "connections": { "south": "K5 (Capital City)" },
+      "description": "Grand capital city northern district, magnificent castle towers, marble streets, ornate fountains, noble quarters, grand architecture. Paved road on bottom edge continuing into city center"
+    },
+    "M4": {
+      "biome": "Grasslands",
+      "connections": { "north": "M3 (Snow)", "east": "N4 (Cave)", "south": "M5 (Grasslands)" },
+      "description": "Mystical grasslands with floating stone monuments, ancient runes, magical atmosphere, hermetic territory. Snow transition on top edge, cave entrance on right edge, path on bottom edge"
+    },
+    "N4": {
+      "biome": "Cave",
+      "connections": { "west": "M4 (Grasslands)" },
+      "description": "Crystal cavern, sparkling gem formations, glowing minerals, golem territory, magical resonance, boss lair. Cave exit on left edge opening to grassy outdoors"
+    },
+    "P4": {
+      "biome": "Jungle",
+      "connections": { "east": "Q4 (Jungle/City)", "south": "P5 (Jungle)" },
+      "description": "Dense jungle with scurrying rats, tropical undergrowth, exotic plants, humid atmosphere, starter area. Jungle path on right edge to city, trail on bottom edge going south"
+    },
+    "Q4": {
+      "biome": "Jungle",
+      "connections": { "north": "Q3 (Jungle)", "east": "R4 (Jungle)", "west": "P4 (Jungle)" },
+      "description": "Jungle starting city built into massive trees, rope bridges, treehouse structures, tribal market, wooden platforms, safe haven. Stone path on top edge, jungle trails on left and right edges"
+    },
+    "R4": {
+      "biome": "Jungle",
+      "connections": { "south": "R5 (Jungle)", "west": "Q4 (Jungle/City)" },
+      "description": "Jungle city outskirts, scattered huts, cultivated clearings, fruit trees, peaceful village edge. Trail on left edge to city, jungle path on bottom edge south"
+    },
+    "A5": {
+      "biome": "Grasslands",
+      "connections": { "east": "B5 (Grasslands)", "south": "A6 (Grasslands)" },
+      "description": "Wild boar territory, muddy wallows, uprooted ground, aggressive wildlife, boss arena with alpha boar den. Dirt path on right edge, grassy trail on bottom edge"
+    },
+    "B5": {
+      "biome": "Grasslands",
+      "connections": { "north": "B4 (Grasslands)", "east": "C5 (Cave)", "west": "A5 (Grasslands)" },
+      "description": "Untamed grasslands with honey badger dens, tall grass, wildflower patches, feral territory. Dirt paths on top and left edges, dark cave entrance on right edge"
+    },
+    "C5": {
+      "biome": "Cave",
+      "connections": { "east": "D5 (Desert)", "west": "B5 (Grasslands)" },
+      "description": "Underground passage connecting biomes, stalactites, underground stream, dim torchlight, safe crossing. Cave exit on left edge to grass, cave exit on right edge opening to desert"
+    },
+    "D5": {
+      "biome": "Desert",
+      "connections": { "north": "D4 (Grasslands)", "south": "D6 (Desert)", "west": "C5 (Cave)" },
+      "description": "Desert passage with sand dunes, scattered rocks, cacti, harsh sunlight, travel corridor. Grass transition on top edge, sandy path on bottom edge, cave entrance on left edge"
+    },
+    "F5": {
+      "biome": "Desert",
+      "connections": { "north": "F4 (Desert)", "south": "F6 (Desert)" },
+      "description": "Spider ant colony desert, large ant hills, tunneled sand, dangerous insect territory. Sandy trails on top and bottom edges"
+    },
+    "I5": {
+      "biome": "Grasslands",
+      "connections": { "north": "I4 (Grasslands)", "east": "J5 (Capital City)" },
+      "description": "Capital approach road, well-maintained highway, mile markers, guard posts, travelers on road. Dirt road on top edge, paved road on right edge to capital"
+    },
+    "J5": {
+      "biome": "Capital City",
+      "connections": { "east": "K5 (Capital City)", "west": "I5 (Grasslands)" },
+      "description": "Capital city western gate, massive stone walls, guard towers, merchant caravans, bustling entrance. Road on left edge from countryside, paved streets on right into city"
+    },
+    "K5": {
+      "biome": "Capital City",
+      "connections": { "north": "K4 (Capital City)", "east": "L5 (Capital City)", "south": "K6 (Capital City)", "west": "J5 (Capital City)" },
+      "description": "Capital city center, grand plaza, central fountain, market district, busy crowds, magnificent buildings. Paved roads on all four edges connecting city districts"
+    },
+    "L5": {
+      "biome": "Capital City",
+      "connections": { "east": "M5 (Grasslands)", "south": "L6 (Grasslands)", "west": "K5 (Capital City)" },
+      "description": "Capital city eastern district, residential area, townhouses, small gardens, peaceful streets. Paved road on left edge, city gate on right and bottom edges to countryside"
+    },
+    "M5": {
+      "biome": "Grasslands",
+      "connections": { "north": "M4 (Grasslands)", "west": "L5 (Capital City)" },
+      "description": "Capital eastern approach, gentle hills, scenic overlook of city, milestone markers, peaceful farmland. Dirt path on top edge, paved road on left edge to city gates"
+    },
+    "O5": {
+      "biome": "Cave",
+      "connections": { "east": "P5 (Jungle)" },
+      "description": "Giant spider lair, massive webs, cocooned prey, glowing spider eyes, dark cavern, boss arena. Cave exit on right edge opening to jungle"
+    },
+    "P5": {
+      "biome": "Jungle",
+      "connections": { "north": "P4 (Jungle)", "south": "P6 (Jungle)", "west": "O5 (Cave)" },
+      "description": "Jungle with walking tree stumps, animated nature, magical forest, mysterious atmosphere. Jungle trail on top edge, path on bottom edge, cave entrance on left edge"
+    },
+    "R5": {
+      "biome": "Jungle",
+      "connections": { "north": "R4 (Jungle)", "south": "R6 (Jungle)" },
+      "description": "Monkey territory jungle, vine swings, fruit trees, playful but mischievous atmosphere. Jungle trails on top and bottom edges"
+    },
+    "A6": {
+      "biome": "Grasslands",
+      "connections": { "north": "A5 (Grasslands)" },
+      "description": "Wolf hunting grounds, forest edge, wolf tracks, prey bones, dangerous predator territory, dead end. Dirt path on top edge only, dense forest blocking other sides"
+    },
+    "D6": {
+      "biome": "Desert",
+      "connections": { "north": "D5 (Desert)", "east": "E6 (Desert)" },
+      "description": "Cactus desert with living cactus creatures, spiny terrain, harsh environment. Sandy path on top edge, sandy trail on right edge"
+    },
+    "E6": {
+      "biome": "Desert",
+      "connections": { "east": "F6 (Desert)", "west": "D6 (Desert)" },
+      "description": "Desert excavation site, sand seeker territory, dig sites, ancient artifacts partially buried. Sandy paths on left and right edges"
+    },
+    "F6": {
+      "biome": "Desert",
+      "connections": { "north": "F5 (Desert)", "east": "G6 (Desert)", "south": "F7 (Desert)", "west": "E6 (Desert)" },
+      "description": "Desert crossroads, oasis in distance, caravan rest area, sandy junction. Sandy trails on all four edges"
+    },
+    "G6": {
+      "biome": "Desert",
+      "connections": { "east": "H6 (Desert)", "west": "F6 (Desert)" },
+      "description": "Desert camp, merchant tents, water barrels, shaded rest area, safe haven in desert. Sandy paths on left and right edges"
+    },
+    "H6": {
+      "biome": "Desert",
+      "connections": { "south": "H7 (Desert)", "west": "G6 (Desert)" },
+      "description": "Empty desert passage, sand dunes, heat waves, scorching sun, travel corridor. Sandy path on left edge, trail on bottom edge"
+    },
+    "K6": {
+      "biome": "Capital City",
+      "connections": { "north": "K5 (Capital City)", "east": "L6 (Grasslands)", "south": "K7 (Grasslands)" },
+      "description": "Capital city southern gate, city walls, guard checkpoint, travelers entering, busy thoroughfare. Paved road on top edge, paths on right and bottom edges to countryside"
+    },
+    "L6": {
+      "biome": "Grasslands",
+      "connections": { "north": "L5 (Capital City)", "west": "K6 (Capital City)" },
+      "description": "Peaceful farmland near capital, chicken coops, grazing animals, rural life, starter mob area. Path on top edge to city, road on left edge to gates"
+    },
+    "P6": {
+      "biome": "Jungle",
+      "connections": { "north": "P5 (Jungle)", "south": "P7 (Jungle)" },
+      "description": "Dense jungle with tangled root creatures, mask-wearing spirits, tribal territory. Jungle trails on top and bottom edges"
+    },
+    "R6": {
+      "biome": "Jungle",
+      "connections": { "north": "R5 (Jungle)" },
+      "description": "Massive ape territory, giant tree with ape throne, banana groves, boss arena, dead end. Jungle trail on top edge only"
+    },
+    "B7": {
+      "biome": "Cave",
+      "connections": { "south": "B8 (Grasslands)" },
+      "description": "Wearied dragon's lair, treasure hoard, scorched walls, ancient dragon resting, epic boss arena. Cave exit on bottom edge opening to grasslands"
+    },
+    "D7": {
+      "biome": "Desert",
+      "connections": { "south": "D8 (Desert)" },
+      "description": "Desert worm territory, sand tunnels, crawler burrows, dangerous hunting ground. Sandy trail on bottom edge only"
+    },
+    "F7": {
+      "biome": "Desert",
+      "connections": { "north": "F6 (Desert)" },
+      "description": "Scorpion emperor's domain, massive scorpion nest, poison pools, boss arena, dead end. Sandy path on top edge only"
+    },
+    "H7": {
+      "biome": "Desert",
+      "connections": { "north": "H6 (Desert)", "south": "H8 (Desert)" },
+      "description": "Royal kobold territory, elaborate kobold structures, tribal decorations, kobold camp. Sandy paths on top and bottom edges"
+    },
+    "J7": {
+      "biome": "Grasslands",
+      "connections": { "east": "K7 (Grasslands)" },
+      "description": "Witch's domain, twisted trees, magical corruption, cauldrons, witch's hut, boss arena. Dirt path on right edge only"
+    },
+    "K7": {
+      "biome": "Grasslands",
+      "connections": { "north": "K6 (Capital City)", "south": "K8 (Grasslands)", "west": "J7 (Grasslands)" },
+      "description": "Grasslands crossroads, worn paths, signpost, peaceful junction area. Paved road on top edge to city, dirt paths on left and bottom edges"
+    },
+    "M7": {
+      "biome": "Grasslands",
+      "connections": { "south": "M8 (Grasslands)" },
+      "description": "Grasslands camp, traveler tents, campfire, safe rest area. Dirt path on bottom edge only"
+    },
+    "P7": {
+      "biome": "Jungle",
+      "connections": { "north": "P6 (Jungle)", "south": "P8 (Cave)" },
+      "description": "Ancient tree guardian territory, massive old oak boss, mystical clearing, boss arena. Jungle trail on top edge, cave entrance on bottom edge"
+    },
+    "A8": {
+      "biome": "Grasslands",
+      "connections": { "east": "B8 (Grasslands)", "south": "A9 (Grasslands)" },
+      "description": "Grasslands camp with traveler tents, campfire circle, supply crates, safe rest area. Dirt path on right edge, grassy trail on bottom edge"
+    },
+    "B8": {
+      "biome": "Grasslands",
+      "connections": { "north": "B7 (Cave)", "east": "C8 (Cave)", "south": "B9 (Grasslands)", "west": "A8 (Grasslands)" },
+      "description": "Grasslands passage near cave system, rocky outcrops, sparse vegetation. Cave entrance on top edge, cave entrance on right edge, dirt paths on bottom and left edges"
+    },
+    "C8": {
+      "biome": "Cave",
+      "connections": { "east": "D8 (Desert)", "west": "B8 (Grasslands)" },
+      "description": "Cyclops cavern, massive single-eyed creature territory, giant bones, crude stone furniture. Cave exit on left edge to grass, cave exit on right edge opening to desert"
+    },
+    "D8": {
+      "biome": "Desert",
+      "connections": { "north": "D7 (Desert)", "south": "D9 (Desert)", "west": "C8 (Cave)" },
+      "description": "Desert passage, empty sand dunes, harsh wind, travel corridor. Sandy path on top edge, sandy trail on bottom edge, cave entrance on left edge"
+    },
+    "H8": {
+      "biome": "Desert",
+      "connections": { "north": "H7 (Desert)", "east": "I8 (Cave)", "south": "H9 (Desert)" },
+      "description": "Kobold warrior territory, fortified kobold outpost, weapon racks, training grounds. Sandy paths on top and bottom edges, cave entrance on right edge"
+    },
+    "I8": {
+      "biome": "Cave",
+      "connections": { "west": "H8 (Desert)" },
+      "description": "Kobold leader's underground throne room, tribal treasures, torch-lit cavern, boss arena. Cave exit on left edge opening to desert"
+    },
+    "K8": {
+      "biome": "Grasslands",
+      "connections": { "north": "K7 (Grasslands)", "south": "K9 (Grasslands)" },
+      "description": "Haunted graveyard edge, tombstones, dead trees, floating skull spirits, eerie fog. Dirt paths on top and bottom edges"
+    },
+    "M8": {
+      "biome": "Grasslands",
+      "connections": { "north": "M7 (Grasslands)", "east": "N8 (Grasslands)", "south": "M9 (Grasslands)" },
+      "description": "Grasslands passage, rolling hills, worn traveler path, peaceful journey. Dirt paths on top, right, and bottom edges"
+    },
+    "N8": {
+      "biome": "Grasslands",
+      "connections": { "east": "O8 (Grasslands)", "west": "M8 (Grasslands)" },
+      "description": "Hogman territory, pig-faced warrior camps, mud pits, crude wooden structures. Dirt paths on left and right edges"
+    },
+    "O8": {
+      "biome": "Grasslands",
+      "connections": { "east": "P8 (Cave)", "south": "O9 (Grasslands)", "west": "N8 (Grasslands)" },
+      "description": "Grasslands with hogman patrols, scattered pig pens, farmland overtaken. Dirt paths on left and bottom edges, cave entrance on right edge"
+    },
+    "P8": {
+      "biome": "Cave",
+      "connections": { "north": "P7 (Jungle)", "east": "Q8 (Cave)", "west": "O8 (Grasslands)" },
+      "description": "Dark cavern with giant bat familiars, guano piles, stalactites, echo chamber. Jungle transition on top edge, cave tunnel on right edge, cave exit on left edge to grass"
+    },
+    "Q8": {
+      "biome": "Cave",
+      "connections": { "east": "R8 (Jungle)", "west": "P8 (Cave)" },
+      "description": "Cave dweller territory, white monkey-like creatures, underground pools, bioluminescent moss. Cave tunnel on left edge, cave exit on right edge to jungle"
+    },
+    "R8": {
+      "biome": "Jungle",
+      "connections": { "south": "R9 (Cave)", "west": "Q8 (Cave)" },
+      "description": "Swampy jungle with bog fiends, murky waters, algae-covered trees, humid mist. Cave entrance on left edge, jungle trail on bottom edge leading to cave"
+    },
+    "A9": {
+      "biome": "Grasslands",
+      "connections": { "north": "A8 (Grasslands)", "east": "B9 (Grasslands)", "south": "A10 (Grasslands)" },
+      "description": "Grasslands passage, gentle hills, scattered boulders, peaceful travel. Dirt paths on top, right, and bottom edges"
+    },
+    "B9": {
+      "biome": "Grasslands",
+      "connections": { "north": "B8 (Grasslands)", "west": "A9 (Grasslands)" },
+      "description": "Quiet grasslands, wildflower meadow, butterflies, peaceful dead end area. Dirt paths on top and left edges only"
+    },
+    "D9": {
+      "biome": "Desert",
+      "connections": { "north": "D8 (Desert)", "east": "E9 (Desert)", "south": "D10 (Grasslands)" },
+      "description": "Suntan werewolf territory, desert oasis, palm trees, strange sun-worshipping creatures. Sandy paths on top and right edges, grass transition on bottom edge"
+    },
+    "E9": {
+      "biome": "Desert",
+      "connections": { "east": "F9 (Desert)", "south": "E10 (Beach)", "west": "D9 (Desert)" },
+      "description": "Desert passage, sand dunes, scattered bones, travel corridor. Sandy paths on left and right edges, sandy beach transition on bottom edge"
+    },
+    "F9": {
+      "biome": "Desert",
+      "connections": { "east": "G9 (Desert)", "south": "F10 (Desert)", "west": "E9 (Desert)" },
+      "description": "Zolmec golem territory, ancient sand statues coming alive, buried temple ruins. Sandy paths on left, right, and bottom edges"
+    },
+    "G9": {
+      "biome": "Desert",
+      "connections": { "east": "H9 (Desert)", "west": "F9 (Desert)" },
+      "description": "Empty desert passage, endless sand dunes, heat mirages, travel corridor. Sandy paths on left and right edges"
+    },
+    "H9": {
+      "biome": "Desert",
+      "connections": { "north": "H8 (Desert)", "south": "H10 (Cave)", "west": "G9 (Desert)" },
+      "description": "Kobold miner territory, mine cart tracks, excavation pits, mineral deposits. Sandy path on top edge, cave entrance on bottom edge, sandy trail on left edge"
+    },
+    "J9": {
+      "biome": "Cave",
+      "connections": { "east": "K9 (Grasslands)" },
+      "description": "Mimic treasure room, deceptive chests, gold piles, trap-filled dungeon, boss arena. Cave exit on right edge opening to graveyard"
+    },
+    "K9": {
+      "biome": "Grasslands",
+      "connections": { "north": "K8 (Grasslands)", "east": "L9 (Grasslands)", "south": "K10 (Grasslands)", "west": "J9 (Cave)" },
+      "description": "Graveyard with skeleton mobs, crumbling tombstones, dead trees, eerie atmosphere. Dirt paths on top and bottom edges, graveyard path on right edge, cave entrance on left edge"
+    },
+    "L9": {
+      "biome": "Grasslands",
+      "connections": { "east": "M9 (Grasslands)", "west": "K9 (Grasslands)" },
+      "description": "Haunted graveyard section, zombie yokai territory, spirit lanterns, cursed ground. Graveyard paths on left and right edges"
+    },
+    "M9": {
+      "biome": "Grasslands",
+      "connections": { "north": "M8 (Grasslands)", "south": "M10 (Grasslands)", "west": "L9 (Grasslands)" },
+      "description": "Badfoot territory, bigfoot-like creature grounds, large footprints, forest edge. Dirt path on top edge, graveyard path on left edge, trail on bottom edge"
+    },
+    "O9": {
+      "biome": "Grasslands",
+      "connections": { "north": "O8 (Grasslands)" },
+      "description": "Dung roller beetle territory, large dung balls, beetle burrows, unpleasant smell, dead end. Dirt path on top edge only"
+    },
+    "R9": {
+      "biome": "Cave",
+      "connections": { "north": "R8 (Jungle)" },
+      "description": "Fat fur beast lair, furry monster den, bones scattered, boss arena, dead end. Cave entrance on top edge leading to jungle"
+    },
+    "A10": {
+      "biome": "Grasslands",
+      "connections": { "north": "A9 (Grasslands)", "south": "A11 (Grasslands)" },
+      "description": "Sea raider frontline territory, viking-like warriors, coastal grasslands, raid staging area. Dirt path on top edge, trail on bottom edge toward beach"
+    },
+    "C10": {
+      "biome": "Beach",
+      "connections": { "east": "D10 (Grasslands)" },
+      "description": "Rocky coastal path, tide pools, seagulls, ocean breeze, scenic beach passage. Sandy beach path on right edge transitioning to grass"
+    },
+    "D10": {
+      "biome": "Grasslands",
+      "connections": { "north": "D9 (Desert)", "east": "E10 (Beach)", "south": "D11 (Bridge)", "west": "C10 (Beach)" },
+      "description": "Relic holder territory, ancient monument guardians, mysterious standing stones. Desert transition on top edge, beach on left and right edges, bridge on bottom edge"
+    },
+    "E10": {
+      "biome": "Beach",
+      "connections": { "north": "E9 (Desert)", "east": "F10 (Desert)", "west": "D10 (Grasslands)" },
+      "description": "Coastal beach, sandy shores, driftwood, gentle waves, peaceful passage. Desert transition on top edge, sandy paths on left and right edges"
+    },
+    "F10": {
+      "biome": "Desert",
+      "connections": { "north": "F9 (Desert)", "south": "F11 (Beach)", "west": "E10 (Beach)" },
+      "description": "Desert edge near coast, sand meeting water, sparse vegetation, transition zone. Sandy path on top edge, beach transition on bottom edge, beach path on left edge"
+    },
+    "H10": {
+      "biome": "Cave",
+      "connections": { "north": "H9 (Desert)", "east": "I10 (Grasslands)" },
+      "description": "Cavern slime lair, gelatinous creatures, dripping cave, glowing slime pools, boss arena. Cave entrance on top edge from desert, cave exit on right edge to grass"
+    },
+    "I10": {
+      "biome": "Grasslands",
+      "connections": { "south": "I11 (Grasslands)", "west": "H10 (Cave)" },
+      "description": "Peaceful grasslands with gruff ox creatures, grazing meadow, pastoral scene. Cave entrance on left edge, dirt path on bottom edge"
+    },
+    "K10": {
+      "biome": "Grasslands",
+      "connections": { "north": "K9 (Grasslands)", "south": "K11 (Grasslands)" },
+      "description": "Hive queen territory, giant beehive structures, angry bee swarms, honey pools, boss arena. Dirt paths on top and bottom edges"
+    },
+    "M10": {
+      "biome": "Grasslands",
+      "connections": { "north": "M9 (Grasslands)", "south": "M11 (Grasslands)" },
+      "description": "Excalibur zombie territory, sword-handed undead, cursed battlefield, rusted weapons everywhere. Dirt paths on top and bottom edges"
+    },
+    "O10": {
+      "biome": "Grasslands",
+      "connections": { "south": "O11 (Grasslands)" },
+      "description": "Big hat mage territory, magical tower ruins, arcane symbols, mystical atmosphere. Dirt path on bottom edge only"
+    },
+    "Q10": {
+      "biome": "Grasslands",
+      "connections": { "south": "Q11 (Grasslands)" },
+      "description": "Grasslands camp, adventurer tents, supply depot, safe rest area. Dirt path on bottom edge only"
+    },
+    "A11": {
+      "biome": "Grasslands",
+      "connections": { "north": "A10 (Grasslands)", "east": "B11 (Beach)", "south": "A12 (Beach)" },
+      "description": "Sea raider crossbowman territory, watchtowers, coastal defense, viking raiders. Dirt path on top edge, beach transition on right and bottom edges"
+    },
+    "B11": {
+      "biome": "Beach",
+      "connections": { "west": "A11 (Grasslands)" },
+      "description": "Sea raider captain's beach fortress, longships on shore, raider chief boss arena, dead end. Beach path on left edge only"
+    },
+    "D11": {
+      "biome": "Bridge",
+      "connections": { "north": "D10 (Grasslands)", "south": "D12 (Bridge)" },
+      "description": "Massive stone bridge over canyon, ancient architecture, scenic overlook, safe crossing. Path on top edge from grasslands, bridge continues on bottom edge"
+    },
+    "F11": {
+      "biome": "Beach",
+      "connections": { "north": "F10 (Desert)" },
+      "description": "Leviathan's beach, massive sea creature territory, shipwrecks, turbulent waters, boss arena, dead end. Beach path on top edge only"
+    },
+    "I11": {
+      "biome": "Grasslands",
+      "connections": { "north": "I10 (Grasslands)", "east": "J11 (Grasslands)", "south": "I12 (Beach/City)" },
+      "description": "City approach grasslands, well-traveled road, milestone markers, scenic overlook. Dirt paths on top and right edges, paved road on bottom edge to beach city"
+    },
+    "J11": {
+      "biome": "Grasslands",
+      "connections": { "east": "K11 (Grasslands)", "south": "J12 (Beach)", "west": "I11 (Grasslands)" },
+      "description": "Grasslands crossroads, signposts, worn paths, junction area. Dirt paths on left and right edges, beach transition on bottom edge"
+    },
+    "K11": {
+      "biome": "Grasslands",
+      "connections": { "north": "K10 (Grasslands)", "west": "J11 (Grasslands)" },
+      "description": "Bee drone territory, smaller beehives, buzzing atmosphere, honey flowers. Dirt paths on top and left edges"
+    },
+    "M11": {
+      "biome": "Grasslands",
+      "connections": { "north": "M10 (Grasslands)", "east": "N11 (Grasslands)", "south": "M12 (Beach)" },
+      "description": "Fallen dread territory, axe-handed undead warriors, cursed ruins, dark atmosphere. Dirt paths on top and right edges, beach transition on bottom edge"
+    },
+    "N11": {
+      "biome": "Grasslands",
+      "connections": { "east": "O11 (Grasslands)", "south": "N12 (Beach)", "west": "M11 (Grasslands)" },
+      "description": "Grasslands passage, gentle hills, peaceful travel corridor. Dirt paths on left and right edges, beach transition on bottom edge"
+    },
+    "O11": {
+      "biome": "Grasslands",
+      "connections": { "north": "O10 (Grasslands)", "east": "P11 (Grasslands)", "west": "N11 (Grasslands)" },
+      "description": "Big shield warrior territory, heavily armored fighters, defensive formations. Dirt paths on top, left, and right edges"
+    },
+    "P11": {
+      "biome": "Grasslands",
+      "connections": { "east": "Q11 (Grasslands)", "south": "P12 (Grasslands)", "west": "O11 (Grasslands)" },
+      "description": "Prototype machine territory, bronze automatons, ancient machinery, steampunk ruins. Dirt paths on left and right edges, trail on bottom edge"
+    },
+    "Q11": {
+      "biome": "Grasslands",
+      "connections": { "north": "Q10 (Grasslands)", "east": "R11 (Empty)", "south": "Q12 (Beach)", "west": "P11 (Grasslands)" },
+      "description": "Grasslands passage, rolling hills, scattered rocks, peaceful travel. Dirt paths on top and left edges, beach transition on bottom edge, faded trail on right edge"
+    },
+    "R11": {
+      "biome": "Empty",
+      "connections": { "west": "Q11 (Grasslands)" },
+      "description": "Abandoned wasteland, barren terrain, mysterious emptiness, forgotten zone, dead end. Faded path on left edge only"
+    },
+    "A12": {
+      "biome": "Beach",
+      "connections": { "north": "A11 (Grasslands)" },
+      "description": "Tur's Anvil sea raider fortress, massive viking stronghold on beach, boss arena, dead end. Beach path on top edge transitioning to grass"
+    },
+    "D12": {
+      "biome": "Bridge",
+      "connections": { "north": "D11 (Bridge)" },
+      "description": "Bridge southern end, ancient stone architecture, canyon views, travel endpoint. Bridge path on top edge only, dead end"
+    },
+    "G12": {
+      "biome": "Beach",
+      "connections": { "east": "H12 (Beach)" },
+      "description": "Pistol darter boss beach, aggressive crab creatures, rocky shore, boss arena. Sandy beach path on right edge"
+    },
+    "H12": {
+      "biome": "Beach",
+      "connections": { "east": "I12 (Beach/City)", "west": "G12 (Beach)" },
+      "description": "Hermit crab beach, tide pools, seashells, gentle waves, peaceful coastal area. Sandy beach paths on left and right edges"
+    },
+    "I12": {
+      "biome": "Beach",
+      "connections": { "north": "I11 (Grasslands)", "east": "J12 (Beach)", "west": "H12 (Beach)" },
+      "description": "Tropical beach starting city, palm tree boardwalks, seaside market stalls, fishing docks, tiki huts, welcoming harbor town, safe haven. Road on top edge to grasslands, sandy beach paths on left and right edges"
+    },
+    "J12": {
+      "biome": "Beach",
+      "connections": { "north": "J11 (Grasslands)", "west": "I12 (Beach/City)" },
+      "description": "Beach with sea grazer turtles, calm shores, seaweed patches, peaceful starter area. Grass transition on top edge, beach path on left edge to city"
+    },
+    "L12": {
+      "biome": "Beach",
+      "connections": { "east": "M12 (Beach)" },
+      "description": "Beach camp, fisherman tents, drying nets, boat repairs, safe rest area. Sandy beach path on right edge"
+    },
+    "M12": {
+      "biome": "Beach",
+      "connections": { "north": "M11 (Grasslands)", "east": "N12 (Beach)", "west": "L12 (Beach)" },
+      "description": "Coastal path beach, rocky outcrops, tide pools, scenic ocean views. Grass transition on top edge, sandy beach paths on left and right edges"
+    },
+    "N12": {
+      "biome": "Beach",
+      "connections": { "north": "N11 (Grasslands)", "west": "M12 (Beach)" },
+      "description": "Abomination boss beach, corrupted shoreline, twisted sea creatures, boss arena. Grass transition on top edge, beach path on left edge"
+    },
+    "P12": {
+      "biome": "Grasslands",
+      "connections": { "north": "P11 (Grasslands)", "east": "Q12 (Beach)" },
+      "description": "Merman territory, triton camp inland, fish-folk warriors, tribal structures. Dirt path on top edge, beach transition on right edge"
+    },
+    "Q12": {
+      "biome": "Beach",
+      "connections": { "north": "Q11 (Grasslands)", "west": "P12 (Grasslands)" },
+      "description": "Coastal path, empty beach, gentle waves, peaceful passage, dead end. Grass transition on top edge, grass path on left edge"
+    },
+    "C13": {
+      "biome": "Grasslands",
+      "connections": { "east": "D13 (Grasslands)", "south": "C14 (Grasslands)" },
+      "description": "Grasslands passage, worn path, scattered boulders, approach to dark knight territory. Dirt path on right edge, trail on bottom edge"
+    },
+    "D13": {
+      "biome": "Grasslands",
+      "connections": { "east": "E13 (Grasslands)", "south": "D14 (Grasslands)", "west": "C13 (Grasslands)" },
+      "description": "Dark soldier territory, corrupted knights patrol, dark banners, ominous fortifications. Dirt paths on left, right, and bottom edges"
+    },
+    "E13": {
+      "biome": "Grasslands",
+      "connections": { "south": "E14 (Grasslands)", "west": "D13 (Grasslands)" },
+      "description": "War machine territory, siege engines, catapults, chain weapons, mechanical warfare. Dirt path on left edge, trail on bottom edge"
+    },
+    "O13": {
+      "biome": "Beach",
+      "connections": { "east": "P13 (Beach)" },
+      "description": "Neptunus triton king territory, underwater palace entrance, triton guards, epic boss arena. Sandy beach path on right edge"
+    },
+    "P13": {
+      "biome": "Beach",
+      "connections": { "west": "O13 (Beach)" },
+      "description": "Triton cavalier beach, armored fish-folk warriors, coral formations, dangerous territory, dead end. Sandy beach path on left edge only"
+    },
+    "C14": {
+      "biome": "Grasslands",
+      "connections": { "north": "C13 (Grasslands)", "east": "D14 (Grasslands)" },
+      "description": "Death Knight Commander fortress, dark castle ruins, epic boss arena, ominous atmosphere. Dirt path on top edge, trail on right edge"
+    },
+    "D14": {
+      "biome": "Grasslands",
+      "connections": { "north": "D13 (Grasslands)", "east": "E14 (Grasslands)", "west": "C14 (Grasslands)" },
+      "description": "Death knight patrol grounds, black armored undead warriors, cursed battlefield. Dirt paths on top, left, and right edges"
+    },
+    "E14": {
+      "biome": "Grasslands",
+      "connections": { "north": "E13 (Grasslands)", "east": "F14 (Grasslands)", "west": "D14 (Grasslands)" },
+      "description": "Grasslands passage, edge of dark knight territory, transitioning to peaceful lands. Dirt paths on top, left, and right edges"
+    },
+    "F14": {
+      "biome": "Grasslands",
+      "connections": { "west": "E14 (Grasslands)" },
+      "description": "Grasslands camp, adventurer outpost, final rest stop, supply depot, dead end. Dirt path on left edge only"
+    }
+  }
+}

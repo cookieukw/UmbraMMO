@@ -1,0 +1,46 @@
+{
+  "id": "jungle_rat",
+  "name": "Jungle Rat",
+  "level": 1,
+  "biome": "jungle",
+  "description": "A rat adapted to jungle life",
+  "sprite": "🐀",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/jungle_rat.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 22,
+    "stamina": 30,
+    "str": 2,
+    "vit": 1,
+    "agi": 2,
+    "dex": 1,
+    "def": 0,
+    "int": 0,
+    "end": 1
+  },
+  
+  "combat": {
+    "baseDamage": 3,
+    "armor": 0,
+    "attackSpeed": 1600,
+    "moveSpeed": 800,
+    "aggroRange": 3
+  },
+  
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  
+  "rewards": {
+    "exp": 10,
+    "gold": 5
+  },
+  
+  "respawnTime": 30000,
+  
+  "drops": []
+}

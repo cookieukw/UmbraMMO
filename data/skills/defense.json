@@ -1,0 +1,119 @@
+{
+  "tree": {
+    "id": "defense",
+    "name": "Defense",
+    "icon": "🛡️",
+    "unlockLevel": 1,
+    "description": "Blocking and damage mitigation"
+  },
+  "skills": [
+    {
+      "id": 10,
+      "name": "Reflect",
+      "type": "active",
+      "staminaCost": 15,
+      "cooldown": 3000,
+      "initialCooldown": 3000,
+      "maxLevel": 5,
+      "description": "Block next attack, reflect {value1}% damage.",
+      "scaling": {
+        "value1": { "base": 50, "perLevel": 25 }
+      },
+      "effect": "reflect"
+    },
+    {
+      "id": 11,
+      "name": "Poise",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Each block restores {value1}% Max HP.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "poise"
+    },
+    {
+      "id": 12,
+      "name": "Sturdiness",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Every 3s gain permanent +{value1}% DEF for battle.",
+      "scaling": {
+        "value1": { "base": 3, "perLevel": 1.5 }
+      },
+      "effect": "sturdiness"
+    },
+    {
+      "id": 13,
+      "name": "Shield Wall",
+      "type": "active",
+      "staminaCost": 23,
+      "cooldown": 20000,
+      "initialCooldown": 10000,
+      "maxLevel": 5,
+      "description": "Invulnerable for {value1}s.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "invulnerable"
+    },
+    {
+      "id": 14,
+      "name": "Undermine",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Enemy loses {value1} stamina when it attacks you.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "undermine"
+    },
+    {
+      "id": 15,
+      "name": "Parry",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Blocking has {value1}% chance to stun for 1s.",
+      "scaling": {
+        "value1": { "base": 15, "perLevel": 7.5 }
+      },
+      "effect": "parry"
+    },
+    {
+      "id": 16,
+      "name": "Stomp",
+      "type": "active",
+      "staminaCost": 17,
+      "cooldown": 8000,
+      "initialCooldown": 3000,
+      "maxLevel": 5,
+      "description": "Deal {value1}% of your DEF as damage.",
+      "scaling": {
+        "value1": { "base": 50, "perLevel": 25 }
+      },
+      "effect": "stomp"
+    },
+    {
+      "id": 17,
+      "name": "Spikes",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When hit, deal {value1} fixed damage back.",
+      "scaling": {
+        "value1": { "base": 4, "perLevel": 2 }
+      },
+      "effect": "spikes"
+    },
+    {
+      "id": 18,
+      "name": "Mana Shield",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Start battle with +{value1}% of your INT as bonus HP (overflow).",
+      "scaling": {
+        "value1": { "base": 50, "perLevel": 25 }
+      },
+      "effect": "mana_shield"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "insect_shell",
+  "numericId": 208,
+  "name": "Insect Shell",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "A hardened insect carapace worn as armor.",
+  "stats": {
+    "armor": 3
+  },
+  "levelGuide": 1,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 2
+}

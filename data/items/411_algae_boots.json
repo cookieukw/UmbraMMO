@@ -1,0 +1,18 @@
+{
+  "id": "algae_boots",
+  "numericId": 411,
+  "name": "Algae Boots",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "rare",
+  "icon": "👢",
+  "description": "Boots coated in enchanted bog algae.",
+  "stats": {
+    "armor": 6,
+    "vit": 4
+  },
+  "levelGuide": 20,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 55
+}

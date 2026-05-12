@@ -1,0 +1,46 @@
+{
+  "id": "cursed_head",
+  "name": "Cursed Head",
+  "level": 15,
+  "biome": "grasslands",
+  "camp": "graveyard",
+  "description": "A floating skeleton head",
+  "sprite": "💀",
+  "color": "#8B0000",
+  "spriteUrl": "assets/sprites/mobs/cursed_head.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 150,
+    "stamina": 45,
+    "str": 8,
+    "vit": 8,
+    "agi": 12,
+    "dex": 10,
+    "def": 3,
+    "int": 6,
+    "end": 5
+  },
+  "combat": {
+    "baseDamage": 20,
+    "armor": 4,
+    "attackSpeed": 1200,
+    "moveSpeed": 500,
+    "aggroRange": 6
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 135,
+    "gold": 60
+  },
+  "respawnTime": 70000,
+  "drops": [
+    {
+      "itemId": "cursed_eyes",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

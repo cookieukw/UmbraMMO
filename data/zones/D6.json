@@ -1,0 +1,91 @@
+﻿{
+    "id":  "D6",
+    "name":  "Cactus Fields",
+    "coord":  "D6",
+    "biome":  "desert",
+    "level":  15,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "D5",
+                  "east":  "E6"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "pinboy",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "pinboy",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "pinboy",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "pinboy",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "pinboy",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "pinboy",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D6.jpg"
+}

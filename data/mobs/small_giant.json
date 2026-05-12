@@ -1,0 +1,46 @@
+{
+  "id": "small_giant",
+  "name": "Small Giant",
+  "level": 40,
+  "biome": "snow",
+  "camp": "giant_camp",
+  "description": "A muscular guy with a mask",
+  "sprite": "👹",
+  "color": "#87CEEB",
+  "spriteUrl": "assets/sprites/mobs/small_giant.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 760,
+    "stamina": 70,
+    "str": 42,
+    "vit": 38,
+    "agi": 8,
+    "dex": 10,
+    "def": 28,
+    "int": 2,
+    "end": 26
+  },
+  "combat": {
+    "baseDamage": 75,
+    "armor": 36,
+    "attackSpeed": 2000,
+    "moveSpeed": 900,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 720,
+    "gold": 340
+  },
+  "respawnTime": 110000,
+  "drops": [
+    {
+      "itemId": "giants_mask",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

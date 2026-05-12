@@ -1,0 +1,47 @@
+{
+  "id": "dire_wolf",
+  "name": "Dire Wolf",
+  "level": 35,
+  "biome": "grasslands",
+  "description": "A massive wolf of legend, far larger and more dangerous than its kin",
+  "sprite": "🐺",
+  "color": "#2F4F4F",
+  "spriteUrl": "assets/sprites/mobs/dire_wolf.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 560,
+    "stamina": 65,
+    "str": 52,
+    "vit": 38,
+    "agi": 48,
+    "dex": 45,
+    "def": 28,
+    "int": 8,
+    "end": 35
+  },
+  
+  "combat": {
+    "baseDamage": 78,
+    "armor": 32,
+    "attackSpeed": 1100,
+    "moveSpeed": 450,
+    "aggroRange": 7
+  },
+  
+  "behavior": {
+    "type": "pack_hunter",
+    "aggressiveness": "hostile",
+    "fleeThreshold": 0.1
+  },
+  
+  "rewards": {
+    "exp": 420,
+    "gold": 165
+  },
+  
+  "respawnTime": 90000,
+  
+  "drops": []
+}

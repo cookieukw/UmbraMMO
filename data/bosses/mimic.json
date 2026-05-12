@@ -1,0 +1,59 @@
+{
+  "id": "mimic",
+  "name": "Mimic",
+  "title": "The Deceiver",
+  "level": 10,
+  "biome": "cave",
+  "location": "J9",
+  "description": "A treasure chest that's actually a hungry monster",
+  "sprite": "📦",
+  "spriteUrl": "assets/sprites/bosses/mimic.png",
+  "color": "#8B4513",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 680,
+    "stamina": 70,
+    "str": 20,
+    "vit": 16,
+    "agi": 16,
+    "dex": 14,
+    "def": 12,
+    "int": 4,
+    "end": 12
+  },
+  
+  "combat": {
+    "baseDamage": 26,
+    "armor": 14,
+    "attackSpeed": 1300,
+    "moveSpeed": 700,
+    "aggroRange": 3
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "roguery", "skillId": 28, "level": 2 },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 2 }
+    ],
+    "passive": [
+      { "treeId": "roguery", "skillId": 33, "level": 2 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "ambush",
+    "aggressiveness": "hostile",
+    "pattern": "surprise"
+  },
+  
+  "rewards": {
+    "exp": 980,
+    "gold": 500
+  },
+  
+  "respawnTime": 420000,
+  
+  "drops": []
+}

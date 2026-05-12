@@ -1,0 +1,91 @@
+﻿{
+    "id":  "C8",
+    "name":  "Cyclops Cavern",
+    "coord":  "C8",
+    "biome":  "cave",
+    "level":  30,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "D8",
+                  "west":  "B8"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "cyclops",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "cyclops",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "cyclops",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "cyclops",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "cyclops",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "cyclops",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/C8.jpg"
+}

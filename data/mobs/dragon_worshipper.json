@@ -1,0 +1,45 @@
+{
+  "id": "dragon_worshipper",
+  "name": "Dragon Worshipper",
+  "level": 60,
+  "biome": "snow",
+  "description": "A giant warrior dressed as a dragon",
+  "sprite": "🐲",
+  "color": "#B22222",
+  "spriteUrl": "assets/sprites/mobs/dragon_worshipper.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1500,
+    "stamina": 90,
+    "str": 70,
+    "vit": 64,
+    "agi": 14,
+    "dex": 16,
+    "def": 56,
+    "int": 8,
+    "end": 48
+  },
+  "combat": {
+    "baseDamage": 135,
+    "armor": 68,
+    "attackSpeed": 1900,
+    "moveSpeed": 800,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1580,
+    "gold": 840
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "dragon_mask",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

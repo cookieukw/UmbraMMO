@@ -1,0 +1,18 @@
+{
+  "id": "greatclub",
+  "numericId": 1103,
+  "name": "Greatclub",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "2h",
+  "rarity": "common",
+  "icon": "🏏",
+  "description": "A massive club torn from ancient stone.",
+  "stats": {
+    "str": 18
+  },
+  "levelGuide": 30,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 60
+}

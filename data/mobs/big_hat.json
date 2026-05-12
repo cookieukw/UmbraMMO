@@ -1,0 +1,45 @@
+{
+  "id": "big_hat",
+  "name": "Big Hat",
+  "level": 40,
+  "biome": "grasslands",
+  "description": "A mage with a big hat",
+  "sprite": "🧙",
+  "color": "#4B0082",
+  "spriteUrl": "assets/sprites/mobs/big_hat.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 600,
+    "stamina": 70,
+    "str": 20,
+    "vit": 26,
+    "agi": 14,
+    "dex": 18,
+    "def": 16,
+    "int": 40,
+    "end": 20
+  },
+  "combat": {
+    "baseDamage": 68,
+    "armor": 22,
+    "attackSpeed": 1800,
+    "moveSpeed": 800,
+    "aggroRange": 6
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 700,
+    "gold": 360
+  },
+  "respawnTime": 110000,
+  "drops": [
+    {
+      "itemId": "archmage_hat",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

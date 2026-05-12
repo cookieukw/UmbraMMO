@@ -1,0 +1,59 @@
+{
+  "id": "giant_spider",
+  "name": "Silk Mother",
+  "title": "Web Weaver",
+  "level": 5,
+  "biome": "cave",
+  "location": "O5",
+  "description": "A giant silkworm",
+  "sprite": "🕷️",
+  "spriteUrl": "assets/sprites/bosses/silk_mother.png",
+  "color": "#1C1C1C",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 360,
+    "stamina": 60,
+    "str": 8,
+    "vit": 8,
+    "agi": 12,
+    "dex": 10,
+    "def": 5,
+    "int": 3,
+    "end": 6
+  },
+  
+  "combat": {
+    "baseDamage": 15,
+    "armor": 6,
+    "attackSpeed": 1200,
+    "moveSpeed": 500,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "shadow", "skillId": 58, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "roguery", "skillId": 32, "level": 1 },
+      { "treeId": "shadow", "skillId": 60, "level": 1 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "ambush",
+    "aggressiveness": "hostile",
+    "pattern": "web_trap"
+  },
+  
+  "rewards": {
+    "exp": 390,
+    "gold": 140
+  },
+  
+  "respawnTime": 360000,
+  
+  "drops": []
+}

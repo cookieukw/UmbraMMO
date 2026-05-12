@@ -1,0 +1,46 @@
+{
+  "id": "wolf",
+  "name": "Wolf",
+  "level": 15,
+  "biome": "grasslands",
+  "description": "A ferocious wolf",
+  "sprite": "🐺",
+  "color": "#696969",
+  "spriteUrl": "assets/sprites/mobs/wolf.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 160,
+    "stamina": 45,
+    "str": 13,
+    "vit": 9,
+    "agi": 11,
+    "dex": 8,
+    "def": 5,
+    "int": 1,
+    "end": 6
+  },
+  
+  "combat": {
+    "baseDamage": 23,
+    "armor": 6,
+    "attackSpeed": 1300,
+    "moveSpeed": 500,
+    "aggroRange": 6
+  },
+  
+  "behavior": {
+    "type": "pack",
+    "aggressiveness": "hostile"
+  },
+  
+  "rewards": {
+    "exp": 138,
+    "gold": 62
+  },
+  
+  "respawnTime": 65000,
+  
+  "drops": []
+}

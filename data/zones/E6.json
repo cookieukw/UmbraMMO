@@ -1,0 +1,91 @@
+﻿{
+    "id":  "E6",
+    "name":  "Sand Seeker Territory",
+    "coord":  "E6",
+    "biome":  "desert",
+    "level":  20,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "west":  "D6",
+                  "east":  "F6"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "sand_seeker",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "sand_seeker",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "sand_seeker",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "sand_seeker",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "sand_seeker",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "sand_seeker",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/E6.jpg"
+}

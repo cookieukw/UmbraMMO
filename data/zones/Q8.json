@@ -1,0 +1,91 @@
+﻿{
+    "id":  "Q8",
+    "name":  "Cave Dweller Den",
+    "coord":  "Q8",
+    "biome":  "cave",
+    "level":  15,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "R8",
+                  "west":  "P8"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "cave_dweller",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "cave_dweller",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "cave_dweller",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "cave_dweller",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "cave_dweller",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "cave_dweller",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/Q8.jpg"
+}

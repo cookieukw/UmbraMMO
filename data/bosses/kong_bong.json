@@ -1,0 +1,59 @@
+{
+  "id": "kong_bong",
+  "name": "Kong Bong",
+  "title": "Jungle King",
+  "level": 5,
+  "biome": "jungle",
+  "location": "R6",
+  "description": "A gigantic ape that rules the jungle with primal fury",
+  "sprite": "🦍",
+  "spriteUrl": "assets/sprites/bosses/kong_bong.png",
+  "color": "#4A4A4A",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 420,
+    "stamina": 60,
+    "str": 14,
+    "vit": 12,
+    "agi": 6,
+    "dex": 4,
+    "def": 8,
+    "int": 1,
+    "end": 7
+  },
+  
+  "combat": {
+    "baseDamage": 20,
+    "armor": 10,
+    "attackSpeed": 1600,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 7, "level": 1 },
+      { "treeId": "defense", "skillId": 16, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 21, "level": 1 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "territorial",
+    "aggressiveness": "hostile",
+    "pattern": "ground_pound"
+  },
+  
+  "rewards": {
+    "exp": 410,
+    "gold": 145
+  },
+  
+  "respawnTime": 360000,
+  
+  "drops": []
+}

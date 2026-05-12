@@ -1,0 +1,45 @@
+{
+  "id": "dung_roller",
+  "name": "Dung Roller",
+  "level": 30,
+  "biome": "grasslands",
+  "description": "An armored dung beetle",
+  "sprite": "🪲",
+  "color": "#4A4A4A",
+  "spriteUrl": "assets/sprites/mobs/dung_roller.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 460,
+    "stamina": 60,
+    "str": 24,
+    "vit": 24,
+    "agi": 8,
+    "dex": 8,
+    "def": 26,
+    "int": 0,
+    "end": 18
+  },
+  "combat": {
+    "baseDamage": 48,
+    "armor": 32,
+    "attackSpeed": 1800,
+    "moveSpeed": 900,
+    "aggroRange": 3
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 425,
+    "gold": 185
+  },
+  "respawnTime": 95000,
+  "drops": [
+    {
+      "itemId": "chroma_shinguards",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

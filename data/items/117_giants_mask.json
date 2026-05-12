@@ -1,0 +1,19 @@
+{
+  "id": "giants_mask",
+  "numericId": 117,
+  "name": "Giant's Mask",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "shield",
+  "rarity": "rare",
+  "icon": "🛡️",
+  "description": "A mask-shaped shield taken from a fallen giant.",
+  "stats": {
+    "def": 14,
+    "vit": 5
+  },
+  "levelGuide": 40,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 95
+}

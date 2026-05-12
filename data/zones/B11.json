@@ -1,0 +1,53 @@
+﻿{
+    "id":  "B11",
+    "name":  "Captain Chieftain\u0027s Beach",
+    "coord":  "B11",
+    "biome":  "beach",
+    "level":  45,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "sea_raiders",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "west":  "A11"
+              },
+    "entryPoints":  {
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "captain_chieftain",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "ship_wreck",
+                        "x":  25,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/B11.jpg"
+}

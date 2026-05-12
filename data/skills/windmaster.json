@@ -1,0 +1,119 @@
+{
+  "tree": {
+    "id": "windmaster",
+    "name": "Windmaster",
+    "icon": "🌬️",
+    "unlockLevel": 20,
+    "description": "Crowd control and utility"
+  },
+  "skills": [
+    {
+      "id": 46,
+      "name": "Wind Blast",
+      "type": "active",
+      "staminaCost": 26,
+      "cooldown": 12000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Deal {value1}% of enemy Max HP as true damage.",
+      "scaling": {
+        "value1": { "base": 5, "perLevel": 2.5 }
+      },
+      "effect": "wind_blast"
+    },
+    {
+      "id": 47,
+      "name": "Rebalance",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Dodging or blocking heals {value1} HP.",
+      "scaling": {
+        "value1": { "base": 5, "perLevel": 2.5 }
+      },
+      "effect": "rebalance"
+    },
+    {
+      "id": 48,
+      "name": "Vigor",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Every time stamina is recovered, deal {value1} damage.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "vigor"
+    },
+    {
+      "id": 49,
+      "name": "Heavy Cloud",
+      "type": "active",
+      "staminaCost": 17,
+      "cooldown": 12000,
+      "initialCooldown": 4000,
+      "maxLevel": 5,
+      "description": "Prevent enemy dodge/block for {value1}s.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "heavy_cloud"
+    },
+    {
+      "id": 50,
+      "name": "Fatigue",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "+{value1}% damage if enemy below 20% stamina.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "fatigue"
+    },
+    {
+      "id": 51,
+      "name": "Cushion",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Reduce basic attack damage taken by {value1}%.",
+      "scaling": {
+        "value1": { "base": 3, "perLevel": 1.5 }
+      },
+      "effect": "cushion"
+    },
+    {
+      "id": 52,
+      "name": "Suffocate",
+      "type": "active",
+      "staminaCost": 20,
+      "cooldown": 12000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Drain {value1}% of enemy current stamina.",
+      "scaling": {
+        "value1": { "base": 25, "perLevel": 12.5 }
+      },
+      "effect": "suffocate"
+    },
+    {
+      "id": 53,
+      "name": "Concentration",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Above 70% HP, +{value1}% block chance.",
+      "scaling": {
+        "value1": { "base": 5, "perLevel": 2.5 }
+      },
+      "effect": "concentration"
+    },
+    {
+      "id": 54,
+      "name": "Aegis",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When HP is below 20% Max HP, all healing is {value1}% stronger.",
+      "scaling": {
+        "value1": { "base": 50, "perLevel": 25 }
+      },
+      "effect": "aegis"
+    }
+  ]
+}

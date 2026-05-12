@@ -1,0 +1,15 @@
+{
+  "id": "exp_shard",
+  "numericId": 2200,
+  "name": "Experience Shard",
+  "type": "consumable",
+  "rarity": "uncommon",
+  "icon": "💎",
+  "useEffect": {
+    "type": "exp",
+    "value": 50
+  },
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 25
+}

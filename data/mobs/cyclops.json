@@ -1,0 +1,45 @@
+{
+  "id": "cyclops",
+  "name": "Cyclops",
+  "level": 30,
+  "biome": "cave",
+  "description": "A chubby creature with a single eye on the belly",
+  "sprite": "👁️",
+  "color": "#DDA0DD",
+  "spriteUrl": "assets/sprites/mobs/cyclops.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 480,
+    "stamina": 60,
+    "str": 28,
+    "vit": 26,
+    "agi": 6,
+    "dex": 8,
+    "def": 18,
+    "int": 2,
+    "end": 18
+  },
+  "combat": {
+    "baseDamage": 52,
+    "armor": 24,
+    "attackSpeed": 2000,
+    "moveSpeed": 1000,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "territorial",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 420,
+    "gold": 190
+  },
+  "respawnTime": 100000,
+  "drops": [
+    {
+      "itemId": "greatclub",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

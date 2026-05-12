@@ -1,0 +1,19 @@
+{
+  "id": "sea_lance",
+  "numericId": 1108,
+  "name": "Sea Lance",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "2h",
+  "rarity": "rare",
+  "icon": "🔱",
+  "description": "A legendary lance wielded by triton cavaliers.",
+  "stats": {
+    "str": 20,
+    "agi": 20
+  },
+  "levelGuide": 60,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 135
+}

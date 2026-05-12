@@ -1,0 +1,45 @@
+{
+  "id": "sand_seeker",
+  "name": "Sand Seeker",
+  "level": 20,
+  "biome": "desert",
+  "description": "A raccoon wearing explorer goggles with a pickaxe",
+  "sprite": "🦝",
+  "color": "#C19A6B",
+  "spriteUrl": "assets/sprites/mobs/sand_seeker.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 260,
+    "stamina": 50,
+    "str": 16,
+    "vit": 14,
+    "agi": 12,
+    "dex": 10,
+    "def": 8,
+    "int": 2,
+    "end": 10
+  },
+  "combat": {
+    "baseDamage": 30,
+    "armor": 12,
+    "attackSpeed": 1400,
+    "moveSpeed": 650,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 210,
+    "gold": 95
+  },
+  "respawnTime": 80000,
+  "drops": [
+    {
+      "itemId": "clay_mask",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

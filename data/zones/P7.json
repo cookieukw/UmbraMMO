@@ -1,0 +1,52 @@
+﻿{
+    "id":  "P7",
+    "name":  "Old Oak\u0027s Grove",
+    "coord":  "P7",
+    "biome":  "jungle",
+    "level":  10,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "P6",
+                  "south":  "P8"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "old_oak",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/P7.jpg"
+}

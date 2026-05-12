@@ -1,0 +1,100 @@
+﻿{
+    "id":  "L6",
+    "name":  "Chicken Farm",
+    "coord":  "L6",
+    "biome":  "grasslands",
+    "level":  1,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "L5",
+                  "west":  "K6"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "chicken",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "chicken",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "chicken",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "chicken",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "chicken",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "chicken",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "fence",
+                        "x":  5,
+                        "y":  5
+                    },
+                    {
+                        "type":  "barn",
+                        "x":  30,
+                        "y":  10
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/L6.jpg"
+}

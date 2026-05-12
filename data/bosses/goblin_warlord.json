@@ -1,0 +1,61 @@
+{
+  "id": "goblin_warlord",
+  "name": "Goblin Warlord",
+  "title": "Conqueror of Camps",
+  "level": 10,
+  "biome": "grasslands",
+  "location": "D1",
+  "camp": "goblin_camp",
+  "description": "A battle-hardened goblin general who leads armies",
+  "sprite": "⚔️",
+  "spriteUrl": "assets/sprites/bosses/goblin_warlord.png",
+  "color": "#006400",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 700,
+    "stamina": 70,
+    "str": 22,
+    "vit": 18,
+    "agi": 14,
+    "dex": 12,
+    "def": 14,
+    "int": 6,
+    "end": 12
+  },
+  
+  "combat": {
+    "baseDamage": 28,
+    "armor": 16,
+    "attackSpeed": 1400,
+    "moveSpeed": 650,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 2 },
+      { "treeId": "swordsmanship", "skillId": 4, "level": 2 },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 2 }
+    ],
+    "passive": [
+      { "treeId": "swordsmanship", "skillId": 6, "level": 2 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "tactical",
+    "aggressiveness": "hostile",
+    "pattern": "commander"
+  },
+  
+  "rewards": {
+    "exp": 950,
+    "gold": 350
+  },
+  
+  "respawnTime": 420000,
+  
+  "drops": []
+}

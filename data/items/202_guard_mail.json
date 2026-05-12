@@ -1,0 +1,18 @@
+{
+  "id": "guard_mail",
+  "numericId": 202,
+  "name": "Guard Mail",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "Chain mail worn by town guards.",
+  "stats": {
+    "armor": 5
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 40,
+  "buyPrice": 100
+}

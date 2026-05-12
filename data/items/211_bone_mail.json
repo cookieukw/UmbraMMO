@@ -1,0 +1,17 @@
+{
+  "id": "bone_mail",
+  "numericId": 211,
+  "name": "Bone Mail",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "Armor stitched together from bones.",
+  "stats": {
+    "armor": 5
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 20
+}

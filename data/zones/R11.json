@@ -1,0 +1,43 @@
+﻿{
+    "id":  "R11",
+    "name":  "Eastern Edge",
+    "coord":  "R11",
+    "biome":  "grasslands",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "west":  "Q11"
+              },
+    "entryPoints":  {
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/R11.jpg"
+}

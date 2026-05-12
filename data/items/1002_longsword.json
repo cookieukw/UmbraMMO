@@ -1,0 +1,19 @@
+{
+  "id": "longsword",
+  "numericId": 1002,
+  "name": "Longsword",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "2h",
+  "rarity": "common",
+  "icon": "⚔️",
+  "description": "A two-handed longsword favored by guards.",
+  "stats": {
+    "str": 7
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 96,
+  "buyPrice": 240
+}

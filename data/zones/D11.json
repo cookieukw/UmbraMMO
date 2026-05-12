@@ -1,0 +1,52 @@
+﻿{
+    "id":  "D11",
+    "name":  "Southern Bridge",
+    "coord":  "D11",
+    "biome":  "bridge",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "D10",
+                  "south":  "D12"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "bridge",
+                        "x":  20,
+                        "y":  15
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D11.jpg"
+}

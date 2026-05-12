@@ -1,0 +1,19 @@
+{
+  "id": "tusk_shield",
+  "numericId": 116,
+  "name": "Tusk Shield",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "shield",
+  "rarity": "rare",
+  "icon": "🛡️",
+  "description": "A shield reinforced with beast tusks.",
+  "stats": {
+    "def": 12,
+    "end": 6
+  },
+  "levelGuide": 35,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 85
+}

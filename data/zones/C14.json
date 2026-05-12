@@ -1,0 +1,68 @@
+﻿{
+    "id":  "C14",
+    "name":  "Death Knight Commander\u0027s Fortress",
+    "coord":  "C14",
+    "biome":  "grasslands",
+    "level":  60,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "dark_knights",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "C13",
+                  "east":  "D14"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "death_knight_commander",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "dark_throne",
+                        "x":  20,
+                        "y":  25
+                    },
+                    {
+                        "type":  "banner",
+                        "x":  15,
+                        "y":  25
+                    },
+                    {
+                        "type":  "banner",
+                        "x":  25,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/C14.jpg"
+}

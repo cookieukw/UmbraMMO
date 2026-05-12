@@ -1,0 +1,46 @@
+{
+  "id": "excalibur",
+  "name": "Excalibur",
+  "level": 30,
+  "biome": "grasslands",
+  "description": "A zombie like creature with swords in the place of hands",
+  "sprite": "🗡️",
+  "color": "#708090",
+  "spriteUrl": "assets/sprites/mobs/excalibur.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 400,
+    "stamina": 60,
+    "str": 32,
+    "vit": 18,
+    "agi": 14,
+    "dex": 16,
+    "def": 10,
+    "int": 2,
+    "end": 14
+  },
+  
+  "combat": {
+    "baseDamage": 58,
+    "armor": 16,
+    "attackSpeed": 1400,
+    "moveSpeed": 650,
+    "aggroRange": 5
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  
+  "rewards": {
+    "exp": 435,
+    "gold": 200
+  },
+  
+  "respawnTime": 100000,
+  
+  "drops": []
+}

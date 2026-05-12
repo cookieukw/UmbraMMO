@@ -1,0 +1,59 @@
+{
+  "id": "alpha_boar",
+  "name": "Alpha Boar",
+  "title": "Forest Fury",
+  "level": 5,
+  "biome": "grasslands",
+  "location": "A5",
+  "description": "A massive boar with tusks sharp enough to pierce armor",
+  "sprite": "🐗",
+  "spriteUrl": "assets/sprites/bosses/alpha_boar.png",
+  "color": "#8B4513",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 400,
+    "stamina": 60,
+    "str": 12,
+    "vit": 10,
+    "agi": 6,
+    "dex": 4,
+    "def": 8,
+    "int": 1,
+    "end": 7
+  },
+  
+  "combat": {
+    "baseDamage": 18,
+    "armor": 10,
+    "attackSpeed": 1500,
+    "moveSpeed": 600,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 1 },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 21, "level": 1 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile",
+    "pattern": "charge"
+  },
+  
+  "rewards": {
+    "exp": 400,
+    "gold": 130
+  },
+  
+  "respawnTime": 360000,
+  
+  "drops": []
+}

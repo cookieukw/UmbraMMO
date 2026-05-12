@@ -1,0 +1,46 @@
+{
+  "id": "chicken",
+  "name": "Chicken",
+  "level": 1,
+  "biome": "grasslands",
+  "description": "A chicken",
+  "sprite": "🐔",
+  "color": "#FFD700",
+  "spriteUrl": "assets/sprites/mobs/chicken.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 18,
+    "stamina": 30,
+    "str": 1,
+    "vit": 1,
+    "agi": 2,
+    "dex": 1,
+    "def": 0,
+    "int": 0,
+    "end": 2
+  },
+  
+  "combat": {
+    "baseDamage": 2,
+    "armor": 0,
+    "attackSpeed": 1800,
+    "moveSpeed": 900,
+    "aggroRange": 2
+  },
+  
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "passive"
+  },
+  
+  "rewards": {
+    "exp": 6,
+    "gold": 3
+  },
+  
+  "respawnTime": 20000,
+  
+  "drops": []
+}

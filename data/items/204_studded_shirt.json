@@ -1,0 +1,18 @@
+{
+  "id": "studded_shirt",
+  "numericId": 204,
+  "name": "Studded Shirt",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "A leather shirt reinforced with metal studs.",
+  "stats": {
+    "armor": 5
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 40,
+  "buyPrice": 100
+}

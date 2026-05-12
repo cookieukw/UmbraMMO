@@ -1,0 +1,58 @@
+﻿{
+    "id":  "Q11",
+    "name":  "Southeastern Path",
+    "coord":  "Q11",
+    "biome":  "grasslands",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "Q10",
+                  "east":  "R11",
+                  "south":  "Q12",
+                  "west":  "P11"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/Q11.jpg"
+}

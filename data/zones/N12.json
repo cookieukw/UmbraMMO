@@ -1,0 +1,52 @@
+﻿{
+    "id":  "N12",
+    "name":  "Abomination\u0027s Lair",
+    "coord":  "N12",
+    "biome":  "beach",
+    "level":  35,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "N11",
+                  "west":  "M12"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "abomination",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/N12.jpg"
+}

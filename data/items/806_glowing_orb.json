@@ -1,0 +1,18 @@
+{
+  "id": "glowing_orb",
+  "numericId": 806,
+  "name": "Glowing Orb",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "relic",
+  "rarity": "uncommon",
+  "icon": "🔮",
+  "description": "A faintly glowing orb pulsing with energy.",
+  "stats": {
+    "int": 3
+  },
+  "levelGuide": 1,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 7
+}

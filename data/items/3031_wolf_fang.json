@@ -1,0 +1,12 @@
+{
+  "id": "wolf_fang",
+  "numericId": 3031,
+  "name": "Wolf Fang",
+  "type": "material",
+  "rarity": "uncommon",
+  "icon": "🦷",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 12,
+  "description": "A sharp fang from a wolf. Prized by collectors."
+}

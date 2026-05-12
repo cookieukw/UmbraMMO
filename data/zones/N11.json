@@ -1,0 +1,53 @@
+﻿{
+    "id":  "N11",
+    "name":  "Eastern Passage",
+    "coord":  "N11",
+    "biome":  "grasslands",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "O11",
+                  "south":  "N12",
+                  "west":  "M11"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/N11.jpg"
+}

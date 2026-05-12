@@ -1,0 +1,18 @@
+{
+  "id": "broken_shield",
+  "numericId": 215,
+  "name": "Broken Shield",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "shield",
+  "rarity": "uncommon",
+  "icon": "🛡️",
+  "description": "A battered shield that still holds together.",
+  "stats": {
+    "def": 12
+  },
+  "levelGuide": 30,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 65
+}

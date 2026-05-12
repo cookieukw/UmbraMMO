@@ -1,0 +1,19 @@
+{
+  "id": "ice_heart",
+  "numericId": 120,
+  "name": "Ice Heart",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "offhand",
+  "rarity": "rare",
+  "icon": "🛡️",
+  "description": "A frozen crystal pulsing with cold energy.",
+  "stats": {
+    "dex": 10,
+    "end": 10
+  },
+  "levelGuide": 55,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 125
+}

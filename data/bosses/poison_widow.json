@@ -1,0 +1,59 @@
+{
+  "id": "poison_widow",
+  "name": "Poison Widow",
+  "title": "Venomous Matriarch",
+  "level": 10,
+  "biome": "cave",
+  "location": "E3",
+  "description": "A massive venomous spider that lurks in the Widow's Nest, mother of countless deadly offspring",
+  "sprite": "🕷️",
+  "spriteUrl": "assets/sprites/bosses/poison_widow.png",
+  "color": "#4B0082",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 800,
+    "stamina": 70,
+    "str": 18,
+    "vit": 16,
+    "agi": 22,
+    "dex": 18,
+    "def": 12,
+    "int": 8,
+    "end": 10
+  },
+  
+  "combat": {
+    "baseDamage": 28,
+    "armor": 14,
+    "attackSpeed": 1100,
+    "moveSpeed": 450,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "shadow", "skillId": 58, "level": 2 }
+    ],
+    "passive": [
+      { "treeId": "roguery", "skillId": 32, "level": 2 },
+      { "treeId": "shadow", "skillId": 60, "level": 2 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "ambush",
+    "aggressiveness": "hostile",
+    "pattern": "poison_web"
+  },
+  
+  "rewards": {
+    "exp": 850,
+    "gold": 320
+  },
+  
+  "respawnTime": 420000,
+  
+  "drops": []
+}

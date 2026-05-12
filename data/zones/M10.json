@@ -1,0 +1,91 @@
+﻿{
+    "id":  "M10",
+    "name":  "Excalibur Fields",
+    "coord":  "M10",
+    "biome":  "grasslands",
+    "level":  30,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "M9",
+                  "south":  "M11"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "excalibur",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "excalibur",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "excalibur",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "excalibur",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "excalibur",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "excalibur",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/M10.jpg"
+}

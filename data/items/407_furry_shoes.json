@@ -1,0 +1,17 @@
+{
+  "id": "furry_shoes",
+  "numericId": 407,
+  "name": "Furry Shoes",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Soft shoes lined with animal fur.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 1,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 2
+}

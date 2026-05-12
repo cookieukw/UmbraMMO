@@ -1,0 +1,96 @@
+﻿{
+    "id":  "O11",
+    "name":  "Big Shield Training Grounds",
+    "coord":  "O11",
+    "biome":  "grasslands",
+    "level":  40,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "O10",
+                  "east":  "P11",
+                  "west":  "N11"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "big_shield",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "big_shield",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "big_shield",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "big_shield",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "big_shield",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "big_shield",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/O11.jpg"
+}

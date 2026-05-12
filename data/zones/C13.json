@@ -1,0 +1,48 @@
+﻿{
+    "id":  "C13",
+    "name":  "Dark Knights Approach",
+    "coord":  "C13",
+    "biome":  "grasslands",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "D13",
+                  "south":  "C14"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/C13.jpg"
+}

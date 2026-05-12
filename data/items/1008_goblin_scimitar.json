@@ -1,0 +1,19 @@
+{
+  "id": "goblin_scimitar",
+  "numericId": 1008,
+  "name": "Goblin Scimitar",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "uncommon",
+  "icon": "⚔️",
+  "description": "A curved blade looted from a goblin warrior.",
+  "stats": {
+    "str": 4,
+    "agi": 2
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 25
+}

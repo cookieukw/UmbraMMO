@@ -1,0 +1,18 @@
+{
+  "id": "clay_sandals",
+  "numericId": 405,
+  "name": "Clay Sandals",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Simple sandals with clay soles.",
+  "stats": {
+    "armor": 1
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 8,
+  "buyPrice": 20
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sprite",
+  "name": "Sprite",
+  "level": 1,
+  "biome": "jungle",
+  "description": "A blueish light ball",
+  "sprite": "✨",
+  "color": "#87CEEB",
+  "spriteUrl": "assets/sprites/mobs/sprite.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 25,
+    "stamina": 35,
+    "str": 1,
+    "vit": 1,
+    "agi": 3,
+    "dex": 2,
+    "def": 0,
+    "int": 3,
+    "end": 1
+  },
+  "combat": {
+    "baseDamage": 3,
+    "armor": 0,
+    "attackSpeed": 1200,
+    "moveSpeed": 500,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "passive",
+    "fleeThreshold": 0.3
+  },
+  "rewards": {
+    "exp": 12,
+    "gold": 4
+  },
+  "respawnTime": 30000,
+  "drops": [
+    {
+      "itemId": "glowing_orb",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

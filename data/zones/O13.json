@@ -1,0 +1,53 @@
+﻿{
+    "id":  "O13",
+    "name":  "Neptunus Domain",
+    "coord":  "O13",
+    "biome":  "beach",
+    "level":  60,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "tritons",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "P13"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "neptunus",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "underwater_throne",
+                        "x":  20,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/O13.jpg"
+}

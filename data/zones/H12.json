@@ -1,0 +1,91 @@
+﻿{
+    "id":  "H12",
+    "name":  "Hermit Beach",
+    "coord":  "H12",
+    "biome":  "beach",
+    "level":  1,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "I12",
+                  "west":  "G12"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "hermit",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "hermit",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "hermit",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "hermit",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "hermit",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "hermit",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/H12.jpg"
+}

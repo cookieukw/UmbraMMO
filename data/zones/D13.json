@@ -1,0 +1,98 @@
+﻿{
+    "id":  "D13",
+    "name":  "Dark Soldier Barracks",
+    "coord":  "D13",
+    "biome":  "grasslands",
+    "level":  55,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "dark_knights",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "E13",
+                  "south":  "D14",
+                  "west":  "C13"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "dark_soldier",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "dark_soldier",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "dark_soldier",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "dark_soldier",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "dark_soldier",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "dark_soldier",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D13.jpg"
+}

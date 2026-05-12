@@ -1,0 +1,17 @@
+{
+  "id": "leather_shorts",
+  "numericId": 307,
+  "name": "Leather Shorts",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "common",
+  "icon": "👖",
+  "description": "Short leather pants for mobility.",
+  "stats": {
+    "armor": 4
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 10
+}

@@ -1,0 +1,46 @@
+{
+  "id": "war_machine",
+  "name": "War Machine",
+  "level": 60,
+  "biome": "grasslands",
+  "camp": "dark_knights_camp",
+  "description": "A catapult like machine with chains",
+  "sprite": "⚙️",
+  "color": "#4A4A4A",
+  "spriteUrl": "assets/sprites/mobs/war_machine.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1700,
+    "stamina": 90,
+    "str": 68,
+    "vit": 72,
+    "agi": 4,
+    "dex": 14,
+    "def": 62,
+    "int": 0,
+    "end": 52
+  },
+  "combat": {
+    "baseDamage": 145,
+    "armor": 75,
+    "attackSpeed": 2500,
+    "moveSpeed": 1500,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "stationary",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1650,
+    "gold": 880
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "golden_axe",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

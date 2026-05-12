@@ -1,0 +1,18 @@
+{
+  "id": "cotton_pants",
+  "numericId": 303,
+  "name": "Cotton Pants",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "common",
+  "icon": "👖",
+  "description": "Comfortable cotton trousers.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 12,
+  "buyPrice": 30
+}

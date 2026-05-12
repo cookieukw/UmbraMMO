@@ -1,0 +1,16 @@
+{
+  "id": "dented_helmet",
+  "numericId": 100,
+  "name": "Dented Helmet",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "normal",
+  "icon": "🪖",
+  "stats": {
+    "def": 1
+  },
+  "armor": 1,
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 4
+}

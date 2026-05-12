@@ -1,0 +1,45 @@
+{
+  "id": "prototype",
+  "name": "Prototype",
+  "level": 45,
+  "biome": "grasslands",
+  "description": "A killing bronze machine",
+  "sprite": "🤖",
+  "color": "#B87333",
+  "spriteUrl": "assets/sprites/mobs/prototype.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 860,
+    "stamina": 75,
+    "str": 46,
+    "vit": 40,
+    "agi": 16,
+    "dex": 20,
+    "def": 34,
+    "int": 0,
+    "end": 26
+  },
+  "combat": {
+    "baseDamage": 86,
+    "armor": 42,
+    "attackSpeed": 1500,
+    "moveSpeed": 650,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 875,
+    "gold": 425
+  },
+  "respawnTime": 115000,
+  "drops": [
+    {
+      "itemId": "sabatons",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

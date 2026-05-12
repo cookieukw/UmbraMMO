@@ -1,0 +1,15 @@
+{
+  "id": "tarnished_ring",
+  "numericId": 600,
+  "name": "Tarnished Ring",
+  "type": "equipment",
+  "slot": "ring",
+  "rarity": "normal",
+  "icon": "💍",
+  "stats": {
+    "dex": 1
+  },
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 3
+}

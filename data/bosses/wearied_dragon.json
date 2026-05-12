@@ -1,0 +1,62 @@
+{
+  "id": "wearied_dragon",
+  "name": "Wearied Dragon",
+  "title": "The Ancient Sleeper",
+  "level": 30,
+  "biome": "cave",
+  "location": "B7",
+  "description": "An old dragon who has slumbered for centuries, now awoken",
+  "sprite": "🐲",
+  "spriteUrl": "assets/sprites/bosses/wearied_dragon.png",
+  "color": "#556B2F",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 3500,
+    "stamina": 100,
+    "str": 58,
+    "vit": 54,
+    "agi": 16,
+    "dex": 20,
+    "def": 44,
+    "int": 26,
+    "end": 36
+  },
+  
+  "combat": {
+    "baseDamage": 85,
+    "armor": 50,
+    "attackSpeed": 1800,
+    "moveSpeed": 800,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "magic", "skillId": 37, "level": 3 },
+      { "treeId": "swordsmanship", "skillId": 1, "level": 3 },
+      { "treeId": "vitality", "skillId": 19, "level": 3 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 20, "level": 3 },
+      { "treeId": "defense", "skillId": 12, "level": 3 },
+      { "treeId": "swordsmanship", "skillId": 5, "level": 3 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "territorial",
+    "aggressiveness": "hostile",
+    "pattern": "breath_attack"
+  },
+  
+  "rewards": {
+    "exp": 4200,
+    "gold": 1500
+  },
+  
+  "respawnTime": 600000,
+  
+  "drops": []
+}

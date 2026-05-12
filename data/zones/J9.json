@@ -1,0 +1,61 @@
+﻿{
+    "id":  "J9",
+    "name":  "Mimic\u0027s Treasure Room",
+    "coord":  "J9",
+    "biome":  "cave",
+    "level":  10,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "K9"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "mimic",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "treasure_chest",
+                        "x":  15,
+                        "y":  15
+                    },
+                    {
+                        "type":  "treasure_chest",
+                        "x":  25,
+                        "y":  15
+                    },
+                    {
+                        "type":  "treasure_chest",
+                        "x":  20,
+                        "y":  10
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/J9.jpg"
+}

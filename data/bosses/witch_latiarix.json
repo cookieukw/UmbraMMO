@@ -1,0 +1,61 @@
+{
+  "id": "witch_latiarix",
+  "name": "Witch Latiarix",
+  "title": "The Hexweaver",
+  "level": 20,
+  "biome": "grasslands",
+  "location": "J7",
+  "description": "A powerful witch who curses all who enter her domain",
+  "sprite": "🧙‍♀️",
+  "spriteUrl": "assets/sprites/bosses/witch_latiarix.png",
+  "color": "#800080",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 1400,
+    "stamina": 90,
+    "str": 20,
+    "vit": 26,
+    "agi": 22,
+    "dex": 28,
+    "def": 18,
+    "int": 42,
+    "end": 20
+  },
+  
+  "combat": {
+    "baseDamage": 48,
+    "armor": 22,
+    "attackSpeed": 1600,
+    "moveSpeed": 700,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "magic", "skillId": 37, "level": 3 },
+      { "treeId": "magic", "skillId": 40, "level": 3 },
+      { "treeId": "vitality", "skillId": 25, "level": 3 }
+    ],
+    "passive": [
+      { "treeId": "magic", "skillId": 38, "level": 3 },
+      { "treeId": "magic", "skillId": 39, "level": 3 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "caster",
+    "aggressiveness": "hostile",
+    "pattern": "hex"
+  },
+  
+  "rewards": {
+    "exp": 2100,
+    "gold": 800
+  },
+  
+  "respawnTime": 540000,
+  
+  "drops": []
+}

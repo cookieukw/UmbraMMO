@@ -1,0 +1,60 @@
+{
+  "id": "lava_moth",
+  "name": "Lava Moth",
+  "title": "Flame of the Deep",
+  "level": 15,
+  "biome": "cave",
+  "location": "R2",
+  "description": "A massive moth born from volcanic flames deep underground",
+  "sprite": "🦋",
+  "spriteUrl": "assets/sprites/bosses/lava_moth.png",
+  "color": "#FF4500",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 1100,
+    "stamina": 80,
+    "str": 26,
+    "vit": 22,
+    "agi": 22,
+    "dex": 18,
+    "def": 14,
+    "int": 18,
+    "end": 14
+  },
+  
+  "combat": {
+    "baseDamage": 38,
+    "armor": 18,
+    "attackSpeed": 1300,
+    "moveSpeed": 500,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "magic", "skillId": 37, "level": 2 },
+      { "treeId": "windmaster", "skillId": 49, "level": 2 }
+    ],
+    "passive": [
+      { "treeId": "roguery", "skillId": 30, "level": 2 },
+      { "treeId": "magic", "skillId": 41, "level": 2 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile",
+    "pattern": "fire_aura"
+  },
+  
+  "rewards": {
+    "exp": 1400,
+    "gold": 480
+  },
+  
+  "respawnTime": 480000,
+  
+  "drops": []
+}

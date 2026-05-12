@@ -1,0 +1,45 @@
+{
+  "id": "cave_dweller",
+  "name": "Cave Dweller",
+  "level": 15,
+  "biome": "cave",
+  "description": "A white monkey-like creature",
+  "sprite": "🦍",
+  "color": "#DCDCDC",
+  "spriteUrl": "assets/sprites/mobs/cave_dweller.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 200,
+    "stamina": 45,
+    "str": 14,
+    "vit": 12,
+    "agi": 7,
+    "dex": 5,
+    "def": 7,
+    "int": 1,
+    "end": 9
+  },
+  "combat": {
+    "baseDamage": 24,
+    "armor": 9,
+    "attackSpeed": 1600,
+    "moveSpeed": 750,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "territorial",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 150,
+    "gold": 70
+  },
+  "respawnTime": 75000,
+  "drops": [
+    {
+      "itemId": "loincloth",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

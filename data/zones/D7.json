@@ -1,0 +1,86 @@
+﻿{
+    "id":  "D7",
+    "name":  "Crawler Burrows",
+    "coord":  "D7",
+    "biome":  "desert",
+    "level":  25,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "south":  "D8"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "crawler",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "crawler",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "crawler",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "crawler",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "crawler",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "crawler",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D7.jpg"
+}

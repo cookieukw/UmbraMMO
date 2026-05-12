@@ -1,0 +1,100 @@
+﻿{
+    "id":  "F9",
+    "name":  "Zolmec Ruins",
+    "coord":  "F9",
+    "biome":  "desert",
+    "level":  35,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "G9",
+                  "south":  "F10",
+                  "west":  "E9"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "zolmec",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "zolmec",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "zolmec",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "zolmec",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "zolmec",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "zolmec",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "ruins",
+                        "x":  20,
+                        "y":  15
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/F9.jpg"
+}

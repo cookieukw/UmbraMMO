@@ -1,0 +1,18 @@
+{
+  "id": "guard_boots",
+  "numericId": 402,
+  "name": "Guard Boots",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Sturdy boots with iron soles.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 20,
+  "buyPrice": 50
+}

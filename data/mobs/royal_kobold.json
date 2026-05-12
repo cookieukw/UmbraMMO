@@ -1,0 +1,46 @@
+{
+  "id": "royal_kobold",
+  "name": "Royal Kobold",
+  "level": 30,
+  "biome": "desert",
+  "camp": "kobold_camp",
+  "description": "A kobold in a fancy armor",
+  "sprite": "👑",
+  "color": "#FFD700",
+  "spriteUrl": "assets/sprites/mobs/royal_kobold.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 440,
+    "stamina": 60,
+    "str": 26,
+    "vit": 22,
+    "agi": 14,
+    "dex": 12,
+    "def": 20,
+    "int": 4,
+    "end": 16
+  },
+  "combat": {
+    "baseDamage": 50,
+    "armor": 26,
+    "attackSpeed": 1500,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 440,
+    "gold": 220
+  },
+  "respawnTime": 105000,
+  "drops": [
+    {
+      "itemId": "kobold_crown",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

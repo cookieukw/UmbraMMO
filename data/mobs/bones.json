@@ -1,0 +1,46 @@
+{
+  "id": "bones",
+  "name": "Bones",
+  "level": 10,
+  "biome": "grasslands",
+  "camp": "graveyard",
+  "description": "A skeleton",
+  "sprite": "💀",
+  "color": "#F5F5DC",
+  "spriteUrl": "assets/sprites/mobs/bones.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 110,
+    "stamina": 40,
+    "str": 9,
+    "vit": 6,
+    "agi": 6,
+    "dex": 5,
+    "def": 4,
+    "int": 0,
+    "end": 5
+  },
+  "combat": {
+    "baseDamage": 15,
+    "armor": 5,
+    "attackSpeed": 1500,
+    "moveSpeed": 900,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 80,
+    "gold": 40
+  },
+  "respawnTime": 60000,
+  "drops": [
+    {
+      "itemId": "bone_mail",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

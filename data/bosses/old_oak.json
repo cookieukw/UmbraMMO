@@ -1,0 +1,60 @@
+{
+  "id": "old_oak",
+  "name": "Old Oak",
+  "title": "Guardian of the Grove",
+  "level": 10,
+  "biome": "jungle",
+  "location": "P7",
+  "description": "An ancient treant awakened to protect the jungle",
+  "sprite": "🌳",
+  "spriteUrl": "assets/sprites/bosses/old_oak.png",
+  "color": "#228B22",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 900,
+    "stamina": 70,
+    "str": 18,
+    "vit": 28,
+    "agi": 2,
+    "dex": 4,
+    "def": 22,
+    "int": 8,
+    "end": 16
+  },
+  
+  "combat": {
+    "baseDamage": 24,
+    "armor": 25,
+    "attackSpeed": 2400,
+    "moveSpeed": 1500,
+    "aggroRange": 4
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "vitality", "skillId": 19, "level": 2 },
+      { "treeId": "defense", "skillId": 16, "level": 2 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 20, "level": 2 },
+      { "treeId": "defense", "skillId": 12, "level": 2 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "stationary",
+    "aggressiveness": "neutral",
+    "pattern": "nature_guardian"
+  },
+  
+  "rewards": {
+    "exp": 940,
+    "gold": 340
+  },
+  
+  "respawnTime": 420000,
+  
+  "drops": []
+}

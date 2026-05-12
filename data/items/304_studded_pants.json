@@ -1,0 +1,18 @@
+{
+  "id": "studded_pants",
+  "numericId": 304,
+  "name": "Studded Pants",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "common",
+  "icon": "👖",
+  "description": "Studded leather pants for rough seas.",
+  "stats": {
+    "armor": 4
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 30,
+  "buyPrice": 75
+}

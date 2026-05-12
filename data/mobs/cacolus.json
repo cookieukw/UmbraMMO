@@ -1,0 +1,45 @@
+{
+  "id": "cacolus",
+  "name": "Cacolus",
+  "level": 35,
+  "biome": "grasslands",
+  "description": "A giant anteater",
+  "sprite": "🐾",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/cacolus.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 560,
+    "stamina": 65,
+    "str": 32,
+    "vit": 26,
+    "agi": 12,
+    "dex": 12,
+    "def": 22,
+    "int": 1,
+    "end": 20
+  },
+  "combat": {
+    "baseDamage": 60,
+    "armor": 28,
+    "attackSpeed": 1500,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 540,
+    "gold": 245
+  },
+  "respawnTime": 100000,
+  "drops": [
+    {
+      "itemId": "tusk_shield",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

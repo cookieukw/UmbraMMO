@@ -1,0 +1,45 @@
+{
+  "id": "feral",
+  "name": "Feral",
+  "level": 5,
+  "biome": "grasslands",
+  "description": "Honey Badger",
+  "sprite": "🦡",
+  "color": "#4A4A4A",
+  "spriteUrl": "assets/sprites/mobs/feral.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 65,
+    "stamina": 35,
+    "str": 5,
+    "vit": 4,
+    "agi": 4,
+    "dex": 2,
+    "def": 2,
+    "int": 0,
+    "end": 3
+  },
+  "combat": {
+    "baseDamage": 8,
+    "armor": 3,
+    "attackSpeed": 1400,
+    "moveSpeed": 600,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 35,
+    "gold": 18
+  },
+  "respawnTime": 45000,
+  "drops": [
+    {
+      "itemId": "claw_blade",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

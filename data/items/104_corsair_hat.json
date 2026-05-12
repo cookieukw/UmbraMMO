@@ -1,0 +1,18 @@
+{
+  "id": "corsair_hat",
+  "numericId": 104,
+  "name": "Corsair Hat",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "A fancy hat befitting a ship captain.",
+  "stats": {
+    "armor": 3
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 24,
+  "buyPrice": 60
+}

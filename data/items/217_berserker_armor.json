@@ -1,0 +1,18 @@
+{
+  "id": "berserker_armor",
+  "numericId": 217,
+  "name": "Berserker Armor",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "uncommon",
+  "icon": "🦺",
+  "description": "Battle-scarred armor worn by raider berserkers.",
+  "stats": {
+    "armor": 10,
+    "str": 8
+  },
+  "levelGuide": 45,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 95
+}

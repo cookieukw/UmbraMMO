@@ -1,0 +1,101 @@
+﻿{
+    "id":  "D10",
+    "name":  "Relic Holder Grounds",
+    "coord":  "D10",
+    "biome":  "grasslands",
+    "level":  40,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "D9",
+                  "east":  "E10",
+                  "south":  "D11",
+                  "west":  "C10"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "relic_holder",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "relic_holder",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "relic_holder",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "relic_holder",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "relic_holder",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "relic_holder",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D10.jpg"
+}

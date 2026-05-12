@@ -1,0 +1,18 @@
+{
+  "id": "raider_helmet",
+  "numericId": 1201,
+  "name": "Raider Helmet",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "uncommon",
+  "icon": "🪖",
+  "description": "A spiked helmet favored by raider crossbowmen.",
+  "stats": {
+    "armor": 8,
+    "dex": 6
+  },
+  "levelGuide": 45,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 95
+}

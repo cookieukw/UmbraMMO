@@ -1,0 +1,19 @@
+{
+  "id": "machete",
+  "numericId": 1003,
+  "name": "Machete",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "common",
+  "icon": "⚔️",
+  "description": "A sturdy machete for cutting through jungle.",
+  "stats": {
+    "str": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 20,
+  "buyPrice": 50
+}

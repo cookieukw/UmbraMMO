@@ -1,0 +1,18 @@
+{
+  "id": "headband",
+  "numericId": 105,
+  "name": "Headband",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "A tribal headband woven from jungle vines.",
+  "stats": {
+    "armor": 1
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 10,
+  "buyPrice": 25
+}

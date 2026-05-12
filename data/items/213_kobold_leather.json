@@ -1,0 +1,17 @@
+{
+  "id": "kobold_leather",
+  "numericId": 213,
+  "name": "Kobold Leather",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "Crude but effective leather armor crafted by kobolds.",
+  "stats": {
+    "armor": 7
+  },
+  "levelGuide": 20,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 40
+}

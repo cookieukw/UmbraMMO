@@ -1,0 +1,60 @@
+{
+  "id": "goblin_raider",
+  "name": "Goblin Raider",
+  "title": "Scourge of Caravans",
+  "level": 5,
+  "biome": "grasslands",
+  "location": "D4",
+  "camp": "goblin_camp",
+  "description": "A cunning goblin leader who commands raiding parties",
+  "sprite": "👺",
+  "spriteUrl": "assets/sprites/bosses/goblin_raider.png",
+  "color": "#006400",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 380,
+    "stamina": 60,
+    "str": 10,
+    "vit": 8,
+    "agi": 10,
+    "dex": 8,
+    "def": 6,
+    "int": 4,
+    "end": 6
+  },
+  
+  "combat": {
+    "baseDamage": 16,
+    "armor": 8,
+    "attackSpeed": 1300,
+    "moveSpeed": 600,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "roguery", "skillId": 31, "level": 1 },
+      { "treeId": "swordsmanship", "skillId": 4, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "roguery", "skillId": 32, "level": 1 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "tactical",
+    "aggressiveness": "hostile",
+    "pattern": "hit_and_run"
+  },
+  
+  "rewards": {
+    "exp": 380,
+    "gold": 150
+  },
+  
+  "respawnTime": 360000,
+  
+  "drops": []
+}

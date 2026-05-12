@@ -1,0 +1,59 @@
+{
+  "id": "cavern_slime",
+  "name": "Mutant Snail",
+  "title": "The Ooze",
+  "level": 5,
+  "biome": "cave",
+  "location": "H10",
+  "description": "A radioactive green snail",
+  "sprite": "🟢",
+  "spriteUrl": "assets/sprites/bosses/mutant_snail.png",
+  "color": "#00FF00",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 480,
+    "stamina": 60,
+    "str": 6,
+    "vit": 16,
+    "agi": 2,
+    "dex": 2,
+    "def": 12,
+    "int": 2,
+    "end": 10
+  },
+  
+  "combat": {
+    "baseDamage": 12,
+    "armor": 14,
+    "attackSpeed": 2200,
+    "moveSpeed": 1200,
+    "aggroRange": 4
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "vitality", "skillId": 19, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 20, "level": 1 },
+      { "treeId": "defense", "skillId": 17, "level": 1 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "slow",
+    "aggressiveness": "hostile",
+    "pattern": "engulf"
+  },
+  
+  "rewards": {
+    "exp": 420,
+    "gold": 135
+  },
+  
+  "respawnTime": 360000,
+  
+  "drops": []
+}

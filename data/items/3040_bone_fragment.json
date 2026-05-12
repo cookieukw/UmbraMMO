@@ -1,0 +1,12 @@
+{
+  "id": "bone_fragment",
+  "numericId": 3040,
+  "name": "Bone Fragment",
+  "type": "material",
+  "rarity": "normal",
+  "icon": "🦴",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 10,
+  "description": "A piece of bone from a skeleton. Has magical residue."
+}

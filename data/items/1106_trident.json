@@ -1,0 +1,19 @@
+{
+  "id": "trident",
+  "numericId": 1106,
+  "name": "Trident",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "2h",
+  "rarity": "rare",
+  "icon": "⚔️",
+  "description": "A legendary trident from the depths of the sea.",
+  "stats": {
+    "str": 22,
+    "int": 10
+  },
+  "levelGuide": 50,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 115
+}

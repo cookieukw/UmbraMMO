@@ -1,0 +1,16 @@
+{
+  "id": "tattered_shirt",
+  "numericId": 200,
+  "name": "Tattered Shirt",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "normal",
+  "icon": "👕",
+  "stats": {
+    "vit": 1
+  },
+  "armor": 2,
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 6
+}

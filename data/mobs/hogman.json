@@ -1,0 +1,45 @@
+{
+  "id": "hogman",
+  "name": "Hogman",
+  "level": 25,
+  "biome": "grasslands",
+  "description": "A fat man with the head of a boar",
+  "sprite": "🐗",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/hogman.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 350,
+    "stamina": 55,
+    "str": 22,
+    "vit": 20,
+    "agi": 6,
+    "dex": 6,
+    "def": 12,
+    "int": 1,
+    "end": 13
+  },
+  "combat": {
+    "baseDamage": 42,
+    "armor": 16,
+    "attackSpeed": 1800,
+    "moveSpeed": 850,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 305,
+    "gold": 135
+  },
+  "respawnTime": 85000,
+  "drops": [
+    {
+      "itemId": "tusk_mace",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

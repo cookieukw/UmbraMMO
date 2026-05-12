@@ -1,0 +1,48 @@
+{
+  "id": "sea_raider_captain",
+  "name": "Sea Raider Captain",
+  "level": 45,
+  "biome": "beach",
+  "camp": "sea_raiders_camp",
+  "description": "A seasoned pirate captain who commands smaller raiding parties",
+  "sprite": "⚓",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/sea_raider_captain.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 780,
+    "stamina": 75,
+    "str": 68,
+    "vit": 58,
+    "agi": 42,
+    "dex": 48,
+    "def": 45,
+    "int": 15,
+    "end": 48
+  },
+  
+  "combat": {
+    "baseDamage": 105,
+    "armor": 52,
+    "attackSpeed": 1300,
+    "moveSpeed": 600,
+    "aggroRange": 6
+  },
+  
+  "behavior": {
+    "type": "tactical",
+    "aggressiveness": "hostile",
+    "fleeThreshold": 0
+  },
+  
+  "rewards": {
+    "exp": 620,
+    "gold": 280
+  },
+  
+  "respawnTime": 100000,
+  
+  "drops": []
+}

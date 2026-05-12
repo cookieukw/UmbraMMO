@@ -1,0 +1,51 @@
+﻿{
+    "id":  "B7",
+    "name":  "Wearied Dragon\u0027s Cave",
+    "coord":  "B7",
+    "biome":  "cave",
+    "level":  30,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "south":  "B8"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "wearied_dragon",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "treasure_hoard",
+                        "x":  20,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/B7.jpg"
+}

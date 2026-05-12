@@ -1,0 +1,100 @@
+﻿{
+    "id":  "I12",
+    "name":  "Seaside Haven",
+    "coord":  "I12",
+    "biome":  "beach",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  true,
+    "isStartingCity":  true,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "I11",
+                  "east":  "J12",
+                  "west":  "H12"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  20,
+                       "y":  15
+                   }
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "fountain",
+                        "x":  20,
+                        "y":  15
+                    },
+                    {
+                        "type":  "statue",
+                        "x":  20,
+                        "y":  10
+                    },
+                    {
+                        "type":  "spawn_beacon",
+                        "x":  15,
+                        "y":  8,
+                        "width":  1,
+                        "height":  1,
+                        "sprite":  "spawn_beacon",
+                        "name":  "Oracle"
+                    }
+                ],
+    "npcs":  [
+                 {
+                     "id":  "city_guard",
+                     "x":  5,
+                     "y":  15
+                 },
+                 {
+                     "id":  "city_guard",
+                     "x":  35,
+                     "y":  15
+                 },
+                 {
+                     "id":  "starter_guide",
+                     "x":  20,
+                     "y":  20
+                 }
+             ],
+    "shops":  [
+                  {
+                      "shopId":  "general_store_I12",
+                      "x":  10,
+                      "y":  8,
+                      "width":  1,
+                      "height":  1,
+                      "name":  "Sebastian"
+                  }
+              ],
+    "background":  "/assets/zones/I12.jpg"
+}

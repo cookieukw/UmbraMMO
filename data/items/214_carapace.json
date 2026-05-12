@@ -1,0 +1,17 @@
+{
+  "id": "carapace",
+  "numericId": 214,
+  "name": "Carapace",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "The thick shell of a desert crawler.",
+  "stats": {
+    "armor": 8
+  },
+  "levelGuide": 25,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 50
+}

@@ -1,0 +1,60 @@
+{
+  "id": "fat_fur",
+  "name": "Fat Fur",
+  "title": "The Glutton",
+  "level": 20,
+  "biome": "cave",
+  "location": "R9",
+  "description": "An enormously fat cave beast that devours everything",
+  "sprite": "🐻",
+  "spriteUrl": "assets/sprites/bosses/fat_fur.png",
+  "color": "#8B4513",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 2000,
+    "stamina": 90,
+    "str": 36,
+    "vit": 44,
+    "agi": 6,
+    "dex": 8,
+    "def": 28,
+    "int": 2,
+    "end": 28
+  },
+  
+  "combat": {
+    "baseDamage": 50,
+    "armor": 32,
+    "attackSpeed": 2000,
+    "moveSpeed": 1000,
+    "aggroRange": 4
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "vitality", "skillId": 19, "level": 3 },
+      { "treeId": "defense", "skillId": 13, "level": 3 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 23, "level": 3 },
+      { "treeId": "vitality", "skillId": 26, "level": 3 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "slow",
+    "aggressiveness": "hostile",
+    "pattern": "devour"
+  },
+  
+  "rewards": {
+    "exp": 2150,
+    "gold": 720
+  },
+  
+  "respawnTime": 540000,
+  
+  "drops": []
+}

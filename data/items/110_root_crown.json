@@ -1,0 +1,18 @@
+{
+  "id": "root_crown",
+  "numericId": 110,
+  "name": "Root Crown",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "uncommon",
+  "icon": "🪖",
+  "description": "A crown woven from living jungle roots.",
+  "stats": {
+    "armor": 3,
+    "end": 3
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 25
+}

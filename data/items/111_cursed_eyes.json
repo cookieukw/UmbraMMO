@@ -1,0 +1,17 @@
+{
+  "id": "cursed_eyes",
+  "numericId": 111,
+  "name": "Cursed Eyes",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "rare",
+  "icon": "🪖",
+  "description": "Spectral lenses that grant dark vision.",
+  "stats": {
+    "int": 5
+  },
+  "levelGuide": 15,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 45
+}

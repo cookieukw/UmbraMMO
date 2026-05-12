@@ -1,0 +1,119 @@
+{
+  "tree": {
+    "id": "vitality",
+    "name": "Vitality",
+    "icon": "❤️",
+    "unlockLevel": 10,
+    "description": "Healing and sustain"
+  },
+  "skills": [
+    {
+      "id": 19,
+      "name": "Heal",
+      "type": "active",
+      "staminaCost": 20,
+      "cooldown": 10000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Heal {value1}% of Max HP.",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "heal"
+    },
+    {
+      "id": 20,
+      "name": "Regeneration",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Regenerate {value1}% Max HP per second.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "regeneration"
+    },
+    {
+      "id": 21,
+      "name": "Berserk",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Below 50% HP, gain +{value1}% STR for each 1% of health missing.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "berserk"
+    },
+    {
+      "id": 22,
+      "name": "Unfair Exchange",
+      "type": "active",
+      "staminaCost": 30,
+      "cooldown": 10000,
+      "initialCooldown": 2000,
+      "maxLevel": 5,
+      "description": "Sacrifice {value1} HP to deal {value1}+INT damage to the enemy.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "unfair_exchange"
+    },
+    {
+      "id": 23,
+      "name": "Life Steal",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Basic attacks heal {value1}% of damage dealt.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "life_steal"
+    },
+    {
+      "id": 24,
+      "name": "Divine Punishment",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When healed, deal {value1} true damage to enemy.",
+      "scaling": {
+        "value1": { "base": 4, "perLevel": 2 }
+      },
+      "effect": "divine_punishment"
+    },
+    {
+      "id": 25,
+      "name": "Disrupt",
+      "type": "active",
+      "staminaCost": 15,
+      "cooldown": 12000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Prevent enemy healing for {value1}s.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "disrupt"
+    },
+    {
+      "id": 26,
+      "name": "Giant",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Start battle with +{value1}% Max HP (overflow).",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "giant"
+    },
+    {
+      "id": 27,
+      "name": "Rust",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Reduces enemy damage mitigation by {value1}%.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "rust"
+    }
+  ]
+}

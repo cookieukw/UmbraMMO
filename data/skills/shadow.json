@@ -1,0 +1,119 @@
+{
+  "tree": {
+    "id": "shadow",
+    "name": "Shadow",
+    "icon": "🌑",
+    "unlockLevel": 30,
+    "description": "Debuffs, poison, and evasion"
+  },
+  "skills": [
+    {
+      "id": 55,
+      "name": "Assassinate",
+      "type": "active",
+      "staminaCost": 12,
+      "cooldown": 15000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Attack with +{value1}% bonus damage. If enemy HP is below 50%, damage is doubled.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "assassinate"
+    },
+    {
+      "id": 56,
+      "name": "Shadow Form",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "After {value1} attacks received, auto-dodge next one.",
+      "scaling": {
+        "value1": { "base": 6, "perLevel": -1 }
+      },
+      "effect": "shadow_form"
+    },
+    {
+      "id": 57,
+      "name": "Weakness",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Each crit increases DEX by {value1}% until the end of the battle.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "weakness"
+    },
+    {
+      "id": 58,
+      "name": "Poison Cloud",
+      "type": "active",
+      "staminaCost": 30,
+      "cooldown": 8000,
+      "initialCooldown": 0,
+      "maxLevel": 5,
+      "description": "Apply {value1} poison stacks instantly.",
+      "scaling": {
+        "value1": { "base": 4, "perLevel": 2 }
+      },
+      "effect": "poison_cloud"
+    },
+    {
+      "id": 59,
+      "name": "Hasty",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Reduce initial cooldown of your skill in position 1 by {value1}s.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "hasty"
+    },
+    {
+      "id": 60,
+      "name": "Putrid",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Every 2s apply {value1} poison to enemy.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "putrid"
+    },
+    {
+      "id": 61,
+      "name": "Metamorph",
+      "type": "active",
+      "staminaCost": 10,
+      "cooldown": 3000,
+      "initialCooldown": 1000,
+      "maxLevel": 5,
+      "description": "Gain +{value1} to your current lowest attribute until the end of the battle.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "metamorph"
+    },
+    {
+      "id": 62,
+      "name": "Binding",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "The first enemy active skill that hits you has an increased cast cooldown of {value1}s for the rest of battle.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "binding"
+    },
+    {
+      "id": 63,
+      "name": "Ooze",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Enemy starts battle stunned for {value1} seconds.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "ooze"
+    }
+  ]
+}

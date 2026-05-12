@@ -1,0 +1,46 @@
+{
+  "id": "giant_gatherer",
+  "name": "Giant",
+  "level": 45,
+  "biome": "snow",
+  "camp": "giant_camp",
+  "description": "A giant holding a bronze basket",
+  "sprite": "🧺",
+  "color": "#B87333",
+  "spriteUrl": "assets/sprites/mobs/giant_gatherer.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 980,
+    "stamina": 75,
+    "str": 50,
+    "vit": 48,
+    "agi": 6,
+    "dex": 8,
+    "def": 36,
+    "int": 2,
+    "end": 34
+  },
+  "combat": {
+    "baseDamage": 88,
+    "armor": 44,
+    "attackSpeed": 2200,
+    "moveSpeed": 1000,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 890,
+    "gold": 430
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "snow_boots",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

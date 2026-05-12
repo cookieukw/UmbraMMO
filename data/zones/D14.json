@@ -1,0 +1,98 @@
+﻿{
+    "id":  "D14",
+    "name":  "Death Knight Garrison",
+    "coord":  "D14",
+    "biome":  "grasslands",
+    "level":  60,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "dark_knights",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "D13",
+                  "east":  "E14",
+                  "west":  "C14"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "death_knight",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "death_knight",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "death_knight",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "death_knight",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "death_knight",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "death_knight",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D14.jpg"
+}

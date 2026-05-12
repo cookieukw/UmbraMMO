@@ -1,0 +1,18 @@
+{
+  "id": "kobold_crown",
+  "numericId": 114,
+  "name": "Kobold Crown",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "uncommon",
+  "icon": "🪖",
+  "description": "A crude crown worn by kobold royalty.",
+  "stats": {
+    "armor": 7,
+    "end": 6
+  },
+  "levelGuide": 30,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 65
+}

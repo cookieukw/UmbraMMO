@@ -1,0 +1,67 @@
+﻿{
+    "id":  "G6",
+    "name":  "Desert Camp",
+    "coord":  "G6",
+    "biome":  "desert",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  true,
+    "isCamp":  true,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "west":  "F6",
+                  "east":  "H6"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "campfire",
+                        "x":  20,
+                        "y":  15
+                    },
+                    {
+                        "type":  "tent",
+                        "x":  15,
+                        "y":  12
+                    },
+                    {
+                        "type":  "tent",
+                        "x":  25,
+                        "y":  12
+                    }
+                ],
+    "npcs":  [
+                 {
+                     "id":  "desert_merchant",
+                     "x":  18,
+                     "y":  18
+                 }
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/G6.jpg"
+}

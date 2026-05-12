@@ -1,0 +1,112 @@
+﻿{
+    "id":  "K8",
+    "name":  "Cursed Graveyard",
+    "coord":  "K8",
+    "biome":  "grasslands",
+    "level":  15,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "graveyard",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "K7",
+                  "south":  "K9"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "cursed_head",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "cursed_head",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "cursed_head",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "cursed_head",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "cursed_head",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "cursed_head",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "tombstone",
+                        "x":  10,
+                        "y":  10
+                    },
+                    {
+                        "type":  "tombstone",
+                        "x":  30,
+                        "y":  10
+                    },
+                    {
+                        "type":  "tombstone",
+                        "x":  10,
+                        "y":  25
+                    },
+                    {
+                        "type":  "tombstone",
+                        "x":  30,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/K8.jpg"
+}

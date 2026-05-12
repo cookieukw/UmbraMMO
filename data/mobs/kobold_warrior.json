@@ -1,0 +1,46 @@
+{
+  "id": "kobold_warrior",
+  "name": "Kobold Warrior",
+  "level": 25,
+  "biome": "desert",
+  "camp": "kobold_camp",
+  "description": "A kobold with weapons and armor",
+  "sprite": "⚔️",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/kobold_warrior.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 320,
+    "stamina": 55,
+    "str": 20,
+    "vit": 16,
+    "agi": 12,
+    "dex": 10,
+    "def": 14,
+    "int": 2,
+    "end": 12
+  },
+  "combat": {
+    "baseDamage": 40,
+    "armor": 18,
+    "attackSpeed": 1500,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 310,
+    "gold": 140
+  },
+  "respawnTime": 90000,
+  "drops": [
+    {
+      "itemId": "kobold_blade",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

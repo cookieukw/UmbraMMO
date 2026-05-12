@@ -1,0 +1,61 @@
+{
+  "id": "abomination",
+  "name": "Abomination",
+  "title": "Horror from the Deep",
+  "level": 35,
+  "biome": "beach",
+  "location": "N12",
+  "description": "A twisted sea creature mutated by dark magic",
+  "sprite": "🦑",
+  "spriteUrl": "assets/sprites/bosses/abomination.png",
+  "color": "#2F4F4F",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 4200,
+    "stamina": 110,
+    "str": 66,
+    "vit": 62,
+    "agi": 20,
+    "dex": 22,
+    "def": 46,
+    "int": 16,
+    "end": 38
+  },
+  
+  "combat": {
+    "baseDamage": 98,
+    "armor": 52,
+    "attackSpeed": 1700,
+    "moveSpeed": 750,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "shadow", "skillId": 58, "level": 4 },
+      { "treeId": "windmaster", "skillId": 49, "level": 4 },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 4 }
+    ],
+    "passive": [
+      { "treeId": "shadow", "skillId": 60, "level": 4 },
+      { "treeId": "vitality", "skillId": 23, "level": 4 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile",
+    "pattern": "tentacle_grab"
+  },
+  
+  "rewards": {
+    "exp": 5500,
+    "gold": 2000
+  },
+  
+  "respawnTime": 660000,
+  
+  "drops": []
+}

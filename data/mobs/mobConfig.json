@@ -1,0 +1,124 @@
+{
+  "_comment": "=== MOB & BOSS SCALING CONFIGURATION ===",
+  "_description": "This config controls the exponential scaling of mob/boss stats. Adjust these values to tune game difficulty.",
+  
+  "scaling": {
+    "_comment": "Exponential scaling: finalStats = baseStats * (1 + scalingPerLevel)^(level-1)",
+    
+    "mob": {
+      "scalingPerLevel": 0.06,
+      "_explanation": "6% stronger per level. Level 30 mob = ~5.4x base stats, Level 60 = ~29x"
+    },
+    "boss": {
+      "scalingPerLevel": 0.07,
+      "_explanation": "7% stronger per level. Bosses scale slightly faster than mobs."
+    }
+  },
+  
+  "baseStatsPerLevel": {
+    "_comment": "Base stat points distributed per level (before exponential scaling)",
+    
+    "mob": {
+      "totalPointsPerLevel": 3,
+      "_distribution": "Points are distributed based on mob archetype (tanky, damage, balanced)"
+    },
+    "boss": {
+      "totalPointsPerLevel": 4,
+      "_distribution": "Bosses get more base stat points per level than regular mobs"
+    }
+  },
+  
+  "hpMultipliers": {
+    "_comment": "HP is calculated as: baseHP * level * hpMultiplier * exponentialScaling",
+    "mob": 8,
+    "boss": 25
+  },
+  
+  "staminaConfig": {
+    "_comment": "Stamina for combat actions",
+    "mob": {
+      "base": 30,
+      "perLevel": 1
+    },
+    "boss": {
+      "base": 50,
+      "perLevel": 2
+    }
+  },
+  
+  "damageConfig": {
+    "_comment": "Base damage calculation",
+    "mob": {
+      "base": 3,
+      "perLevel": 1.5
+    },
+    "boss": {
+      "base": 5,
+      "perLevel": 2.5
+    }
+  },
+  
+  "armorConfig": {
+    "_comment": "Base armor/defense",
+    "mob": {
+      "base": 1,
+      "perLevel": 0.8
+    },
+    "boss": {
+      "base": 3,
+      "perLevel": 1.5
+    }
+  },
+  
+  "expRewardConfig": {
+    "_comment": "Experience reward calculation: multiplier * level^exponent. Tuned for desired kills per tier pattern.",
+    "_targetKills": "~30-40 kills for tiers 1&5, ~70-90 kills for mid tiers, ~100-130 kills for late tiers",
+    "mob": {
+      "multiplier": 8,
+      "exponent": 1.25,
+      "_explanation": "Level 1: 8 EXP, Level 10: 99 EXP, Level 30: 355 EXP, Level 50: 637 EXP. Scaling slower than EXP requirements means more kills at higher levels."
+    },
+    "boss": {
+      "multiplier": 200,
+      "exponent": 1.25,
+      "_explanation": "Bosses give ~25x mob EXP"
+    }
+  },
+  
+  "goldRewardConfig": {
+    "_comment": "Gold reward calculation: base * level * multiplier",
+    "mob": {
+      "base": 5,
+      "levelMultiplier": 1.2
+    },
+    "boss": {
+      "base": 25,
+      "levelMultiplier": 2
+    }
+  },
+  
+  "respawnConfig": {
+    "_comment": "Respawn times in milliseconds",
+    "mob": {
+      "base": 30000,
+      "perLevel": 1000,
+      "max": 120000
+    },
+    "boss": {
+      "base": 300000,
+      "perLevel": 5000,
+      "max": 900000
+    }
+  },
+  
+  "skillLevelScaling": {
+    "_comment": "Boss skill levels based on boss level",
+    "thresholds": [
+      { "bossLevel": 1, "skillLevel": 1 },
+      { "bossLevel": 10, "skillLevel": 2 },
+      { "bossLevel": 25, "skillLevel": 3 },
+      { "bossLevel": 40, "skillLevel": 4 },
+      { "bossLevel": 55, "skillLevel": 5 }
+    ]
+  }
+}

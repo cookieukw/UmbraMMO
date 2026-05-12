@@ -1,0 +1,17 @@
+{
+  "id": "hide_cape",
+  "numericId": 207,
+  "name": "Hide Cape",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "A rough cape made from animal hide.",
+  "stats": {
+    "armor": 3
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 10
+}

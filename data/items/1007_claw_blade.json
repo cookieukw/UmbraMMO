@@ -1,0 +1,18 @@
+{
+  "id": "claw_blade",
+  "numericId": 1007,
+  "name": "Claw Blade",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "uncommon",
+  "icon": "🗡️",
+  "description": "A jagged blade fashioned from beast claws.",
+  "stats": {
+    "agi": 4
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 15
+}

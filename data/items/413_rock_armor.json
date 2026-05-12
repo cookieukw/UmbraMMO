@@ -1,0 +1,18 @@
+{
+  "id": "rock_armor",
+  "numericId": 413,
+  "name": "Rock Armor",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "uncommon",
+  "icon": "🦺",
+  "description": "Armor hewn from solid desert rock.",
+  "stats": {
+    "armor": 12,
+    "vit": 4
+  },
+  "levelGuide": 35,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 75
+}

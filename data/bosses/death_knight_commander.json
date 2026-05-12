@@ -1,0 +1,65 @@
+{
+  "id": "death_knight_commander",
+  "name": "Fallen Hero Benjamin",
+  "title": "Herald of Oblivion",
+  "level": 60,
+  "biome": "grasslands",
+  "location": "C14",
+  "camp": "dark_knights_camp",
+  "description": "A skinny warrior with long arms and legs and a full plate gold armor, a gold pyramid hat covering its eyes, in a battle stance",
+  "sprite": "⚰️",
+  "spriteUrl": "assets/sprites/bosses/fallen_hero_benjamin.png",
+  "color": "#1C1C1C",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 17500,
+    "stamina": 175,
+    "str": 148,
+    "vit": 108,
+    "agi": 35,
+    "dex": 40,
+    "def": 105,
+    "int": 52,
+    "end": 78
+  },
+  
+  "combat": {
+    "baseDamage": 270,
+    "armor": 135,
+    "attackSpeed": 2000,
+    "moveSpeed": 850,
+    "aggroRange": 7
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 5, "_name": "Strike (death blow)" },
+      { "treeId": "shadow", "skillId": 55, "level": 5, "_name": "Assassinate (execute)" },
+      { "treeId": "shadow", "skillId": 58, "level": 5, "_name": "Poison Cloud (death miasma)" },
+      { "treeId": "vitality", "skillId": 25, "level": 5, "_name": "Disrupt (curse)" }
+    ],
+    "passive": [
+      { "treeId": "shadow", "skillId": 60, "level": 5, "_name": "Putrid" },
+      { "treeId": "swordsmanship", "skillId": 5, "level": 5, "_name": "Bloodletting" },
+      { "treeId": "vitality", "skillId": 21, "level": 5, "_name": "Berserk" },
+      { "treeId": "defense", "skillId": 12, "level": 5, "_name": "Sturdiness" }
+    ]
+  },
+  
+  "behavior": {
+    "type": "ruthless",
+    "aggressiveness": "hostile",
+    "pattern": "death_commander"
+  },
+  
+  "rewards": {
+    "exp": 27000,
+    "gold": 13500
+  },
+  
+  "respawnTime": 2100000,
+  
+  "drops": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "king_gloopus",
+  "name": "King Gloopus",
+  "title": "Lord of the Ooze",
+  "level": 10,
+  "biome": "cave",
+  "location": "B1",
+  "description": "A massive slime wearing a tiny crown, absorbs everything in its path",
+  "sprite": "👑",
+  "spriteUrl": "assets/sprites/bosses/king_gloopus.png",
+  "color": "#00FF7F",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 800,
+    "stamina": 70,
+    "str": 14,
+    "vit": 24,
+    "agi": 4,
+    "dex": 6,
+    "def": 18,
+    "int": 6,
+    "end": 14
+  },
+  
+  "combat": {
+    "baseDamage": 22,
+    "armor": 20,
+    "attackSpeed": 2000,
+    "moveSpeed": 1100,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "vitality", "skillId": 19, "level": 2 },
+      { "treeId": "defense", "skillId": 10, "level": 2 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 20, "level": 2 },
+      { "treeId": "defense", "skillId": 17, "level": 2 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "slow",
+    "aggressiveness": "hostile",
+    "pattern": "absorb"
+  },
+  
+  "rewards": {
+    "exp": 900,
+    "gold": 300
+  },
+  
+  "respawnTime": 420000,
+  
+  "drops": []
+}

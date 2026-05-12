@@ -1,0 +1,96 @@
+﻿{
+    "id":  "O8",
+    "name":  "Hogman Woods",
+    "coord":  "O8",
+    "biome":  "grasslands",
+    "level":  25,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "P8",
+                  "south":  "O9",
+                  "west":  "N8"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "hogman",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "hogman",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "hogman",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "hogman",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "hogman",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "hogman",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/O8.jpg"
+}

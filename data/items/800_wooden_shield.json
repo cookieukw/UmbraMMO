@@ -1,0 +1,17 @@
+{
+  "id": "wooden_shield",
+  "numericId": 800,
+  "name": "Wooden Shield",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "offhand",
+  "rarity": "normal",
+  "icon": "🛡️",
+  "stats": {
+    "def": 1
+  },
+  "armor": 1,
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 5
+}

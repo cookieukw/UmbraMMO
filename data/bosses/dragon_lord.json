@@ -1,0 +1,64 @@
+{
+  "id": "dragon_lord",
+  "name": "Dragon Lord",
+  "title": "Sovereign of Fire and Ice",
+  "level": 60,
+  "biome": "cave",
+  "location": "L1",
+  "description": "The supreme dragon who commands all dragonkind, wielding both fire and frost",
+  "sprite": "🐲",
+  "spriteUrl": "assets/sprites/bosses/dragon_lord.png",
+  "color": "#FFD700",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 20000,
+    "stamina": 200,
+    "str": 155,
+    "vit": 120,
+    "agi": 32,
+    "dex": 38,
+    "def": 95,
+    "int": 75,
+    "end": 70
+  },
+  
+  "combat": {
+    "baseDamage": 265,
+    "armor": 125,
+    "attackSpeed": 2200,
+    "moveSpeed": 900,
+    "aggroRange": 10
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "magic", "skillId": 37, "level": 5, "_name": "Fireball (fire breath)" },
+      { "treeId": "magic", "skillId": 40, "level": 5, "_name": "Frozen Bolt (ice breath)" },
+      { "treeId": "swordsmanship", "skillId": 1, "level": 5, "_name": "Strike (claw swipe)" },
+      { "treeId": "shadow", "skillId": 55, "level": 5, "_name": "Assassinate (dive attack)" }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 21, "level": 5, "_name": "Berserk" },
+      { "treeId": "magic", "skillId": 44, "level": 5, "_name": "Dispelling" },
+      { "treeId": "swordsmanship", "skillId": 5, "level": 5, "_name": "Bloodletting" },
+      { "treeId": "vitality", "skillId": 20, "level": 5, "_name": "Regeneration" }
+    ]
+  },
+  
+  "behavior": {
+    "type": "intelligent_predator",
+    "aggressiveness": "hostile",
+    "pattern": "dragon_lord"
+  },
+  
+  "rewards": {
+    "exp": 30000,
+    "gold": 15000
+  },
+  
+  "respawnTime": 2400000,
+  
+  "drops": []
+}

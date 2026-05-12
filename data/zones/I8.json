@@ -1,0 +1,53 @@
+﻿{
+    "id":  "I8",
+    "name":  "Kobold Leader\u0027s Throne",
+    "coord":  "I8",
+    "biome":  "cave",
+    "level":  30,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "kobold",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "west":  "H8"
+              },
+    "entryPoints":  {
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "kobold_leader",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "throne",
+                        "x":  20,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/I8.jpg"
+}

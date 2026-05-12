@@ -1,0 +1,65 @@
+{
+  "id": "giant_rat_king",
+  "name": "Giant Rat King",
+  "title": "Ruler of the Sewers",
+  "level": 5,
+  "biome": "cave",
+  "location": "A3",
+  "description": "A massive rat that has grown to monstrous proportions. It rules over the lesser rats with an iron paw, and its golden crown gleams with stolen treasures.",
+  "sprite": "🐀",
+  "spriteUrl": "assets/sprites/bosses/giant_rat_king.png",
+  "color": "#FFD700",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 800,
+    "stamina": 50,
+    "str": 8,
+    "vit": 12,
+    "agi": 6,
+    "dex": 5,
+    "def": 8,
+    "int": 3,
+    "end": 8
+  },
+  
+  "combat": {
+    "baseDamage": 12,
+    "armor": 8,
+    "attackSpeed": 1200,
+    "moveSpeed": 1500,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 2 },
+      { "treeId": "defense", "skillId": 10, "level": 2 },
+      { "treeId": "vitality", "skillId": 19, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 20, "level": 3 },
+      { "treeId": "swordsmanship", "skillId": 3, "level": 2 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile",
+    "pattern": "swarm"
+  },
+  
+  "rewards": {
+    "exp": 250,
+    "gold": 50
+  },
+  
+  "respawnTime": 3600000,
+  
+  "drops": [
+    { "itemId": "rat_tail", "chance": 100, "minQty": 3, "maxQty": 5 },
+    { "itemId": "rat_meat", "chance": 100, "minQty": 2, "maxQty": 4 },
+    { "itemId": "exp_shard", "chance": 50, "minQty": 1, "maxQty": 2 }
+  ]
+}

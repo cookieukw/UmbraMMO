@@ -1,0 +1,63 @@
+﻿{
+    "id":  "K6",
+    "name":  "Capital District - South",
+    "coord":  "K6",
+    "biome":  "capital_city",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  true,
+    "isCapitalCity":  true,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "K5",
+                  "east":  "L6",
+                  "south":  "K7"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+                 {
+                     "id":  "city_guard",
+                     "x":  10,
+                     "y":  15
+                 },
+                 {
+                     "id":  "city_guard",
+                     "x":  30,
+                     "y":  15
+                 }
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/K6.jpg"
+}

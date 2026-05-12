@@ -1,0 +1,45 @@
+{
+  "id": "badfoot",
+  "name": "Badfoot",
+  "level": 25,
+  "biome": "grasslands",
+  "description": "A big foot like brbrpatapim",
+  "sprite": "🦶",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/badfoot.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 360,
+    "stamina": 55,
+    "str": 24,
+    "vit": 18,
+    "agi": 10,
+    "dex": 8,
+    "def": 10,
+    "int": 1,
+    "end": 11
+  },
+  "combat": {
+    "baseDamage": 44,
+    "armor": 14,
+    "attackSpeed": 1600,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "territorial",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 320,
+    "gold": 145
+  },
+  "respawnTime": 90000,
+  "drops": [
+    {
+      "itemId": "bad_feet",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

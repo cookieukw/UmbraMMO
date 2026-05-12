@@ -1,0 +1,62 @@
+{
+  "id": "leviathan",
+  "name": "Leviathan",
+  "title": "Terror of the Deep",
+  "level": 50,
+  "biome": "beach",
+  "location": "F11",
+  "description": "An ancient sea serpent of colossal proportions that guards the coastal waters",
+  "sprite": "🐍",
+  "spriteUrl": "assets/sprites/bosses/leviathan.png",
+  "color": "#006994",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 10500,
+    "stamina": 140,
+    "str": 102,
+    "vit": 88,
+    "agi": 28,
+    "dex": 26,
+    "def": 72,
+    "int": 32,
+    "end": 56
+  },
+  
+  "combat": {
+    "baseDamage": 175,
+    "armor": 85,
+    "attackSpeed": 1800,
+    "moveSpeed": 700,
+    "aggroRange": 8
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 5, "_name": "Strike (bite)" },
+      { "treeId": "magic", "skillId": 40, "level": 5, "_name": "Frozen Bolt (tidal wave)" },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 5, "_name": "Bash (tail swipe)" }
+    ],
+    "passive": [
+      { "treeId": "vitality", "skillId": 21, "level": 5, "_name": "Berserk" },
+      { "treeId": "vitality", "skillId": 20, "level": 5, "_name": "Regeneration" },
+      { "treeId": "swordsmanship", "skillId": 5, "level": 5, "_name": "Bloodletting" }
+    ]
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile",
+    "pattern": "sea_monster"
+  },
+  
+  "rewards": {
+    "exp": 13000,
+    "gold": 5000
+  },
+  
+  "respawnTime": 900000,
+  
+  "drops": []
+}

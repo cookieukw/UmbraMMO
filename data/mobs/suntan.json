@@ -1,0 +1,45 @@
+{
+  "id": "suntan",
+  "name": "Suntan",
+  "level": 30,
+  "biome": "desert",
+  "description": "A werewolf with tanning glasses",
+  "sprite": "🐺",
+  "color": "#FFB347",
+  "spriteUrl": "assets/sprites/mobs/suntan.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 420,
+    "stamina": 60,
+    "str": 30,
+    "vit": 20,
+    "agi": 18,
+    "dex": 14,
+    "def": 12,
+    "int": 2,
+    "end": 12
+  },
+  "combat": {
+    "baseDamage": 55,
+    "armor": 18,
+    "attackSpeed": 1300,
+    "moveSpeed": 500,
+    "aggroRange": 6
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 430,
+    "gold": 195
+  },
+  "respawnTime": 95000,
+  "drops": [
+    {
+      "itemId": "horns",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+﻿{
+    "id":  "R9",
+    "name":  "Fat Fur\u0027s Den",
+    "coord":  "R9",
+    "biome":  "cave",
+    "level":  20,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "R8"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "fat_fur",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/R9.jpg"
+}

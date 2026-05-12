@@ -1,0 +1,45 @@
+{
+  "id": "drone",
+  "name": "Drone",
+  "level": 5,
+  "biome": "grasslands",
+  "description": "A very angry bee with a spear",
+  "sprite": "🐝",
+  "color": "#FFD700",
+  "spriteUrl": "assets/sprites/mobs/drone.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 50,
+    "stamina": 35,
+    "str": 4,
+    "vit": 2,
+    "agi": 5,
+    "dex": 4,
+    "def": 1,
+    "int": 0,
+    "end": 2
+  },
+  "combat": {
+    "baseDamage": 9,
+    "armor": 1,
+    "attackSpeed": 1200,
+    "moveSpeed": 500,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 32,
+    "gold": 16
+  },
+  "respawnTime": 40000,
+  "drops": [
+    {
+      "itemId": "stinger_spear",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

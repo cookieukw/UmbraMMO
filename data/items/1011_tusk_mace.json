@@ -1,0 +1,18 @@
+{
+  "id": "tusk_mace",
+  "numericId": 1011,
+  "name": "Tusk Mace",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "common",
+  "icon": "🔨",
+  "description": "A heavy mace made from a beast tusk.",
+  "stats": {
+    "str": 8
+  },
+  "levelGuide": 25,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 50
+}

@@ -1,0 +1,17 @@
+{
+  "id": "loincloth",
+  "numericId": 308,
+  "name": "Loincloth",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "common",
+  "icon": "👖",
+  "description": "A primitive loincloth offering basic coverage.",
+  "stats": {
+    "armor": 5
+  },
+  "levelGuide": 15,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 30
+}

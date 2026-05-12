@@ -1,0 +1,45 @@
+{
+  "id": "hermetic_stone",
+  "name": "Hermetic Stone",
+  "level": 50,
+  "biome": "grasslands",
+  "description": "A floating stone device",
+  "sprite": "🪨",
+  "color": "#708090",
+  "spriteUrl": "assets/sprites/mobs/hermetic_stone.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1000,
+    "stamina": 80,
+    "str": 30,
+    "vit": 50,
+    "agi": 10,
+    "dex": 12,
+    "def": 48,
+    "int": 20,
+    "end": 36
+  },
+  "combat": {
+    "baseDamage": 90,
+    "armor": 55,
+    "attackSpeed": 2000,
+    "moveSpeed": 600,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "stationary",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1050,
+    "gold": 520
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "emerald_stone",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

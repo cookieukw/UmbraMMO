@@ -1,0 +1,45 @@
+{
+  "id": "hermit",
+  "name": "Hermit",
+  "level": 1,
+  "biome": "beach",
+  "description": "A cartoon hermit crab",
+  "sprite": "🦀",
+  "color": "#FF6347",
+  "spriteUrl": "assets/sprites/mobs/hermit.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 28,
+    "stamina": 30,
+    "str": 1,
+    "vit": 2,
+    "agi": 1,
+    "dex": 0,
+    "def": 2,
+    "int": 0,
+    "end": 1
+  },
+  "combat": {
+    "baseDamage": 3,
+    "armor": 3,
+    "attackSpeed": 2200,
+    "moveSpeed": 1400,
+    "aggroRange": 2
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "passive"
+  },
+  "rewards": {
+    "exp": 10,
+    "gold": 6
+  },
+  "respawnTime": 30000,
+  "drops": [
+    {
+      "itemId": "bug_helmet",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

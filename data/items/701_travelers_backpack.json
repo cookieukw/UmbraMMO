@@ -1,0 +1,15 @@
+{
+  "id": "travelers_backpack",
+  "numericId": 701,
+  "name": "Traveler's Backpack",
+  "type": "equipment",
+  "slot": "backpack",
+  "rarity": "rare",
+  "icon": "🎒",
+  "description": "A spacious backpack crafted from sturdy leather. Greatly expands your carrying capacity.",
+  "stats": {},
+  "bonusSlots": 28,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 500
+}

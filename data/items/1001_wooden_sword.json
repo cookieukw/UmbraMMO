@@ -1,0 +1,19 @@
+{
+  "id": "wooden_sword",
+  "numericId": 1001,
+  "name": "Wooden Sword",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "common",
+  "icon": "⚔️",
+  "description": "A wooden practice sword. Better than nothing.",
+  "stats": {
+    "str": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 20,
+  "buyPrice": 50
+}

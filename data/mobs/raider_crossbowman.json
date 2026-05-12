@@ -1,0 +1,46 @@
+{
+  "id": "raider_crossbowman",
+  "name": "Raider",
+  "level": 45,
+  "biome": "beach",
+  "camp": "sea_raiders_camp",
+  "description": "Viking like with a crossbow",
+  "sprite": "🏹",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/raider_crossbowman.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 780,
+    "stamina": 75,
+    "str": 36,
+    "vit": 34,
+    "agi": 22,
+    "dex": 30,
+    "def": 22,
+    "int": 4,
+    "end": 24
+  },
+  "combat": {
+    "baseDamage": 90,
+    "armor": 28,
+    "attackSpeed": 1800,
+    "moveSpeed": 750,
+    "aggroRange": 7
+  },
+  "behavior": {
+    "type": "ranged",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 870,
+    "gold": 410
+  },
+  "respawnTime": 115000,
+  "drops": [
+    {
+      "itemId": "raider_helmet",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

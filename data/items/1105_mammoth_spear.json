@@ -1,0 +1,19 @@
+{
+  "id": "mammoth_spear",
+  "numericId": 1105,
+  "name": "Mammoth Spear",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "2h",
+  "rarity": "common",
+  "icon": "🔱",
+  "description": "A massive spear made from a mammoth tusk.",
+  "stats": {
+    "str": 16,
+    "agi": 10
+  },
+  "levelGuide": 45,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 90
+}

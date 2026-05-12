@@ -1,0 +1,45 @@
+{
+  "id": "crawler",
+  "name": "Crawler",
+  "level": 25,
+  "biome": "desert",
+  "description": "A desert worm/bug",
+  "sprite": "🐛",
+  "color": "#DEB887",
+  "spriteUrl": "assets/sprites/mobs/crawler.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 340,
+    "stamina": 55,
+    "str": 20,
+    "vit": 18,
+    "agi": 8,
+    "dex": 8,
+    "def": 14,
+    "int": 0,
+    "end": 14
+  },
+  "combat": {
+    "baseDamage": 38,
+    "armor": 18,
+    "attackSpeed": 1700,
+    "moveSpeed": 900,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "burrow",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 300,
+    "gold": 130
+  },
+  "respawnTime": 90000,
+  "drops": [
+    {
+      "itemId": "carapace",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

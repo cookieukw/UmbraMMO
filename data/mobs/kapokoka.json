@@ -1,0 +1,45 @@
+{
+  "id": "kapokoka",
+  "name": "Kapokoka",
+  "level": 10,
+  "biome": "jungle",
+  "description": "Tangled roots with a mask",
+  "sprite": "🎭",
+  "color": "#654321",
+  "spriteUrl": "assets/sprites/mobs/kapokoka.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 140,
+    "stamina": 40,
+    "str": 8,
+    "vit": 10,
+    "agi": 3,
+    "dex": 3,
+    "def": 8,
+    "int": 2,
+    "end": 6
+  },
+  "combat": {
+    "baseDamage": 14,
+    "armor": 10,
+    "attackSpeed": 2000,
+    "moveSpeed": 1200,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 90,
+    "gold": 42
+  },
+  "respawnTime": 65000,
+  "drops": [
+    {
+      "itemId": "root_crown",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

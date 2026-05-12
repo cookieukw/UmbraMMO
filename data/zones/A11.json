@@ -1,0 +1,98 @@
+﻿{
+    "id":  "A11",
+    "name":  "Sea Raider Crossbowmen",
+    "coord":  "A11",
+    "biome":  "grasslands",
+    "level":  45,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "sea_raiders",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "A10",
+                  "east":  "B11",
+                  "south":  "A12"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "raider_crossbowman",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "raider_crossbowman",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "raider_crossbowman",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "raider_crossbowman",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "raider_crossbowman",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "raider_crossbowman",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/A11.jpg"
+}

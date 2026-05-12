@@ -1,0 +1,19 @@
+{
+  "id": "blessed_sword",
+  "numericId": 119,
+  "name": "Blessed Sword",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "rare",
+  "icon": "⚔️",
+  "description": "A holy blade blessed by ancient light.",
+  "stats": {
+    "str": 15,
+    "agi": 7
+  },
+  "levelGuide": 55,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 125
+}

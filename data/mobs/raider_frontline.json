@@ -1,0 +1,46 @@
+{
+  "id": "raider_frontline",
+  "name": "Raider Frontline",
+  "level": 45,
+  "biome": "beach",
+  "camp": "sea_raiders_camp",
+  "description": "Viking like with a sword",
+  "sprite": "⚔️",
+  "color": "#CD853F",
+  "spriteUrl": "assets/sprites/mobs/raider_frontline.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 900,
+    "stamina": 75,
+    "str": 48,
+    "vit": 42,
+    "agi": 14,
+    "dex": 16,
+    "def": 32,
+    "int": 2,
+    "end": 28
+  },
+  "combat": {
+    "baseDamage": 85,
+    "armor": 40,
+    "attackSpeed": 1600,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 880,
+    "gold": 420
+  },
+  "respawnTime": 115000,
+  "drops": [
+    {
+      "itemId": "berserker_armor",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

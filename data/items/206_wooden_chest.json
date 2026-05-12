@@ -1,0 +1,18 @@
+{
+  "id": "wooden_chest",
+  "numericId": 206,
+  "name": "Wooden Chest",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "Chest armor made of interlocking wooden plates.",
+  "stats": {
+    "armor": 5
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 40,
+  "buyPrice": 100
+}

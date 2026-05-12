@@ -1,0 +1,122 @@
+﻿{
+    "id":  "K9",
+    "name":  "Old Graveyard",
+    "coord":  "K9",
+    "biome":  "grasslands",
+    "level":  10,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "graveyard",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "K8",
+                  "east":  "L9",
+                  "south":  "K10",
+                  "west":  "J9"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "bones",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "bones",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "bones",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "bones",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "bones",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "bones",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "tombstone",
+                        "x":  10,
+                        "y":  10
+                    },
+                    {
+                        "type":  "tombstone",
+                        "x":  30,
+                        "y":  10
+                    },
+                    {
+                        "type":  "tombstone",
+                        "x":  10,
+                        "y":  25
+                    },
+                    {
+                        "type":  "tombstone",
+                        "x":  30,
+                        "y":  25
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/K9.jpg"
+}

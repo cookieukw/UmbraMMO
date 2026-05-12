@@ -1,0 +1,17 @@
+{
+  "id": "bug_helmet",
+  "numericId": 109,
+  "name": "Bug Helmet",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "uncommon",
+  "icon": "🪖",
+  "description": "A helmet fashioned from a giant bug shell.",
+  "stats": {
+    "armor": 3
+  },
+  "levelGuide": 1,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 7
+}

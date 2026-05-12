@@ -1,0 +1,46 @@
+{
+  "id": "giant_legionary",
+  "name": "Giant Legionary",
+  "level": 50,
+  "biome": "snow",
+  "camp": "giant_camp",
+  "description": "A giant with armor and a club",
+  "sprite": "🏛️",
+  "color": "#B8860B",
+  "spriteUrl": "assets/sprites/mobs/giant_legionary.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1200,
+    "stamina": 80,
+    "str": 60,
+    "vit": 56,
+    "agi": 8,
+    "dex": 10,
+    "def": 44,
+    "int": 2,
+    "end": 38
+  },
+  "combat": {
+    "baseDamage": 110,
+    "armor": 52,
+    "attackSpeed": 2000,
+    "moveSpeed": 900,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1100,
+    "gold": 560
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "double_axe",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "cobra_head",
+  "numericId": 113,
+  "name": "Cobra Head",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "rare",
+  "icon": "🪖",
+  "description": "A helm shaped like a cobra hood.",
+  "stats": {
+    "armor": 4,
+    "dex": 8
+  },
+  "levelGuide": 25,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 65
+}

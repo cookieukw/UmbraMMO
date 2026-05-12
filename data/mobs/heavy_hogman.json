@@ -1,0 +1,45 @@
+{
+  "id": "heavy_hogman",
+  "name": "Heavy Hogman",
+  "level": 30,
+  "biome": "grasslands",
+  "description": "A hogman with plate armor",
+  "sprite": "🐗",
+  "color": "#708090",
+  "spriteUrl": "assets/sprites/mobs/heavy_hogman.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 500,
+    "stamina": 60,
+    "str": 28,
+    "vit": 28,
+    "agi": 4,
+    "dex": 6,
+    "def": 24,
+    "int": 0,
+    "end": 20
+  },
+  "combat": {
+    "baseDamage": 52,
+    "armor": 30,
+    "attackSpeed": 2200,
+    "moveSpeed": 1100,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 450,
+    "gold": 205
+  },
+  "respawnTime": 105000,
+  "drops": [
+    {
+      "itemId": "broken_shield",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

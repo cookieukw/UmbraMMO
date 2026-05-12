@@ -1,0 +1,45 @@
+{
+  "id": "pinboy",
+  "name": "Fire Elemental",
+  "level": 15,
+  "biome": "desert",
+  "description": "A live cactus",
+  "sprite": "🌵",
+  "color": "#228B22",
+  "spriteUrl": "assets/sprites/mobs/pinboy.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 190,
+    "stamina": 45,
+    "str": 10,
+    "vit": 14,
+    "agi": 2,
+    "dex": 4,
+    "def": 12,
+    "int": 0,
+    "end": 10
+  },
+  "combat": {
+    "baseDamage": 18,
+    "armor": 14,
+    "attackSpeed": 2200,
+    "moveSpeed": 1500,
+    "aggroRange": 3
+  },
+  "behavior": {
+    "type": "stationary",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 155,
+    "gold": 72
+  },
+  "respawnTime": 80000,
+  "drops": [
+    {
+      "itemId": "flame_sword",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

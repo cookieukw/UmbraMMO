@@ -1,0 +1,120 @@
+{
+  "tree": {
+    "id": "swordsmanship",
+    "name": "Swordsmanship",
+    "icon": "⚔️",
+    "unlockLevel": 1,
+    "description": "Physical damage and offensive combat"
+  },
+  "skills": [
+    {
+      "id": 1,
+      "name": "Strike",
+      "type": "active",
+      "staminaCost": 15,
+      "cooldown": 6000,
+      "initialCooldown": 4000,
+      "maxLevel": 5,
+      "description": "Attack dealing +{value1} damage.",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "bonus_damage"
+    },
+    {
+      "id": 2,
+      "name": "Riposte",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When you dodge, deal {value1}% of enemy's attack back.",
+      "scaling": {
+        "value1": { "base": 40, "perLevel": 20 }
+      },
+      "effect": "riposte"
+    },
+    {
+      "id": 3,
+      "name": "En Garde",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Attacks restore {value1}% stamina.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "stamina_on_attack"
+    },
+    {
+      "id": 4,
+      "name": "Second Wind",
+      "type": "active",
+      "staminaCost": 10,
+      "cooldown": 4000,
+      "initialCooldown": 1000,
+      "maxLevel": 5,
+      "description": "Increase attack speed by {value1}% for the battle.",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "attack_speed_buff",
+      "duration": -1
+    },
+    {
+      "id": 5,
+      "name": "Bloodletting",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Attacks deal extra {value1}% of enemy Max HP as true damage.",
+      "scaling": {
+        "value1": { "base": 0.5, "perLevel": 0.25 }
+      },
+      "effect": "percent_max_hp_damage"
+    },
+    {
+      "id": 6,
+      "name": "Punish",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "{value1}% chance to strike twice.",
+      "scaling": {
+        "value1": { "base": 5, "perLevel": 2.5 }
+      },
+      "effect": "double_strike"
+    },
+    {
+      "id": 7,
+      "name": "Bash",
+      "type": "active",
+      "staminaCost": 20,
+      "cooldown": 15000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Stun opponent for {value1}s. Stunned opponents cannot act but passive skills keep working.",
+      "scaling": {
+        "value1": { "base": 1, "perLevel": 0.5 }
+      },
+      "effect": "stun"
+    },
+    {
+      "id": 8,
+      "name": "Precision",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Critical hits deal {value1}% additional damage.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "crit_damage_bonus"
+    },
+    {
+      "id": 9,
+      "name": "Unbalance",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When enemy dodges/blocks, deal {value1}% of your AGI as damage.",
+      "scaling": {
+        "value1": { "base": 50, "perLevel": 25 }
+      },
+      "effect": "unbalance_damage"
+    }
+  ]
+}

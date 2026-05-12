@@ -1,0 +1,12 @@
+{
+  "id": "skull_shard",
+  "numericId": 3041,
+  "name": "Skull Shard",
+  "type": "material",
+  "rarity": "uncommon",
+  "icon": "💀",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 15,
+  "description": "A fragment of a skeleton's skull. Radiates dark energy."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "clay_mask",
+  "numericId": 112,
+  "name": "Clay Mask",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "uncommon",
+  "icon": "🪖",
+  "description": "A desert mask hardened in the sun.",
+  "stats": {
+    "armor": 7
+  },
+  "levelGuide": 20,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 45
+}

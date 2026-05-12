@@ -1,0 +1,45 @@
+{
+  "id": "big_shield",
+  "name": "Big Shield",
+  "level": 40,
+  "biome": "grasslands",
+  "description": "A warrior with a big shield",
+  "sprite": "🛡️",
+  "color": "#4169E1",
+  "spriteUrl": "assets/sprites/mobs/big_shield.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 820,
+    "stamina": 70,
+    "str": 32,
+    "vit": 40,
+    "agi": 6,
+    "dex": 8,
+    "def": 42,
+    "int": 2,
+    "end": 30
+  },
+  "combat": {
+    "baseDamage": 60,
+    "armor": 50,
+    "attackSpeed": 2200,
+    "moveSpeed": 1000,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 730,
+    "gold": 345
+  },
+  "respawnTime": 115000,
+  "drops": [
+    {
+      "itemId": "tower_shield",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

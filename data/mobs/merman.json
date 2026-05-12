@@ -1,0 +1,46 @@
+{
+  "id": "merman",
+  "name": "Merman",
+  "level": 50,
+  "biome": "beach",
+  "camp": "tritons_camp",
+  "description": "A tired fishman",
+  "sprite": "🧜‍♂️",
+  "color": "#20B2AA",
+  "spriteUrl": "assets/sprites/mobs/merman.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1050,
+    "stamina": 80,
+    "str": 52,
+    "vit": 48,
+    "agi": 16,
+    "dex": 18,
+    "def": 36,
+    "int": 8,
+    "end": 32
+  },
+  "combat": {
+    "baseDamage": 98,
+    "armor": 44,
+    "attackSpeed": 1700,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1060,
+    "gold": 530
+  },
+  "respawnTime": 115000,
+  "drops": [
+    {
+      "itemId": "trident",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

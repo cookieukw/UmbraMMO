@@ -1,0 +1,19 @@
+{
+  "id": "general_store_B3",
+  "name": "Alfred",
+  "icon": "🏪",
+  "sprite": "assets/sprites/shops/general_store_B3.png",
+  "inventory": [
+    { "itemId": "apple", "price": 10 },
+    { "itemId": "hand_axe", "price": 120 },
+    { "itemId": "longsword", "price": 240 },
+    { "itemId": "leather_cap", "price": 25 },
+    { "itemId": "leather_tunic", "price": 40 },
+    { "itemId": "leather_trousers", "price": 30 },
+    { "itemId": "leather_boots", "price": 20 },
+    { "itemId": "guard_helmet", "price": 60 },
+    { "itemId": "guard_mail", "price": 100 },
+    { "itemId": "guard_leggings", "price": 75 },
+    { "itemId": "guard_boots", "price": 50 }
+  ]
+}

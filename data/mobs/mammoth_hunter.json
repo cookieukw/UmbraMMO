@@ -1,0 +1,46 @@
+{
+  "id": "mammoth_hunter",
+  "name": "Mammoth Hunter",
+  "level": 45,
+  "biome": "snow",
+  "camp": "giant_camp",
+  "description": "A giant holding thick spears",
+  "sprite": "🗡️",
+  "color": "#2F4F4F",
+  "spriteUrl": "assets/sprites/mobs/mammoth_hunter.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 920,
+    "stamina": 75,
+    "str": 52,
+    "vit": 44,
+    "agi": 12,
+    "dex": 18,
+    "def": 30,
+    "int": 2,
+    "end": 28
+  },
+  "combat": {
+    "baseDamage": 92,
+    "armor": 38,
+    "attackSpeed": 1800,
+    "moveSpeed": 800,
+    "aggroRange": 6
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 895,
+    "gold": 435
+  },
+  "respawnTime": 115000,
+  "drops": [
+    {
+      "itemId": "mammoth_spear",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

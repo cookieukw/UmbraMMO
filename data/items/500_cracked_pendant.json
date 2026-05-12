@@ -1,0 +1,15 @@
+{
+  "id": "cracked_pendant",
+  "numericId": 500,
+  "name": "Cracked Pendant",
+  "type": "equipment",
+  "slot": "amulet",
+  "rarity": "normal",
+  "icon": "📿",
+  "stats": {
+    "int": 1
+  },
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 5
+}

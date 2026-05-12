@@ -1,0 +1,18 @@
+{
+  "id": "scale_leggings",
+  "numericId": 313,
+  "name": "Scale Leggings",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "rare",
+  "icon": "👖",
+  "description": "Leggings crafted from dragon scales.",
+  "stats": {
+    "armor": 12,
+    "vit": 6
+  },
+  "levelGuide": 60,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 135
+}

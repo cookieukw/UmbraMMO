@@ -1,0 +1,18 @@
+{
+  "id": "wooden_mask",
+  "numericId": 106,
+  "name": "Wooden Mask",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "A carved wooden mask with tribal markings.",
+  "stats": {
+    "armor": 3
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 24,
+  "buyPrice": 60
+}

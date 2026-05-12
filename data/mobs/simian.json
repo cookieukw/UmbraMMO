@@ -1,0 +1,45 @@
+{
+  "id": "simian",
+  "name": "Simian",
+  "level": 5,
+  "biome": "jungle",
+  "description": "A cartoon monkey with a trickster face",
+  "sprite": "🐒",
+  "color": "#CD853F",
+  "spriteUrl": "assets/sprites/mobs/simian.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 55,
+    "stamina": 35,
+    "str": 3,
+    "vit": 3,
+    "agi": 6,
+    "dex": 4,
+    "def": 1,
+    "int": 1,
+    "end": 2
+  },
+  "combat": {
+    "baseDamage": 7,
+    "armor": 2,
+    "attackSpeed": 1300,
+    "moveSpeed": 550,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 35,
+    "gold": 20
+  },
+  "respawnTime": 45000,
+  "drops": [
+    {
+      "itemId": "monkey_feet",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "wooden_boots",
+  "numericId": 406,
+  "name": "Wooden Boots",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Carved wooden boots lined with soft leaves.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 20,
+  "buyPrice": 50
+}

@@ -1,0 +1,54 @@
+{
+  "id": "rat",
+  "name": "Rat",
+  "type": "mob",
+  
+  "_comment_display": "=== DISPLAY ===",
+  "sprite": "🐀",
+  "color": "#8B7355",
+  "spriteUrl": "assets/sprites/mobs/rat.png",
+  
+  "_comment_core": "=== CORE STATS ===",
+  "level": 1,
+  "exp": 0,
+  "gold": 0,
+  
+  "_comment_resources": "=== RESOURCES ===",
+  "hp": 100,
+  "maxHp": 100,
+  "stamina": 15,
+  "maxStamina": 15,
+  
+  "_comment_attributes": "=== ATTRIBUTES (same as player) ===",
+  "str": 1,
+  "vit": 1,
+  "agi": 1,
+  "dex": 1,
+  "def": 1,
+  "int": 1,
+  "end": 1,
+  
+  "_comment_combat": "=== COMBAT (derived from attributes or overridden) ===",
+  "baseDamage": 1,
+  "armor": 0,
+  
+  "_comment_rewards": "=== REWARDS ===",
+  "expReward": 30,
+  "drops": [
+    { "itemId": "rat_tail", "chance": 60, "rarity": "common" },
+    { "itemId": "rat_meat", "chance": 40, "rarity": "common" }
+  ],
+  
+  "_comment_behavior": "=== BEHAVIOR ===",
+  "behavior": "wander",
+  "aggroRange": 3,
+  "leashRange": 8,
+  "moveSpeed": 800,
+  "respawnTime": 30000,
+  
+  "_comment_flags": "=== FLAGS ===",
+  "isBoss": false,
+  "isAggressive": false,
+  "canFlee": true,
+  "fleeHealthPercent": 0.15
+}

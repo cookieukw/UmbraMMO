@@ -1,0 +1,18 @@
+{
+  "id": "clay_shinguards",
+  "numericId": 305,
+  "name": "Clay Shinguards",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "common",
+  "icon": "👖",
+  "description": "Leg protection made from baked clay.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 12,
+  "buyPrice": 30
+}

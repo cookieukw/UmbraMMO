@@ -1,0 +1,19 @@
+{
+  "id": "flame_sword",
+  "numericId": 1009,
+  "name": "Flame Sword",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "rare",
+  "icon": "⚔️",
+  "description": "A blade wreathed in flickering flames.",
+  "stats": {
+    "str": 6,
+    "dex": 3
+  },
+  "levelGuide": 15,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 45
+}

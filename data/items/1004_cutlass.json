@@ -1,0 +1,19 @@
+{
+  "id": "cutlass",
+  "numericId": 1004,
+  "name": "Cutlass",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "common",
+  "icon": "⚔️",
+  "description": "A curved blade favored by sailors.",
+  "stats": {
+    "str": 4
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 48,
+  "buyPrice": 120
+}

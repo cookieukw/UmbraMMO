@@ -1,0 +1,16 @@
+{
+  "id": "scuffed_boots",
+  "numericId": 400,
+  "name": "Scuffed Boots",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "normal",
+  "icon": "👢",
+  "stats": {
+    "agi": 1
+  },
+  "armor": 1,
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 3
+}

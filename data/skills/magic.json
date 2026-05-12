@@ -1,0 +1,119 @@
+{
+  "tree": {
+    "id": "magic",
+    "name": "Magic",
+    "icon": "✨",
+    "unlockLevel": 20,
+    "description": "Magic damage and spell casting"
+  },
+  "skills": [
+    {
+      "id": 37,
+      "name": "Fireball",
+      "type": "active",
+      "staminaCost": 25,
+      "cooldown": 8000,
+      "initialCooldown": 3000,
+      "maxLevel": 5,
+      "description": "Deal {value1}% of INT as damage.",
+      "scaling": {
+        "value1": { "base": 100, "perLevel": 50 }
+      },
+      "effect": "fireball"
+    },
+    {
+      "id": 38,
+      "name": "Meditation",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Recover {value1}% max stamina per second.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "meditation"
+    },
+    {
+      "id": 39,
+      "name": "Time Bend",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Increases enemy's initial cooldowns by {value1}%.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "time_bend"
+    },
+    {
+      "id": 40,
+      "name": "Frozen Bolt",
+      "type": "active",
+      "staminaCost": 16,
+      "cooldown": 10000,
+      "initialCooldown": 4000,
+      "maxLevel": 5,
+      "description": "Reduce enemy attack speed by 50% for {value1}s.",
+      "scaling": {
+        "value1": { "base": 4, "perLevel": 2 }
+      },
+      "effect": "frozen_bolt"
+    },
+    {
+      "id": 41,
+      "name": "Shards",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When using active skill, deal {value1} extra damage.",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "shards"
+    },
+    {
+      "id": 42,
+      "name": "Quick Cast",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When you start battle, the first cast of each skill has {value1}% less cooldown.",
+      "scaling": {
+        "value1": { "base": 30, "perLevel": 15 }
+      },
+      "effect": "quick_cast"
+    },
+    {
+      "id": 43,
+      "name": "Hidden Force",
+      "type": "active",
+      "staminaCost": 27,
+      "cooldown": 20000,
+      "initialCooldown": 0,
+      "maxLevel": 5,
+      "description": "Increase your STR by +{value1}% of your INT until the end of the battle.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "hidden_force"
+    },
+    {
+      "id": 44,
+      "name": "Dispelling",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "When an enemy uses a skill, it loses {value1}% stamina.",
+      "scaling": {
+        "value1": { "base": 6, "perLevel": 3 }
+      },
+      "effect": "dispelling"
+    },
+    {
+      "id": 45,
+      "name": "Chant",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Every 3s gain +{value1}% INT until the end of the battle.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "chant"
+    }
+  ]
+}

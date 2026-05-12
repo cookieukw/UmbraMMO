@@ -1,0 +1,18 @@
+{
+  "id": "beach_sandals",
+  "numericId": 403,
+  "name": "Beach Sandals",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Open sandals for walking on sand.",
+  "stats": {
+    "armor": 1
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 8,
+  "buyPrice": 20
+}

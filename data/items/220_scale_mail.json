@@ -1,0 +1,18 @@
+{
+  "id": "scale_mail",
+  "numericId": 220,
+  "name": "Scale Mail",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "rare",
+  "icon": "🦺",
+  "description": "Armor forged from wyrm scales.",
+  "stats": {
+    "armor": 14,
+    "vit": 10
+  },
+  "levelGuide": 55,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 125
+}

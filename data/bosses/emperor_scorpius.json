@@ -1,0 +1,61 @@
+{
+  "id": "emperor_scorpius",
+  "name": "Emperor Scorpius",
+  "title": "Lord of the Sands",
+  "level": 20,
+  "biome": "desert",
+  "location": "F7",
+  "description": "A colossal scorpion with an armored carapace and deadly venom",
+  "sprite": "🦂",
+  "spriteUrl": "assets/sprites/bosses/emperor_scorpius.png",
+  "color": "#DAA520",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 1800,
+    "stamina": 90,
+    "str": 38,
+    "vit": 34,
+    "agi": 18,
+    "dex": 22,
+    "def": 30,
+    "int": 6,
+    "end": 22
+  },
+  
+  "combat": {
+    "baseDamage": 52,
+    "armor": 35,
+    "attackSpeed": 1500,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "shadow", "skillId": 58, "level": 3 },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 3 },
+      { "treeId": "defense", "skillId": 10, "level": 3 }
+    ],
+    "passive": [
+      { "treeId": "shadow", "skillId": 60, "level": 3 },
+      { "treeId": "defense", "skillId": 17, "level": 3 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile",
+    "pattern": "burrow_strike"
+  },
+  
+  "rewards": {
+    "exp": 2200,
+    "gold": 750
+  },
+  
+  "respawnTime": 540000,
+  
+  "drops": []
+}

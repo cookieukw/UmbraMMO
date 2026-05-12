@@ -1,0 +1,18 @@
+{
+  "id": "bark_armor",
+  "numericId": 210,
+  "name": "Bark Armor",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "uncommon",
+  "icon": "🦺",
+  "description": "Armor crafted from enchanted tree bark.",
+  "stats": {
+    "armor": 3,
+    "vit": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 15
+}

@@ -1,0 +1,14 @@
+{
+  "id": "small_pouch",
+  "numericId": 700,
+  "name": "Small Pouch",
+  "type": "equipment",
+  "slot": "backpack",
+  "rarity": "normal",
+  "icon": "👝",
+  "stats": {},
+  "bonusSlots": 2,
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 10
+}

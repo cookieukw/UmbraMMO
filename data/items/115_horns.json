@@ -1,0 +1,18 @@
+{
+  "id": "horns",
+  "numericId": 115,
+  "name": "Horns",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "rare",
+  "icon": "🪖",
+  "description": "Demonic horns radiating dark power.",
+  "stats": {
+    "armor": 4,
+    "str": 9
+  },
+  "levelGuide": 30,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 75
+}

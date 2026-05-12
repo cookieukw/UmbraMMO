@@ -1,0 +1,96 @@
+﻿{
+    "id":  "D9",
+    "name":  "Suntan Badlands",
+    "coord":  "D9",
+    "biome":  "desert",
+    "level":  30,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "D8",
+                  "east":  "E9",
+                  "south":  "D10"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "suntan",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "suntan",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "suntan",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "suntan",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "suntan",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "suntan",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/D9.jpg"
+}

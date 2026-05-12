@@ -1,0 +1,67 @@
+﻿{
+    "id":  "A8",
+    "name":  "Western Camp",
+    "coord":  "A8",
+    "biome":  "grasslands",
+    "level":  null,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  true,
+    "isCamp":  true,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "B8",
+                  "south":  "A9"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "campfire",
+                        "x":  20,
+                        "y":  15
+                    },
+                    {
+                        "type":  "tent",
+                        "x":  15,
+                        "y":  12
+                    },
+                    {
+                        "type":  "tent",
+                        "x":  25,
+                        "y":  12
+                    }
+                ],
+    "npcs":  [
+                 {
+                     "id":  "camp_merchant",
+                     "x":  18,
+                     "y":  18
+                 }
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/A8.jpg"
+}

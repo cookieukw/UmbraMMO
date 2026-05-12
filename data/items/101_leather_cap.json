@@ -1,0 +1,18 @@
+{
+  "id": "leather_cap",
+  "numericId": 101,
+  "name": "Leather Cap",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "A simple leather cap for new adventurers.",
+  "stats": {
+    "armor": 1
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 10,
+  "buyPrice": 25
+}

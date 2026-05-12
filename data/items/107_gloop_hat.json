@@ -1,0 +1,17 @@
+{
+  "id": "gloop_hat",
+  "numericId": 107,
+  "name": "Gloop Hat",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "A hat made from solidified gloop.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 1,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 2
+}

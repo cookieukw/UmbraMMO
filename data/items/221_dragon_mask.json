@@ -1,0 +1,18 @@
+{
+  "id": "dragon_mask",
+  "numericId": 221,
+  "name": "Dragon Mask",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "rare",
+  "icon": "🪖",
+  "description": "A fearsome mask carved in the likeness of a dragon.",
+  "stats": {
+    "armor": 12,
+    "vit": 8
+  },
+  "levelGuide": 60,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 135
+}

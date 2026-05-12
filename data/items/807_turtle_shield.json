@@ -1,0 +1,19 @@
+{
+  "id": "turtle_shield",
+  "numericId": 807,
+  "name": "Turtle Shield",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "shield",
+  "rarity": "rare",
+  "icon": "🛡️",
+  "description": "A shield carved from a massive turtle shell.",
+  "stats": {
+    "def": 3,
+    "vit": 2
+  },
+  "levelGuide": 1,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 17
+}

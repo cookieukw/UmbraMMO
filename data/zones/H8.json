@@ -1,0 +1,98 @@
+﻿{
+    "id":  "H8",
+    "name":  "Kobold Warrior Camp",
+    "coord":  "H8",
+    "biome":  "desert",
+    "level":  25,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "kobold",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "H7",
+                  "east":  "I8",
+                  "south":  "H9"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "kobold_warrior",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "kobold_warrior",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "kobold_warrior",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "kobold_warrior",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "kobold_warrior",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "kobold_warrior",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/H8.jpg"
+}

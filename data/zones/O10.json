@@ -1,0 +1,86 @@
+﻿{
+    "id":  "O10",
+    "name":  "Big Hat Academy",
+    "coord":  "O10",
+    "biome":  "grasslands",
+    "level":  40,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "south":  "O11"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "big_hat",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "big_hat",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "big_hat",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "big_hat",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "big_hat",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "big_hat",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/O10.jpg"
+}

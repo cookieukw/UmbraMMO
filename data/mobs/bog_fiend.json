@@ -1,0 +1,45 @@
+{
+  "id": "bog_fiend",
+  "name": "Bog Fiend",
+  "level": 20,
+  "biome": "jungle",
+  "description": "A green creature with algae around its body",
+  "sprite": "🧟",
+  "color": "#2E8B2E",
+  "spriteUrl": "assets/sprites/mobs/bog_fiend.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 280,
+    "stamina": 50,
+    "str": 15,
+    "vit": 16,
+    "agi": 6,
+    "dex": 6,
+    "def": 12,
+    "int": 3,
+    "end": 12
+  },
+  "combat": {
+    "baseDamage": 28,
+    "armor": 15,
+    "attackSpeed": 1800,
+    "moveSpeed": 1000,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "territorial",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 220,
+    "gold": 90
+  },
+  "respawnTime": 85000,
+  "drops": [
+    {
+      "itemId": "algae_boots",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

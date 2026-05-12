@@ -1,0 +1,45 @@
+{
+  "id": "zolmec",
+  "name": "Zolmec",
+  "level": 35,
+  "biome": "desert",
+  "description": "A sand statue golem",
+  "sprite": "🗿",
+  "color": "#C2B280",
+  "spriteUrl": "assets/sprites/mobs/zolmec.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 620,
+    "stamina": 65,
+    "str": 34,
+    "vit": 32,
+    "agi": 4,
+    "dex": 6,
+    "def": 30,
+    "int": 2,
+    "end": 24
+  },
+  "combat": {
+    "baseDamage": 62,
+    "armor": 38,
+    "attackSpeed": 2400,
+    "moveSpeed": 1300,
+    "aggroRange": 4
+  },
+  "behavior": {
+    "type": "stationary",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 560,
+    "gold": 260
+  },
+  "respawnTime": 110000,
+  "drops": [
+    {
+      "itemId": "rock_armor",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "dragon",
+  "name": "Dragon",
+  "level": 60,
+  "biome": "snow",
+  "description": "A dragon",
+  "sprite": "🐉",
+  "color": "#8B0000",
+  "spriteUrl": "assets/sprites/mobs/dragon.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1600,
+    "stamina": 90,
+    "str": 72,
+    "vit": 68,
+    "agi": 18,
+    "dex": 20,
+    "def": 52,
+    "int": 24,
+    "end": 46
+  },
+  "combat": {
+    "baseDamage": 140,
+    "armor": 65,
+    "attackSpeed": 1800,
+    "moveSpeed": 700,
+    "aggroRange": 7
+  },
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1600,
+    "gold": 850
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "scale_leggings",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

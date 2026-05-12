@@ -1,0 +1,18 @@
+{
+  "id": "emerald_stone",
+  "numericId": 219,
+  "name": "Emerald Stone",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "relic",
+  "rarity": "rare",
+  "icon": "🔮",
+  "description": "A gem humming with arcane resonance.",
+  "stats": {
+    "int": 16
+  },
+  "levelGuide": 50,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 115
+}

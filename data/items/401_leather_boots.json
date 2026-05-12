@@ -1,0 +1,18 @@
+{
+  "id": "leather_boots",
+  "numericId": 401,
+  "name": "Leather Boots",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Well-worn leather boots.",
+  "stats": {
+    "armor": 1
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 8,
+  "buyPrice": 20
+}

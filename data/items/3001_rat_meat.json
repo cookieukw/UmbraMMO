@@ -1,0 +1,12 @@
+{
+  "id": "rat_meat",
+  "numericId": 3001,
+  "name": "Rat Meat",
+  "type": "material",
+  "rarity": "normal",
+  "icon": "🍖",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 3,
+  "description": "Raw meat from a rat. Questionable quality."
+}

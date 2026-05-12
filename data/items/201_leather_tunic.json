@@ -1,0 +1,18 @@
+{
+  "id": "leather_tunic",
+  "numericId": 201,
+  "name": "Leather Tunic",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "A basic leather tunic offering minimal protection.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 16,
+  "buyPrice": 40
+}

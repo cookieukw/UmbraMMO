@@ -1,0 +1,91 @@
+﻿{
+    "id":  "J12",
+    "name":  "Sea Grazer Shore",
+    "coord":  "J12",
+    "biome":  "beach",
+    "level":  1,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "J11",
+                  "west":  "I12"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "sea_grazer",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "sea_grazer",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "sea_grazer",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "sea_grazer",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "sea_grazer",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "sea_grazer",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/J12.jpg"
+}

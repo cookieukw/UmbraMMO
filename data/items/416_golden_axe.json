@@ -1,0 +1,18 @@
+{
+  "id": "golden_axe",
+  "numericId": 416,
+  "name": "Golden Axe",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "rare",
+  "icon": "🪓",
+  "description": "An axe forged from enchanted gold. Impossibly sharp.",
+  "stats": {
+    "str": 22
+  },
+  "levelGuide": 60,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 135
+}

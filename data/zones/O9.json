@@ -1,0 +1,86 @@
+﻿{
+    "id":  "O9",
+    "name":  "Dung Roller Plains",
+    "coord":  "O9",
+    "biome":  "grasslands",
+    "level":  30,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "O8"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "dung_roller",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "dung_roller",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "dung_roller",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "dung_roller",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "dung_roller",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "dung_roller",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/O9.jpg"
+}

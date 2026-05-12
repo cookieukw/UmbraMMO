@@ -1,0 +1,12 @@
+{
+  "id": "wolf_pelt",
+  "numericId": 3030,
+  "name": "Wolf Pelt",
+  "type": "material",
+  "rarity": "normal",
+  "icon": "🐺",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 8,
+  "description": "Thick fur from a wolf. Used for crafting."
+}

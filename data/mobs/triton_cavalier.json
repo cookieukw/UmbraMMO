@@ -1,0 +1,46 @@
+{
+  "id": "triton_cavalier",
+  "name": "Triton Cavalier",
+  "level": 60,
+  "biome": "beach",
+  "camp": "tritons_camp",
+  "description": "An armored triton",
+  "sprite": "🔱",
+  "color": "#4682B4",
+  "spriteUrl": "assets/sprites/mobs/triton_cavalier.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 1480,
+    "stamina": 90,
+    "str": 68,
+    "vit": 62,
+    "agi": 20,
+    "dex": 22,
+    "def": 50,
+    "int": 12,
+    "end": 44
+  },
+  "combat": {
+    "baseDamage": 138,
+    "armor": 62,
+    "attackSpeed": 1600,
+    "moveSpeed": 650,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 1600,
+    "gold": 870
+  },
+  "respawnTime": 120000,
+  "drops": [
+    {
+      "itemId": "sea_lance",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

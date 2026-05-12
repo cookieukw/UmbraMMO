@@ -1,0 +1,96 @@
+﻿{
+    "id":  "P11",
+    "name":  "Prototype Factory",
+    "coord":  "P11",
+    "biome":  "grasslands",
+    "level":  45,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "Q11",
+                  "south":  "P12",
+                  "west":  "O11"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 },
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "prototype",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "prototype",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "prototype",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "prototype",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "prototype",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "prototype",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/P11.jpg"
+}

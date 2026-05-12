@@ -1,0 +1,18 @@
+{
+  "id": "magic_mane",
+  "numericId": 1014,
+  "name": "Magic Mane",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "rare",
+  "icon": "🪖",
+  "description": "An enchanted mane radiating protective magic.",
+  "stats": {
+    "armor": 12,
+    "def": 8
+  },
+  "levelGuide": 50,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 115
+}

@@ -1,0 +1,62 @@
+{
+  "id": "turs_anvil",
+  "name": "Tur's Anvil",
+  "title": "The Living Forge",
+  "level": 45,
+  "biome": "beach",
+  "location": "A12",
+  "camp": "sea_raiders_camp",
+  "description": "A massive automaton smith that forges weapons for the raiders",
+  "sprite": "⚒️",
+  "spriteUrl": "assets/sprites/bosses/turs_anvil.png",
+  "color": "#B87333",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 7200,
+    "stamina": 120,
+    "str": 92,
+    "vit": 88,
+    "agi": 12,
+    "dex": 18,
+    "def": 72,
+    "int": 8,
+    "end": 58
+  },
+  
+  "combat": {
+    "baseDamage": 145,
+    "armor": 85,
+    "attackSpeed": 2200,
+    "moveSpeed": 1100,
+    "aggroRange": 4
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "defense", "skillId": 16, "level": 4 },
+      { "treeId": "defense", "skillId": 13, "level": 4 },
+      { "treeId": "swordsmanship", "skillId": 7, "level": 4 }
+    ],
+    "passive": [
+      { "treeId": "defense", "skillId": 12, "level": 4 },
+      { "treeId": "defense", "skillId": 17, "level": 4 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "slow",
+    "aggressiveness": "hostile",
+    "pattern": "forge_slam"
+  },
+  
+  "rewards": {
+    "exp": 8800,
+    "gold": 3500
+  },
+  
+  "respawnTime": 720000,
+  
+  "drops": []
+}

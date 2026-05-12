@@ -1,0 +1,91 @@
+﻿{
+    "id":  "R8",
+    "name":  "Bog Fiend Swamp",
+    "coord":  "R8",
+    "biome":  "jungle",
+    "level":  20,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "south":  "R9",
+                  "west":  "Q8"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "bog_fiend",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "bog_fiend",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "bog_fiend",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "bog_fiend",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "bog_fiend",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "bog_fiend",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/R8.jpg"
+}

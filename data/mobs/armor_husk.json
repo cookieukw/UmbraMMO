@@ -1,0 +1,45 @@
+{
+  "id": "armor_husk",
+  "name": "Gargoyle",
+  "level": 35,
+  "biome": "grasslands",
+  "description": "An armor without a head",
+  "sprite": "🛡️",
+  "spriteUrl": "assets/sprites/mobs/armor_husk.png",
+  "color": "#4682B4",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 580,
+    "stamina": 65,
+    "str": 30,
+    "vit": 28,
+    "agi": 10,
+    "dex": 10,
+    "def": 32,
+    "int": 0,
+    "end": 22
+  },
+  "combat": {
+    "baseDamage": 58,
+    "armor": 40,
+    "attackSpeed": 1700,
+    "moveSpeed": 800,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 545,
+    "gold": 250
+  },
+  "respawnTime": 105000,
+  "drops": [
+    {
+      "itemId": "plate_mail",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

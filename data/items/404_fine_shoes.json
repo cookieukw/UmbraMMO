@@ -1,0 +1,18 @@
+{
+  "id": "fine_shoes",
+  "numericId": 404,
+  "name": "Fine Shoes",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "common",
+  "icon": "👢",
+  "description": "Well-crafted shoes with good grip.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 20,
+  "buyPrice": 50
+}

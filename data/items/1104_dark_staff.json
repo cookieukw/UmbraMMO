@@ -1,0 +1,18 @@
+{
+  "id": "dark_staff",
+  "numericId": 1104,
+  "name": "Dark Staff",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "2h",
+  "rarity": "uncommon",
+  "icon": "🪄",
+  "description": "A staff pulsing with dark magical energy.",
+  "stats": {
+    "int": 24
+  },
+  "levelGuide": 40,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 85
+}

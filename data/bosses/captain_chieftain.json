@@ -1,0 +1,63 @@
+{
+  "id": "captain_chieftain",
+  "name": "Admiral Ulfric",
+  "title": "Scourge of the Seas",
+  "level": 45,
+  "biome": "beach",
+  "location": "B11",
+  "camp": "sea_raiders_camp",
+  "description": "A red viking-like creature with a full plate dark armor",
+  "sprite": "☠️",
+  "spriteUrl": "assets/sprites/bosses/admiral_ulfric.png",
+  "color": "#8B0000",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 6500,
+    "stamina": 120,
+    "str": 86,
+    "vit": 78,
+    "agi": 32,
+    "dex": 36,
+    "def": 58,
+    "int": 14,
+    "end": 48
+  },
+  
+  "combat": {
+    "baseDamage": 135,
+    "armor": 68,
+    "attackSpeed": 1400,
+    "moveSpeed": 600,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 4 },
+      { "treeId": "roguery", "skillId": 31, "level": 4 },
+      { "treeId": "roguery", "skillId": 28, "level": 4 }
+    ],
+    "passive": [
+      { "treeId": "swordsmanship", "skillId": 6, "level": 4 },
+      { "treeId": "roguery", "skillId": 33, "level": 4 },
+      { "treeId": "roguery", "skillId": 35, "level": 4 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "tactical",
+    "aggressiveness": "hostile",
+    "pattern": "pirate_captain"
+  },
+  
+  "rewards": {
+    "exp": 8500,
+    "gold": 3200
+  },
+  
+  "respawnTime": 720000,
+  
+  "drops": []
+}

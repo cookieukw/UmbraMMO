@@ -1,0 +1,19 @@
+{
+  "id": "kobold_blade",
+  "numericId": 1010,
+  "name": "Kobold Blade",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "uncommon",
+  "icon": "🗡️",
+  "description": "A jagged blade forged in kobold mines.",
+  "stats": {
+    "str": 8,
+    "end": 5
+  },
+  "levelGuide": 25,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 55
+}

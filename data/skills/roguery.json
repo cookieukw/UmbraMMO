@@ -1,0 +1,117 @@
+{
+  "tree": {
+    "id": "roguery",
+    "name": "Roguery",
+    "icon": "🏹",
+    "unlockLevel": 10,
+    "description": "Speed, precision, and critical hits"
+  },
+  "skills": [
+    {
+      "id": 28,
+      "name": "Analyze",
+      "type": "active",
+      "staminaCost": 20,
+      "cooldown": 8000,
+      "initialCooldown": 3000,
+      "maxLevel": 5,
+      "description": "Next attack is a guaranteed crit with +{value1}% bonus damage.",
+      "scaling": {
+        "value1": { "base": 30, "perLevel": 15 }
+      },
+      "effect": "analyze"
+    },
+    {
+      "id": 29,
+      "name": "Counter-Attack",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "After dodging, next attack deals +{value1}% damage (stacks).",
+      "scaling": {
+        "value1": { "base": 5, "perLevel": 2.5 }
+      },
+      "effect": "counter_attack"
+    },
+    {
+      "id": 30,
+      "name": "Light Feet",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Auto-dodge all basic attacks for the first {value1}s of battle.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "light_feet"
+    },
+    {
+      "id": 31,
+      "name": "Multi-Strike",
+      "type": "active",
+      "staminaCost": 30,
+      "cooldown": 12000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Next attack hits {value1} extra times.",
+      "scaling": {
+        "value1": { "base": 2, "perLevel": 1 }
+      },
+      "effect": "multi_strike"
+    },
+    {
+      "id": 32,
+      "name": "Poisonous Blade",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "{value1}% chance to apply +1 Poison on hit. Poison deals stack damage per second.",
+      "scaling": {
+        "value1": { "base": 10, "perLevel": 5 }
+      },
+      "effect": "poisonous_blade"
+    },
+    {
+      "id": 33,
+      "name": "Grand Opening",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "First successful attack deals +{value1}% damage.",
+      "scaling": {
+        "value1": { "base": 100, "perLevel": 50 }
+      },
+      "effect": "grand_opening"
+    },
+    {
+      "id": 34,
+      "name": "Cleanse",
+      "type": "active",
+      "staminaCost": 17,
+      "cooldown": 15000,
+      "initialCooldown": 5000,
+      "maxLevel": 5,
+      "description": "Remove all negative effects from yourself.",
+      "scaling": {},
+      "effect": "cleanse"
+    },
+    {
+      "id": 35,
+      "name": "Battle Rhythm",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Skills cost {value1}% less stamina.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "battle_rhythm"
+    },
+    {
+      "id": 36,
+      "name": "Shuriken",
+      "type": "passive",
+      "maxLevel": 5,
+      "description": "Every 3s deal {value1}% of DEX as damage.",
+      "scaling": {
+        "value1": { "base": 20, "perLevel": 10 }
+      },
+      "effect": "shuriken"
+    }
+  ]
+}

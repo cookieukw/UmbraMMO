@@ -1,0 +1,62 @@
+{
+  "id": "crystal_golem",
+  "name": "Crystal Golem",
+  "title": "The Living Prism",
+  "level": 50,
+  "biome": "cave",
+  "location": "N4",
+  "description": "A massive construct made of living crystals that refracts light into deadly beams",
+  "sprite": "💎",
+  "spriteUrl": "assets/sprites/bosses/crystal_golem.png",
+  "color": "#E0FFFF",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 9500,
+    "stamina": 130,
+    "str": 88,
+    "vit": 96,
+    "agi": 14,
+    "dex": 22,
+    "def": 92,
+    "int": 48,
+    "end": 62
+  },
+  
+  "combat": {
+    "baseDamage": 165,
+    "armor": 105,
+    "attackSpeed": 2400,
+    "moveSpeed": 1200,
+    "aggroRange": 5
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "defense", "skillId": 13, "level": 5, "_name": "Shield Wall" },
+      { "treeId": "magic", "skillId": 37, "level": 5, "_name": "Fireball (crystal beam)" },
+      { "treeId": "defense", "skillId": 10, "level": 5, "_name": "Reflect" }
+    ],
+    "passive": [
+      { "treeId": "defense", "skillId": 12, "level": 5, "_name": "Sturdiness" },
+      { "treeId": "defense", "skillId": 17, "level": 5, "_name": "Spikes" },
+      { "treeId": "vitality", "skillId": 20, "level": 5, "_name": "Regeneration" }
+    ]
+  },
+  
+  "behavior": {
+    "type": "defensive",
+    "aggressiveness": "hostile",
+    "pattern": "crystal_defense"
+  },
+  
+  "rewards": {
+    "exp": 12000,
+    "gold": 4500
+  },
+  
+  "respawnTime": 900000,
+  
+  "drops": []
+}

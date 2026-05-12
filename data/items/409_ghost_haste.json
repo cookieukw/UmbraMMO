@@ -1,0 +1,18 @@
+{
+  "id": "ghost_haste",
+  "numericId": 409,
+  "name": "Ghost Haste",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "uncommon",
+  "icon": "👢",
+  "description": "Ethereal boots that make you lighter on your feet.",
+  "stats": {
+    "armor": 2,
+    "agi": 4
+  },
+  "levelGuide": 15,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 35
+}

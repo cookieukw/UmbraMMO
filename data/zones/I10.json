@@ -1,0 +1,91 @@
+﻿{
+    "id":  "I10",
+    "name":  "Gruff Pastures",
+    "coord":  "I10",
+    "biome":  "grasslands",
+    "level":  5,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "south":  "I11",
+                  "west":  "H10"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "gruff",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "gruff",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "gruff",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "gruff",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "gruff",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "gruff",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/I10.jpg"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "worn_sword",
+  "numericId": 1000,
+  "name": "Worn Sword",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "normal",
+  "icon": "🗡️",
+  "stats": {
+    "str": 1
+  },
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 5
+}

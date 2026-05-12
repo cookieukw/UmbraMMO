@@ -1,0 +1,18 @@
+{
+  "id": "archmage_hat",
+  "numericId": 118,
+  "name": "Archmage Hat",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "A tall pointed hat worn by powerful mages.",
+  "stats": {
+    "armor": 6,
+    "int": 12
+  },
+  "levelGuide": 40,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 80
+}

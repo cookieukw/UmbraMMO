@@ -1,0 +1,58 @@
+﻿{
+    "id":  "A12",
+    "name":  "Tur\u0027s Anvil Shore",
+    "coord":  "A12",
+    "biome":  "beach",
+    "level":  45,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "sea_raiders",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "A11"
+              },
+    "entryPoints":  {
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "turs_anvil",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "anvil",
+                        "x":  18,
+                        "y":  22
+                    },
+                    {
+                        "type":  "forge",
+                        "x":  22,
+                        "y":  22
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/A12.jpg"
+}

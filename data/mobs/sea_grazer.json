@@ -1,0 +1,45 @@
+{
+  "id": "sea_grazer",
+  "name": "Sea Grazer",
+  "level": 1,
+  "biome": "beach",
+  "description": "A land turtle",
+  "sprite": "🐢",
+  "color": "#228B22",
+  "spriteUrl": "assets/sprites/mobs/sea_grazer.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 35,
+    "stamina": 30,
+    "str": 1,
+    "vit": 3,
+    "agi": 0,
+    "dex": 0,
+    "def": 3,
+    "int": 0,
+    "end": 0
+  },
+  "combat": {
+    "baseDamage": 2,
+    "armor": 4,
+    "attackSpeed": 3000,
+    "moveSpeed": 2000,
+    "aggroRange": 1
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "passive"
+  },
+  "rewards": {
+    "exp": 12,
+    "gold": 6
+  },
+  "respawnTime": 35000,
+  "drops": [
+    {
+      "itemId": "turtle_shield",
+      "chance": 1,
+      "rarity": "rare"
+    }
+  ]
+}

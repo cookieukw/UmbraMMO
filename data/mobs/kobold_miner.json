@@ -1,0 +1,46 @@
+{
+  "id": "kobold_miner",
+  "name": "Kobold",
+  "level": 20,
+  "biome": "desert",
+  "camp": "kobold_camp",
+  "description": "A kobold with mining tools",
+  "sprite": "⛏️",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/kobold_miner.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 240,
+    "stamina": 50,
+    "str": 14,
+    "vit": 12,
+    "agi": 10,
+    "dex": 12,
+    "def": 10,
+    "int": 2,
+    "end": 10
+  },
+  "combat": {
+    "baseDamage": 28,
+    "armor": 13,
+    "attackSpeed": 1500,
+    "moveSpeed": 800,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 200,
+    "gold": 105
+  },
+  "respawnTime": 75000,
+  "drops": [
+    {
+      "itemId": "kobold_leather",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

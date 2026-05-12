@@ -1,0 +1,16 @@
+{
+  "id": "apple",
+  "numericId": 2000,
+  "name": "Apple",
+  "type": "food",
+  "rarity": "normal",
+  "icon": "🍎",
+  "useEffect": {
+    "type": "heal",
+    "value": 15
+  },
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 2,
+  "buyPrice": 10
+}

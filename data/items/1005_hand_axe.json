@@ -1,0 +1,19 @@
+{
+  "id": "hand_axe",
+  "numericId": 1005,
+  "name": "Hand Axe",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "common",
+  "icon": "🪓",
+  "description": "A small but sharp hand axe.",
+  "stats": {
+    "str": 4
+  },
+  "levelGuide": 10,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 48,
+  "buyPrice": 120
+}

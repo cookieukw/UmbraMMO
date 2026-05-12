@@ -1,0 +1,18 @@
+{
+  "id": "cotton_shirt",
+  "numericId": 203,
+  "name": "Cotton Shirt",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "A light cotton shirt for warm climates.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 16,
+  "buyPrice": 40
+}

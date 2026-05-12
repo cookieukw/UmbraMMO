@@ -1,0 +1,91 @@
+﻿{
+    "id":  "P6",
+    "name":  "Kapokoka Grove",
+    "coord":  "P6",
+    "biome":  "jungle",
+    "level":  10,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "P5",
+                  "south":  "P7"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "kapokoka",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "kapokoka",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "kapokoka",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "kapokoka",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "kapokoka",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "kapokoka",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/P6.jpg"
+}

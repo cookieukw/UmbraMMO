@@ -1,0 +1,58 @@
+{
+  "id": "evil_bird",
+  "name": "Evil Bird",
+  "title": "Terror of the Skies",
+  "level": 1,
+  "biome": "grasslands",
+  "location": "A2",
+  "description": "A menacing dark bird that terrorizes newcomers",
+  "sprite": "🦅",
+  "spriteUrl": "assets/sprites/bosses/evil_bird.png",
+  "color": "#2F2F2F",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 4 pts/level, 7% exponential growth",
+  
+  "baseStats": {
+    "hp": 150,
+    "stamina": 50,
+    "str": 4,
+    "vit": 3,
+    "agi": 5,
+    "dex": 4,
+    "def": 2,
+    "int": 1,
+    "end": 3
+  },
+  
+  "combat": {
+    "baseDamage": 8,
+    "armor": 3,
+    "attackSpeed": 1400,
+    "moveSpeed": 500,
+    "aggroRange": 6
+  },
+  
+  "skills": {
+    "active": [
+      { "treeId": "swordsmanship", "skillId": 1, "level": 1 }
+    ],
+    "passive": [
+      { "treeId": "roguery", "skillId": 30, "level": 1 }
+    ]
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile",
+    "pattern": "dive_attack"
+  },
+  
+  "rewards": {
+    "exp": 150,
+    "gold": 50
+  },
+  
+  "respawnTime": 300000,
+  
+  "drops": []
+}

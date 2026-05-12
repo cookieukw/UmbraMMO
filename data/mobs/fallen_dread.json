@@ -1,0 +1,46 @@
+{
+  "id": "fallen_dread",
+  "name": "Fallen Dread",
+  "level": 35,
+  "biome": "grasslands",
+  "description": "A zombie like creature with axes in the place of hands",
+  "sprite": "🪓",
+  "color": "#2F4F4F",
+  "spriteUrl": "assets/sprites/mobs/fallen_dread.png",
+  
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  
+  "baseStats": {
+    "hp": 540,
+    "stamina": 65,
+    "str": 36,
+    "vit": 24,
+    "agi": 14,
+    "dex": 14,
+    "def": 18,
+    "int": 2,
+    "end": 18
+  },
+  
+  "combat": {
+    "baseDamage": 65,
+    "armor": 24,
+    "attackSpeed": 1400,
+    "moveSpeed": 650,
+    "aggroRange": 5
+  },
+  
+  "behavior": {
+    "type": "aggressive",
+    "aggressiveness": "hostile"
+  },
+  
+  "rewards": {
+    "exp": 555,
+    "gold": 255
+  },
+  
+  "respawnTime": 105000,
+  
+  "drops": []
+}

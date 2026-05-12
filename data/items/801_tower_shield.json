@@ -1,0 +1,18 @@
+{
+  "id": "tower_shield",
+  "numericId": 801,
+  "name": "Tower Shield",
+  "type": "equipment",
+  "slot": "weapon2",
+  "subtype": "shield",
+  "rarity": "common",
+  "icon": "🛡️",
+  "description": "A massive shield that covers the entire body.",
+  "stats": {
+    "def": 14
+  },
+  "levelGuide": 40,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 80
+}

@@ -1,0 +1,15 @@
+{
+  "id": "golden_backpack",
+  "numericId": 701,
+  "name": "Golden Backpack",
+  "type": "equipment",
+  "slot": "backpack",
+  "rarity": "rare",
+  "icon": "🎒",
+  "description": "A spacious backpack crafted from sturdy leather. Greatly expands your carrying capacity.",
+  "stats": {},
+  "bonusSlots": 24,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 500
+}

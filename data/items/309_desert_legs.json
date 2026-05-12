@@ -1,0 +1,17 @@
+{
+  "id": "desert_legs",
+  "numericId": 309,
+  "name": "Desert Legs",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "common",
+  "icon": "👖",
+  "description": "Leg armor adapted for desert travel.",
+  "stats": {
+    "armor": 7
+  },
+  "levelGuide": 25,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 50
+}

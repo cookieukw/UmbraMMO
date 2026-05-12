@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umbra Online</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="auth-screen">
+    <div class="auth-box">
+      <h1>Umbra Online</h1>
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  
+  <!-- Login Screen -->
+  <div id="login-screen" class="auth-screen hidden">
+    <div class="auth-box">
+      <h1>Umbra Online</h1>
+      <form id="login-form" onsubmit="event.preventDefault(); Auth.handleLogin(
+        document.getElementById('login-username').value,
+        document.getElementById('login-password').value
+      );">
+        <div class="form-group">
+          <label for="login-username">Username or Email</label>
+          <input type="text" id="login-username" required autocomplete="username" placeholder="Enter your username or email">
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required autocomplete="current-password" placeholder="Enter your password">
+        </div>
+        <div id="login-error" class="error-message hidden"></div>
+        <div id="login-message" class="success-message hidden"></div>
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <p class="auth-link">Don't have an account? <a href="#" onclick="Auth.showScreen('register'); return false;">Register</a></p>
+    </div>
+  </div>
+  
+  <!-- Register Screen -->
+  <div id="register-screen" class="auth-screen hidden">
+    <div class="auth-box">
+      <h1>Create Account</h1>
+      <form id="register-form" onsubmit="event.preventDefault(); Auth.handleRegister(
+        document.getElementById('register-username').value,
+        document.getElementById('register-email').value,
+        document.getElementById('register-password').value,
+        document.getElementById('register-confirm').value
+      );">
+        <div class="form-group">
+          <label for="register-username">Username</label>
+          <input type="text" id="register-username" required minlength="3" maxlength="20" autocomplete="username" placeholder="3-20 characters, letters and numbers">
+        </div>
+        <div class="form-group">
+          <label for="register-email">Email</label>
+          <input type="email" id="register-email" required autocomplete="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input type="password" id="register-password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+        </div>
+        <div class="form-group">
+          <label for="register-confirm">Confirm Password</label>
+          <input type="password" id="register-confirm" required autocomplete="new-password" placeholder="Repeat your password">
+        </div>
+        <div id="register-error" class="error-message hidden"></div>
+        <button type="submit" class="btn-primary">Create Account</button>
+      </form>
+      <p class="auth-link">Already have an account? <a href="#" onclick="Auth.showScreen('login'); return false;">Login</a></p>
+    </div>
+  </div>
+  
+  <!-- Character Creation Screen -->
+  <div id="character-create-screen" class="auth-screen hidden">
+    <div class="auth-box">
+      <h1>Create Character</h1>
+      <p class="char-create-intro">Welcome, adventurer! Choose a name for your character.</p>
+      <form id="character-form" onsubmit="event.preventDefault(); Auth.handleCreateCharacter(
+        document.getElementById('char-name-input').value
+      );">
+        <div class="form-group">
+          <label for="char-name-input">Character Name</label>
+          <input type="text" id="char-name-input" required minlength="2" maxlength="16" pattern="[a-zA-Z]+" 
+                 placeholder="Letters only, 2-16 characters">
+        </div>
+        <div id="character-create-error" class="error-message hidden"></div>
+        <button type="submit" class="btn-primary">Enter the World</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- ========================================
+       MAIN GAME HUD (Tibia-style layout)
+       ======================================== -->
+  <div id="game-container" class="hidden">
+    <!-- Main Game Area -->
+    <div id="game-main-area">
+      <!-- Left Side: Game Viewport -->
+      <div id="game-viewport-container">
+        <!-- Game Canvas (sprites, tiles — pixelated) -->
+        <canvas id="game-canvas"></canvas>
+        <!-- Text Overlay Canvas (names, labels — crisp) -->
+        <canvas id="text-overlay-canvas"></canvas>
+        
+        <!-- Connection Status Indicator -->
+        <div id="connection-status" title="Connecting..."></div>
+      </div>
+      
+      <!-- Right Side: UI Panels -->
+      <div id="sidebar-container">
+        <!-- Fixed Character Panel (cannot be hidden) -->
+        <div class="fixed-panel" id="character-panel">
+          <div class="char-header">
+            <span id="ui-char-name">Player</span>
+            <span id="ui-char-level">Level 1</span>
+          </div>
+          
+          <!-- Status Bars (HP, Stamina, EXP) - Drop zone for consumables -->
+          <div class="status-bars" id="status-bars">
+            <!-- HP Bar -->
+            <div class="char-hp-bar">
+              <div class="bar-fill" id="hp-bar-fill"></div>
+              <span class="bar-text" id="hp-bar-text">50/50</span>
+            </div>
+            
+            <!-- Stamina Bar -->
+            <div class="char-stamina-bar">
+              <div class="bar-fill" id="stamina-bar-fill"></div>
+              <span class="bar-text" id="stamina-bar-text">50/50</span>
+            </div>
+            
+            <!-- EXP Bar -->
+            <div class="char-exp-bar">
+              <div class="bar-fill exp-fill" id="exp-bar-fill"></div>
+              <span class="bar-text" id="exp-text">0%</span>
+            </div>
+          </div>
+          
+          <!-- Equipment Grid (2 rows of 5) -->
+          <div class="equipment-grid">
+            <!-- Row 1: headgear, chest, main-hand, pants, boots -->
+            <div class="equip-slot" id="slot-headgear" data-slot="headgear" title="Headgear">
+              <span class="slot-icon">🪖</span>
+            </div>
+            <div class="equip-slot" id="slot-chest" data-slot="chest" title="Chest">
+              <span class="slot-icon">🎽</span>
+            </div>
+            <div class="equip-slot" id="slot-weapon1" data-slot="weapon1" title="Main Hand">
+              <span class="slot-icon">⚔️</span>
+            </div>
+            <div class="equip-slot" id="slot-pants" data-slot="pants" title="Pants">
+              <span class="slot-icon">👖</span>
+            </div>
+            <div class="equip-slot" id="slot-boots" data-slot="boots" title="Boots">
+              <span class="slot-icon">👢</span>
+            </div>
+            <!-- Row 2: amulet, backpack, off-hand, ring1, ring2 -->
+            <div class="equip-slot" id="slot-amulet" data-slot="amulet" title="Amulet">
+              <span class="slot-icon">📿</span>
+            </div>
+            <div class="equip-slot" id="slot-backpack" data-slot="backpack" title="Backpack">
+              <span class="slot-icon">🎒</span>
+            </div>
+            <div class="equip-slot" id="slot-weapon2" data-slot="weapon2" title="Off-Hand">
+              <span class="slot-icon">🛡️</span>
+            </div>
+            <div class="equip-slot" id="slot-ring1" data-slot="ring1" title="Ring 1">
+              <span class="slot-icon">💍</span>
+            </div>
+            <div class="equip-slot" id="slot-ring2" data-slot="ring2" title="Ring 2">
+              <span class="slot-icon">💍</span>
+            </div>
+          </div>
+          
+          <!-- Active Skill Slots (5 slots) -->
+          <div class="skill-slots-bar">
+            <div class="skill-slot" id="skill-slot-1" data-slot="1" title="Skill Slot 1">
+              <span class="slot-number">1</span>
+            </div>
+            <div class="skill-slot" id="skill-slot-2" data-slot="2" title="Skill Slot 2">
+              <span class="slot-number">2</span>
+            </div>
+            <div class="skill-slot" id="skill-slot-3" data-slot="3" title="Skill Slot 3">
+              <span class="slot-number">3</span>
+            </div>
+            <div class="skill-slot" id="skill-slot-4" data-slot="4" title="Skill Slot 4">
+              <span class="slot-number">4</span>
+            </div>
+            <div class="skill-slot" id="skill-slot-5" data-slot="5" title="Skill Slot 5">
+              <span class="slot-number">5</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Character Stats Panel -->
+        <div class="ui-panel collapsed" id="stats-panel">
+          <div class="panel-header" onclick="GameUI.togglePanel('stats')">
+            <span class="panel-title">📊 Stats</span>
+            <div class="panel-header-right">
+              <span class="panel-notification hidden" id="stats-notification">0</span>
+              <span class="panel-toggle">▶</span>
+            </div>
+          </div>
+          <div class="panel-content">
+            <div class="stats-columns">
+              <!-- Stats Column -->
+              <div class="stats-column">
+                <div class="stat-row">
+                  <div class="stat-item" data-tooltip="stat" data-stat="str">
+                    <span class="stat-icon">💪</span>
+                    <span class="stat-name">STR</span>
+                    <span class="stat-value" id="stat-str">1</span>
+                    <button class="stat-upgrade-btn hidden" data-stat="str" onclick="event.stopPropagation(); GameUI.upgradeStat('str')">+</button>
+                  </div>
+                  <div class="stat-item derived">
+                    <span class="stat-name">Atk Dmg</span>
+                    <span class="stat-value" id="derived-attackdmg">1</span>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-item" data-tooltip="stat" data-stat="agi">
+                    <span class="stat-icon">🏃</span>
+                    <span class="stat-name">AGI</span>
+                    <span class="stat-value" id="stat-agi">1</span>
+                    <button class="stat-upgrade-btn hidden" data-stat="agi" onclick="event.stopPropagation(); GameUI.upgradeStat('agi')">+</button>
+                  </div>
+                  <div class="stat-item derived">
+                    <span class="stat-name">Atk Spd</span>
+                    <span class="stat-value" id="derived-attackspd">1.82s</span>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-item" data-tooltip="stat" data-stat="dex">
+                    <span class="stat-icon">🎯</span>
+                    <span class="stat-name">DEX</span>
+                    <span class="stat-value" id="stat-dex">1</span>
+                    <button class="stat-upgrade-btn hidden" data-stat="dex" onclick="event.stopPropagation(); GameUI.upgradeStat('dex')">+</button>
+                  </div>
+                  <div class="stat-item derived split-stat">
+                    <span class="stat-half">Crit <span id="derived-crit">0%</span></span>
+                    <span class="stat-divider">|</span>
+                    <span class="stat-half">Dodg <span id="derived-dodge">0%</span></span>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-item" data-tooltip="stat" data-stat="vit">
+                    <span class="stat-icon">❤️</span>
+                    <span class="stat-name">VIT</span>
+                    <span class="stat-value" id="stat-vit">1</span>
+                    <button class="stat-upgrade-btn hidden" data-stat="vit" onclick="event.stopPropagation(); GameUI.upgradeStat('vit')">+</button>
+                  </div>
+                  <div class="stat-item derived">
+                    <span class="stat-name">Max HP</span>
+                    <span class="stat-value" id="derived-maxhp">50</span>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-item" data-tooltip="stat" data-stat="end">
+                    <span class="stat-icon">⚡</span>
+                    <span class="stat-name">END</span>
+                    <span class="stat-value" id="stat-end">1</span>
+                    <button class="stat-upgrade-btn hidden" data-stat="end" onclick="event.stopPropagation(); GameUI.upgradeStat('end')">+</button>
+                  </div>
+                  <div class="stat-item derived">
+                    <span class="stat-name">Max Stam</span>
+                    <span class="stat-value" id="derived-maxstamina">50</span>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-item" data-tooltip="stat" data-stat="int">
+                    <span class="stat-icon">🔮</span>
+                    <span class="stat-name">INT</span>
+                    <span class="stat-value" id="stat-int">1</span>
+                    <button class="stat-upgrade-btn hidden" data-stat="int" onclick="event.stopPropagation(); GameUI.upgradeStat('int')">+</button>
+                  </div>
+                  <div class="stat-item derived split-stat">
+                    <span class="stat-half">Mag <span id="derived-mag">1</span></span>
+                    <span class="stat-divider">|</span>
+                    <span class="stat-half">CDR <span id="derived-cdr">0%</span></span>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-item" data-tooltip="stat" data-stat="def">
+                    <span class="stat-icon">🛡️</span>
+                    <span class="stat-name">DEF</span>
+                    <span class="stat-value" id="stat-def">1</span>
+                    <button class="stat-upgrade-btn hidden" data-stat="def" onclick="event.stopPropagation(); GameUI.upgradeStat('def')">+</button>
+                  </div>
+                  <div class="stat-item derived">
+                    <span class="stat-name">Block</span>
+                    <span class="stat-value" id="derived-block">0%</span>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat-item armor-stat" data-tooltip="stat" data-stat="arm">
+                    <span class="stat-icon">🪖</span>
+                    <span class="stat-name">ARM</span>
+                    <span class="stat-value" id="stat-arm">0</span>
+                  </div>
+                  <div class="stat-item derived armor-stat">
+                    <span class="stat-name">Mitigation</span>
+                    <span class="stat-value" id="derived-mitigation">0%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-points-row hidden" id="stat-points-row">
+              <span>Available Points: <strong id="stat-points">0</strong></span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Inventory Panel -->
+        <div class="ui-panel collapsed" id="inventory-panel">
+          <div class="panel-header" onclick="GameUI.togglePanel('inventory')">
+            <span class="panel-title">🎒 Inventory</span>
+            <span class="panel-toggle">▶</span>
+          </div>
+          <div class="panel-content">
+            <div class="inventory-header">
+              <span id="gold-display">💰 <span id="ui-gold">100</span></span>
+              <span id="inventory-capacity">0/20</span>
+            </div>
+            <div class="inventory-grid" id="inventory-grid">
+              <!-- Inventory slots will be generated by JS -->
+            </div>
+          </div>
+        </div>
+        
+        <!-- Skills Panel -->
+        <div class="ui-panel collapsed" id="skills-panel">
+          <div class="panel-header" onclick="GameUI.togglePanel('skills')">
+            <span class="panel-title">⚡ Skills</span>
+            <div class="panel-header-right">
+              <span class="panel-notification hidden" id="skills-notification">0</span>
+              <span class="panel-toggle">▶</span>
+            </div>
+          </div>
+          <div class="panel-content">
+            <!-- Skill Points Display -->
+            <div class="skill-points-display">
+              <span>Skill Points: <strong id="skill-points-available">0</strong></span>
+            </div>
+            
+            <!-- Skill Trees Grid (default view) -->
+            <div class="skill-trees-grid" id="skill-trees-view">
+              <!-- Column 1 -->
+              <div class="skill-tree-item unlocked" data-tree="swordsmanship" data-unlock="1" onclick="GameUI.openSkillTree('swordsmanship')">
+                <span class="tree-icon">⚔️</span>
+                <span class="tree-name">Swordsmanship</span>
+                <span class="tree-unlock"></span>
+              </div>
+              <div class="skill-tree-item unlocked" data-tree="defense" data-unlock="1" onclick="GameUI.openSkillTree('defense')">
+                <span class="tree-icon">🛡️</span>
+                <span class="tree-name">Defense</span>
+                <span class="tree-unlock"></span>
+              </div>
+              <div class="skill-tree-item" data-tree="vitality" data-unlock="10" onclick="GameUI.openSkillTree('vitality')">
+                <span class="tree-icon">❤️</span>
+                <span class="tree-name">Vitality</span>
+                <span class="tree-unlock">Lv.10</span>
+              </div>
+              <div class="skill-tree-item" data-tree="roguery" data-unlock="10" onclick="GameUI.openSkillTree('roguery')">
+                <span class="tree-icon">🏹</span>
+                <span class="tree-name">Roguery</span>
+                <span class="tree-unlock">Lv.10</span>
+              </div>
+              <!-- Column 2 -->
+              <div class="skill-tree-item" data-tree="magic" data-unlock="20" onclick="GameUI.openSkillTree('magic')">
+                <span class="tree-icon">✨</span>
+                <span class="tree-name">Magic</span>
+                <span class="tree-unlock">Lv.20</span>
+              </div>
+              <div class="skill-tree-item" data-tree="windmaster" data-unlock="20" onclick="GameUI.openSkillTree('windmaster')">
+                <span class="tree-icon">🌬️</span>
+                <span class="tree-name">Windmaster</span>
+                <span class="tree-unlock">Lv.20</span>
+              </div>
+              <div class="skill-tree-item" data-tree="shadow" data-unlock="30" onclick="GameUI.openSkillTree('shadow')">
+                <span class="tree-icon">🌑</span>
+                <span class="tree-name">Shadow</span>
+                <span class="tree-unlock">Lv.30</span>
+              </div>
+              <div class="skill-tree-item" data-tree="arcane" data-unlock="30" onclick="GameUI.openSkillTree('arcane')">
+                <span class="tree-icon">🔮</span>
+                <span class="tree-name">Arcane</span>
+                <span class="tree-unlock">Lv.30</span>
+              </div>
+            </div>
+            
+            <!-- Skill Tree Detail View (hidden by default) -->
+            <div class="skill-tree-detail hidden" id="skill-tree-detail">
+              <div class="tree-detail-header">
+                <button class="back-btn" onclick="GameUI.closeSkillTree()">← Back</button>
+                <span class="tree-detail-title" id="tree-detail-title">Swordsmanship</span>
+              </div>
+              
+              <!-- Active Skills Row (3 skills) -->
+              <div class="skills-section">
+                <div class="section-label">Active Skills</div>
+                <div class="skills-row active-skills" id="active-skills-row">
+                  <!-- Will be populated by JS -->
+                </div>
+              </div>
+              
+              <!-- Passive Skills (2 rows of 3) -->
+              <div class="skills-section">
+                <div class="section-label">Passive Skills</div>
+                <div class="skills-row passive-skills" id="passive-skills-row-1">
+                  <!-- Will be populated by JS -->
+                </div>
+                <div class="skills-row passive-skills" id="passive-skills-row-2">
+                  <!-- Will be populated by JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Console/Log Area -->
+    <div id="console-container">
+      <div class="console-header">
+        <div class="console-tabs">
+          <button class="console-tab active" data-tab="default">Game Log</button>
+          <button class="console-tab" data-tab="server">Server</button>
+        </div>
+        <div class="console-buttons">
+          <button class="console-btn" id="btn-worldmap" onclick="WorldMap.open()" title="World Map (M)">🗺️</button>
+          <button class="console-btn" id="btn-options" title="Options">⚙️</button>
+          <button class="console-btn btn-logout" id="btn-logout" onclick="Auth.logout()" title="Logout">🚪</button>
+        </div>
+      </div>
+      <div class="console-content" id="console-content">
+        <div class="console-messages" id="console-messages">
+          <div class="console-msg system">Welcome to Umbra Online!</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Debug Info (toggleable) -->
+    <div id="debug-info" class="hidden">
+      <div id="fps">FPS: 0</div>
+      <div id="player-info">Player: -</div>
+    </div>
+    
+    <!-- Admin Panel (hidden by default, always visible for admins) -->
+    <div id="admin-panel" class="hidden">
+      <div class="admin-header">
+        <span class="admin-title">🔧 Admin</span>
+        <button class="admin-minimize-btn" id="admin-minimize-btn" title="Minimize">−</button>
+      </div>
+      <div class="admin-body" id="admin-body">
+        <div class="admin-controls">
+          <label class="admin-toggle">
+            <input type="checkbox" id="toggle-collision">
+            <span>Show Collision Grid</span>
+          </label>
+          <label class="admin-toggle">
+            <input type="checkbox" id="toggle-coords">
+            <span>Show Coordinates</span>
+          </label>
+        </div>
+        <div class="admin-actions">
+          <button class="admin-btn" id="btn-add-level" onclick="GameUI.addLevelAdmin()">⬆️ Add +1 Level</button>
+          <button class="admin-btn" id="btn-heal" onclick="GameUI.healAdmin()">❤️ Full Heal</button>
+          <button class="admin-btn" id="btn-give-items" onclick="GameUI.giveRandomItemsAdmin()">🎲 Give Random Items</button>
+          <button class="admin-btn admin-btn-danger" id="btn-reset-char" onclick="GameUI.resetCharacterAdmin()">🔄 Reset Character</button>
+        </div>
+        
+        <!-- Teleport Tools -->
+        <div class="admin-section">
+          <div class="admin-section-title">🗺️ Teleport</div>
+          <div class="admin-teleport">
+            <input type="text" id="teleport-zone-input" placeholder="Zone ID (e.g. town_01)" class="admin-input">
+            <button class="admin-btn admin-btn-small" onclick="GameUI.teleportAdmin()">⚡ Go</button>
+          </div>
+        </div>
+        
+        <!-- Map Editor Tools -->
+        <div class="admin-section">
+          <div class="admin-section-title">🗺️ Map Editor</div>
+          <div class="admin-map-tools">
+            <button class="admin-btn" id="btn-open-map-editor" onclick="MapEditor.toggle()">📝 Toggle Map Editor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shop Panel (popup window) -->
+    <div id="shop-panel" class="shop-panel hidden">
+      <div class="shop-header">
+        <div class="shop-title-row">
+          <span class="shop-icon">🏪</span>
+          <span class="shop-name">Shop</span>
+        </div>
+        <button class="shop-close-btn" onclick="GameUI.closeShop()" title="Close">✕</button>
+      </div>
+      <div class="shop-body">
+        <div class="shop-tabs">
+          <button class="shop-tab active" data-tab="buy" onclick="GameUI.switchShopTab('buy')">Buy</button>
+          <button class="shop-tab" data-tab="sell" onclick="GameUI.switchShopTab('sell')">Sell</button>
+        </div>
+        <div class="shop-content">
+          <!-- Buy Tab -->
+          <div class="shop-tab-content" id="shop-buy-tab">
+            <div class="shop-items-grid" id="shop-items-grid">
+              <!-- Shop items will be populated here -->
+            </div>
+          </div>
+          <!-- Sell Tab -->
+          <div class="shop-tab-content hidden" id="shop-sell-tab">
+            <div class="shop-sell-info">
+              <p>Drag items from your inventory here to sell them.</p>
+            </div>
+            <div class="shop-sell-zone" id="shop-sell-zone">
+              <span class="sell-zone-text">Drop items here to sell</span>
+            </div>
+          </div>
+        </div>
+        <div class="shop-footer">
+          <div class="shop-gold">
+            <span>Your Gold:</span>
+            <span class="shop-gold-amount" id="shop-gold-amount">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shop Confirm Dialog -->
+    <div id="shop-confirm-dialog" class="shop-confirm-dialog hidden">
+      <div class="shop-confirm-title">Confirm Purchase</div>
+      <div class="shop-confirm-item">
+        <span class="item-icon" id="confirm-item-icon">🗡️</span>
+        <div class="shop-confirm-item-info">
+          <div class="shop-confirm-item-name" id="confirm-item-name">Item Name</div>
+          <div class="shop-confirm-item-price" id="confirm-item-price">💰 100 gold each</div>
+        </div>
+      </div>
+      <div class="shop-confirm-quantity">
+        <label for="confirm-quantity">Quantity:</label>
+        <input type="number" id="confirm-quantity" min="1" max="99" value="1" onchange="GameUI.updateShopConfirmTotal()" oninput="GameUI.updateShopConfirmTotal()">
+      </div>
+      <div class="shop-confirm-total">
+        <span>Total:</span>
+        <span class="shop-confirm-total-amount" id="confirm-total-amount">💰 100</span>
+      </div>
+      <div class="shop-confirm-buttons">
+        <button class="shop-confirm-btn cancel-btn" onclick="GameUI.closeShopConfirm()">Cancel</button>
+        <button class="shop-confirm-btn buy-btn" id="confirm-action-btn" onclick="GameUI.confirmShopTransaction()">Buy</button>
+      </div>
+    </div>
+    
+    <!-- Market Panel (popup window) -->
+    <div id="market-panel" class="market-panel hidden">
+      <div class="market-header">
+        <div class="market-title-row">
+          <span class="market-icon">🏪</span>
+          <span class="market-name">Global Market</span>
+        </div>
+        <button class="market-close-btn" onclick="GameUI.closeMarket()" title="Close">✕</button>
+      </div>
+      <div class="market-body">
+        <div class="market-tabs">
+          <button class="market-tab active" data-tab="browse" onclick="GameUI.switchMarketTab('browse')">Browse</button>
+          <button class="market-tab" data-tab="sell" onclick="GameUI.switchMarketTab('sell')">My Listings</button>
+        </div>
+        <div class="market-content">
+          <!-- Browse Tab -->
+          <div class="market-tab-content" id="market-browse-tab">
+            <div class="market-search-bar">
+              <input type="text" id="market-search-input" placeholder="Search items..." class="market-search-input" onkeydown="if(event.key==='Enter')GameUI.marketSearch()">
+              <button class="market-search-btn" onclick="GameUI.marketSearch()">🔍</button>
+            </div>
+            <div class="market-listings-grid" id="market-listings-grid">
+              <!-- Listings populated by JS -->
+            </div>
+          </div>
+          <!-- Sell Tab -->
+          <div class="market-tab-content hidden" id="market-sell-tab">
+            <div class="market-my-listings" id="market-my-listings">
+              <!-- My listings populated by JS -->
+            </div>
+            <div class="market-sell-form" id="market-sell-form">
+              <!-- Sell form populated by JS -->
+            </div>
+          </div>
+        </div>
+        <div class="market-footer">
+          <div class="market-gold">
+            <span>Your Gold:</span>
+            <span class="market-gold-amount" id="market-gold-amount">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Player Info Card (popup when clicking another player) -->
+    <div id="player-info-card" class="player-info-card hidden">
+      <div class="player-card-header">
+        <div class="player-card-title-row">
+          <span class="player-card-name" id="player-card-name">PlayerName</span>
+          <span class="player-card-level" id="player-card-level">Level 1</span>
+        </div>
+        <button class="player-card-close-btn" onclick="GameUI.closePlayerCard()" title="Close">✕</button>
+      </div>
+      <div class="player-card-body">
+        <!-- Equipment Section -->
+        <div class="player-card-section">
+          <div class="player-card-section-title">Equipment</div>
+          <div class="player-card-equipment" id="player-card-equipment">
+            <!-- Equipment slots will be populated here -->
+          </div>
+        </div>
+        <!-- Skills Section -->
+        <div class="player-card-section">
+          <div class="player-card-section-title">Active Skills</div>
+          <div class="player-card-skills" id="player-card-skills">
+            <!-- Skills will be populated here -->
+          </div>
+        </div>
+        <!-- Action Buttons -->
+        <div class="player-card-actions">
+          <button class="player-card-attack-btn" id="player-card-attack-btn" onclick="GameUI.attackPlayer()">⚔️ Attack</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Castle Info Card -->
+    <div id="castle-info-card" class="castle-info-card hidden">
+      <div class="castle-card-header">
+        <div class="castle-card-title-row">
+          <span class="castle-card-icon">🏰</span>
+          <span class="castle-card-name" id="castle-card-name">Town Castle</span>
+        </div>
+        <button class="castle-card-close-btn" onclick="GameUI.closeCastleCard()" title="Close">✕</button>
+      </div>
+      <div class="castle-card-body">
+        <!-- No Owner State -->
+        <div class="castle-no-owner" id="castle-no-owner">
+          <p class="castle-unclaimed-text">This castle is unclaimed!</p>
+          
+          <!-- Guardian Info -->
+          <div class="castle-guardian-info" id="castle-guardian-info">
+            <div class="guardian-header">
+              <span class="guardian-label">Guarded by:</span>
+            </div>
+            <div class="guardian-details">
+              <span class="guardian-sprite" id="castle-guardian-sprite">🐀</span>
+              <span class="guardian-name" id="castle-guardian-name">Rat</span>
+              <span class="guardian-level" id="castle-guardian-level">Level 1</span>
+            </div>
+          </div>
+          
+          <button class="castle-claim-btn" onclick="GameUI.attackCastle()">⚔️ Fight Guardian</button>
+        </div>
+        
+        <!-- Owner Info State -->
+        <div class="castle-owner-info hidden" id="castle-owner-info">
+          <!-- Owner Header -->
+          <div class="castle-owner-header">
+            <div class="castle-owner-title">Current Ruler</div>
+            <div class="castle-owner-details">
+              <span class="castle-owner-name" id="castle-owner-name">OwnerName</span>
+              <span class="castle-owner-level" id="castle-owner-level">Level 1</span>
+            </div>
+          </div>
+          
+          <!-- Ownership Duration -->
+          <div class="castle-duration">
+            <span class="duration-label">Ruled for:</span>
+            <span class="duration-value" id="castle-duration">0h 0m</span>
+          </div>
+          
+          <!-- Equipment Section -->
+          <div class="castle-card-section">
+            <div class="castle-card-section-title">Equipment</div>
+            <div class="castle-card-equipment" id="castle-card-equipment">
+              <!-- Equipment slots will be populated here -->
+            </div>
+          </div>
+          
+          <!-- Skills Section -->
+          <div class="castle-card-section">
+            <div class="castle-card-section-title">Active Skills</div>
+            <div class="castle-card-skills" id="castle-card-skills">
+              <!-- Skills will be populated here -->
+            </div>
+          </div>
+          
+          <!-- Your Castle Notice -->
+          <div class="castle-yours-notice hidden" id="castle-yours-notice">
+            <span>👑 You own this castle!</span>
+            <span class="castle-gold-earned">Gold Earned: <span id="castle-gold-earned">0</span></span>
+          </div>
+          
+          <!-- Attack Button -->
+          <div class="castle-card-actions" id="castle-attack-section">
+            <button class="castle-attack-btn" onclick="GameUI.attackCastle()">⚔️ Challenge for Castle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Training Panel -->
+    <div id="training-panel" class="training-panel hidden">
+      <div class="training-panel-header">
+        <div class="training-panel-title-row">
+          <span class="training-panel-icon">🎯</span>
+          <span class="training-panel-name" id="training-panel-name">Training Dummy</span>
+        </div>
+        <button class="training-panel-close-btn" onclick="GameUI.hideTrainingPanel()" title="Close">✕</button>
+      </div>
+      <div class="training-panel-body">
+        <!-- Info State (not training) -->
+        <div class="training-info" id="training-info">
+          <div class="training-description">
+            <p>💪 <strong>Auto-Train</strong> while you're away!</p>
+            <ul class="training-rules">
+              <li>⏱️ Every <strong id="training-cycle-time">20</strong> minutes, gain <strong id="training-exp-percent">2</strong>% of level-up EXP</li>
+              <li>📊 Works up to level <strong id="training-max-level">50</strong></li>
+              <li>🚪 You can safely log out - training continues!</li>
+              <li>⚠️ Moving or entering combat stops training</li>
+              <li>❌ Incomplete cycles award no EXP</li>
+            </ul>
+          </div>
+          <div class="training-actions">
+            <button class="training-start-btn" onclick="GameUI.startTraining()">🏋️ Start Training</button>
+          </div>
+        </div>
+        
+        <!-- Active Training State -->
+        <div class="training-active hidden" id="training-active">
+          <div class="training-status">
+            <div class="training-status-icon">🏋️</div>
+            <div class="training-status-text">Training in progress...</div>
+          </div>
+          <div class="training-progress">
+            <div class="training-progress-label">Next EXP reward in:</div>
+            <div class="training-progress-timer" id="training-timer">20:00</div>
+            <div class="training-progress-bar-container">
+              <div class="training-progress-bar" id="training-progress-bar" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="training-cycles">
+            <span>Cycles completed this session: </span>
+            <span id="training-cycles-count">0</span>
+          </div>
+          <div class="training-actions">
+            <button class="training-stop-btn" onclick="GameUI.stopTraining()">⏹️ Stop Training</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Death Overlay -->
+    <div id="death-overlay" class="death-overlay hidden">
+      <div class="death-content">
+        <div class="death-icon">💀</div>
+        <h1 class="death-title">You Died</h1>
+        <p class="death-message">Your journey has come to an end... for now.</p>
+        <button class="death-respawn-btn" onclick="GameUI.respawn()">Respawn</button>
+      </div>
+    </div>
+    
+    <!-- Spawn Beacon Popup -->
+    <div id="spawn-beacon-popup" class="spawn-beacon-popup hidden">
+      <div class="beacon-popup-content">
+        <p class="beacon-message">Set this location as your respawn point?</p>
+        <div class="beacon-buttons">
+          <button class="beacon-btn beacon-cancel" onclick="GameUI.closeBeaconPopup()">No</button>
+          <button class="beacon-btn beacon-confirm" onclick="GameUI.confirmSetSpawn()">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Skills Panel Backdrop (for modal overlay) -->
+  <div id="skills-overlay-backdrop" class="skills-overlay-backdrop" onclick="GameUI.closeSkillsPanel()"></div>
+  
+  <!-- Universal Tooltip -->
+  <div id="game-tooltip" class="game-tooltip">
+    <div class="tooltip-header">
+      <span class="tooltip-icon"></span>
+      <div class="tooltip-title-container">
+        <div class="tooltip-title"></div>
+        <div class="tooltip-subtitle"></div>
+      </div>
+    </div>
+    <div class="tooltip-body"></div>
+    <div class="tooltip-stats"></div>
+    <div class="tooltip-footer"></div>
+  </div>
+
+  <!-- Load shared constants -->
+  <script src="/shared/constants.js"></script>
+  
+  <!-- Load game engine -->
+  <script src="js/engine/camera.js"></script>
+  <script src="js/engine/tilemapRenderer.js"></script>
+  <script src="js/engine/zoneManager.js"></script>
+  <script src="js/engine/paperdollManager.js"></script>
+  <script src="js/engine/player.js"></script>
+  <script src="js/engine/ghostPlayers.js"></script>
+  <script src="js/engine/mobManager.js"></script>
+  <script src="js/engine/bossManager.js"></script>
+  <script src="js/engine/combatManager.js"></script>
+  <script src="js/engine/input.js"></script>
+  
+  <!-- Load networking -->
+  <script src="js/net/connection.js"></script>
+  
+  <!-- Load UI -->
+  <script src="js/ui/auth.js"></script>
+  <script src="js/ui/gameUI.js"></script>
+  <script src="js/ui/worldMap.js"></script>
+  
+  <!-- Load editor (admin tools) -->
+  <script src="js/editor/mapEditor.js"></script>
+  
+  <!-- Load main game -->
+  <script src="js/main.js"></script>
+</body>
+</html>

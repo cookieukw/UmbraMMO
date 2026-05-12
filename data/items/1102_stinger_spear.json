@@ -1,0 +1,19 @@
+{
+  "id": "stinger_spear",
+  "numericId": 1102,
+  "name": "Stinger Spear",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "2h",
+  "rarity": "uncommon",
+  "icon": "🔱",
+  "description": "A spear tipped with a giant insect stinger.",
+  "stats": {
+    "str": 3,
+    "dex": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 15
+}

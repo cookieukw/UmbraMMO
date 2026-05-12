@@ -1,0 +1,102 @@
+﻿{
+    "id":  "H9",
+    "name":  "Kobold Miner Camp",
+    "coord":  "H9",
+    "biome":  "desert",
+    "level":  20,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "kobold",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "north":  "H8",
+                  "south":  "H10",
+                  "west":  "G9"
+              },
+    "entryPoints":  {
+                        "north":  {
+                                      "x":  20,
+                                      "y":  28
+                                  },
+                        "south":  {
+                                      "x":  20,
+                                      "y":  2
+                                  },
+                        "east":  {
+                                     "x":  2,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "kobold_miner",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "kobold_miner",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "kobold_miner",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "kobold_miner",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "kobold_miner",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "kobold_miner",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "mine_cart",
+                        "x":  15,
+                        "y":  15
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/H9.jpg"
+}

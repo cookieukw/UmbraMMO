@@ -1,0 +1,46 @@
+{
+  "id": "goblin_warrior",
+  "name": "Goblin Warrior",
+  "level": 10,
+  "biome": "grasslands",
+  "camp": "goblin_camp",
+  "description": "A goblin with a scimitar and a shield",
+  "sprite": "👺",
+  "color": "#2E8B2E",
+  "spriteUrl": "assets/sprites/mobs/goblin_warrior.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 130,
+    "stamina": 40,
+    "str": 10,
+    "vit": 8,
+    "agi": 5,
+    "dex": 4,
+    "def": 6,
+    "int": 1,
+    "end": 6
+  },
+  "combat": {
+    "baseDamage": 16,
+    "armor": 8,
+    "attackSpeed": 1600,
+    "moveSpeed": 800,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 85,
+    "gold": 45
+  },
+  "respawnTime": 60000,
+  "drops": [
+    {
+      "itemId": "goblin_scimitar",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "wooden_club",
+  "numericId": 1101,
+  "name": "Wooden Club",
+  "type": "equipment",
+  "slot": "weapon1",
+  "subtype": "1h",
+  "rarity": "common",
+  "icon": "⚔️",
+  "description": "A thick wooden club carved from jungle hardwood.",
+  "stats": {
+    "str": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 20,
+  "buyPrice": 50
+}

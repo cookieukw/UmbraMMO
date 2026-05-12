@@ -1,0 +1,18 @@
+{
+  "id": "chroma_shinguards",
+  "numericId": 310,
+  "name": "Chroma Shinguards",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "uncommon",
+  "icon": "👖",
+  "description": "Iridescent leg guards that shimmer in the light.",
+  "stats": {
+    "armor": 8,
+    "end": 5
+  },
+  "levelGuide": 30,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 65
+}

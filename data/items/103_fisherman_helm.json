@@ -1,0 +1,18 @@
+{
+  "id": "fisherman_helm",
+  "numericId": 103,
+  "name": "Fisherman Hat",
+  "type": "equipment",
+  "slot": "headgear",
+  "rarity": "common",
+  "icon": "🪖",
+  "description": "A wide-brimmed hat worn by coastal fishermen.",
+  "stats": {
+    "armor": 1
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 10,
+  "buyPrice": 25
+}

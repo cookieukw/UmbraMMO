@@ -1,0 +1,107 @@
+﻿{
+    "id":  "L9",
+    "name":  "Haunted Graveyard",
+    "coord":  "L9",
+    "biome":  "grasslands",
+    "level":  15,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  false,
+    "isSafeZone":  false,
+    "isCamp":  true,
+    "campType":  "graveyard",
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "M9",
+                  "west":  "K9"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  2,
+                                     "y":  15
+                                 },
+                        "east":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+                   {
+                       "x":  8,
+                       "y":  12
+                   },
+                   {
+                       "x":  20,
+                       "y":  8
+                   },
+                   {
+                       "x":  32,
+                       "y":  15
+                   },
+                   {
+                       "x":  12,
+                       "y":  22
+                   },
+                   {
+                       "x":  28,
+                       "y":  20
+                   }
+               ],
+    "mobType":  "haunting",
+    "mobSpawns":  [
+                      {
+                          "mobId":  "haunting",
+                          "x":  8,
+                          "y":  12
+                      },
+                      {
+                          "mobId":  "haunting",
+                          "x":  20,
+                          "y":  8
+                      },
+                      {
+                          "mobId":  "haunting",
+                          "x":  32,
+                          "y":  15
+                      },
+                      {
+                          "mobId":  "haunting",
+                          "x":  12,
+                          "y":  22
+                      },
+                      {
+                          "mobId":  "haunting",
+                          "x":  28,
+                          "y":  20
+                      }
+                  ],
+    "bossSpawns":  [
+
+                   ],
+    "objects":  [
+                    {
+                        "type":  "tombstone",
+                        "x":  10,
+                        "y":  10
+                    },
+                    {
+                        "type":  "tombstone",
+                        "x":  30,
+                        "y":  10
+                    },
+                    {
+                        "type":  "crypt",
+                        "x":  20,
+                        "y":  20
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/L9.jpg"
+}

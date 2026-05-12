@@ -1,0 +1,18 @@
+{
+  "id": "leather_trousers",
+  "numericId": 301,
+  "name": "Leather Trousers",
+  "type": "equipment",
+  "slot": "pants",
+  "rarity": "common",
+  "icon": "👖",
+  "description": "Sturdy leather trousers for travel.",
+  "stats": {
+    "armor": 2
+  },
+  "levelGuide": 5,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 12,
+  "buyPrice": 30
+}

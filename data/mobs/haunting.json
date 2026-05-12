@@ -1,0 +1,46 @@
+{
+  "id": "haunting",
+  "name": "Haunting",
+  "level": 15,
+  "biome": "grasslands",
+  "camp": "graveyard",
+  "description": "A zombie yokai",
+  "sprite": "👻",
+  "color": "#9370DB",
+  "spriteUrl": "assets/sprites/mobs/haunting.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 170,
+    "stamina": 45,
+    "str": 10,
+    "vit": 10,
+    "agi": 8,
+    "dex": 6,
+    "def": 6,
+    "int": 5,
+    "end": 8
+  },
+  "combat": {
+    "baseDamage": 21,
+    "armor": 6,
+    "attackSpeed": 1500,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 145,
+    "gold": 68
+  },
+  "respawnTime": 75000,
+  "drops": [
+    {
+      "itemId": "ghost_haste",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

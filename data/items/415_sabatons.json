@@ -1,0 +1,18 @@
+{
+  "id": "sabatons",
+  "numericId": 415,
+  "name": "Sabatons",
+  "type": "equipment",
+  "slot": "boots",
+  "rarity": "uncommon",
+  "icon": "👢",
+  "description": "Heavy armored boots of fine craftsmanship.",
+  "stats": {
+    "armor": 8,
+    "vit": 5
+  },
+  "levelGuide": 45,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 95
+}

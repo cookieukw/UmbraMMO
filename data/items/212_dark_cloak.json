@@ -1,0 +1,18 @@
+{
+  "id": "dark_cloak",
+  "numericId": 212,
+  "name": "Dark Cloak",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "rare",
+  "icon": "🦺",
+  "description": "A shadowy cloak that seems to absorb light.",
+  "stats": {
+    "agi": 3,
+    "dex": 3
+  },
+  "levelGuide": 15,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 45
+}

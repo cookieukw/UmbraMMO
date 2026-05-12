@@ -1,0 +1,45 @@
+{
+  "id": "relic_holder",
+  "name": "Relic Holder",
+  "level": 40,
+  "biome": "grasslands",
+  "description": "A muscular creature holding an ankh",
+  "sprite": "☥",
+  "color": "#FFD700",
+  "spriteUrl": "assets/sprites/mobs/relic_holder.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 720,
+    "stamina": 70,
+    "str": 38,
+    "vit": 34,
+    "agi": 12,
+    "dex": 14,
+    "def": 24,
+    "int": 8,
+    "end": 24
+  },
+  "combat": {
+    "baseDamage": 72,
+    "armor": 32,
+    "attackSpeed": 1700,
+    "moveSpeed": 750,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "territorial",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 710,
+    "gold": 350
+  },
+  "respawnTime": 115000,
+  "drops": [
+    {
+      "itemId": "dark_staff",
+      "chance": 2,
+      "rarity": "uncommon"
+    }
+  ]
+}

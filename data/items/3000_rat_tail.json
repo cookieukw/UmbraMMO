@@ -1,0 +1,12 @@
+{
+  "id": "rat_tail",
+  "numericId": 3000,
+  "name": "Rat Tail",
+  "type": "material",
+  "rarity": "normal",
+  "icon": "🐀",
+  "stackable": true,
+  "maxStack": 99,
+  "sellPrice": 2,
+  "description": "A grimy tail from a rat. Can be sold to merchants."
+}

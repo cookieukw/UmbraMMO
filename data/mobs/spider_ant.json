@@ -1,0 +1,45 @@
+{
+  "id": "spider_ant",
+  "name": "Spider Ant",
+  "level": 25,
+  "biome": "desert",
+  "description": "A red ant with more legs",
+  "sprite": "🐜",
+  "color": "#B22222",
+  "spriteUrl": "assets/sprites/mobs/spider_ant.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 280,
+    "stamina": 55,
+    "str": 16,
+    "vit": 12,
+    "agi": 18,
+    "dex": 16,
+    "def": 10,
+    "int": 0,
+    "end": 8
+  },
+  "combat": {
+    "baseDamage": 35,
+    "armor": 14,
+    "attackSpeed": 1200,
+    "moveSpeed": 500,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "swarm",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 275,
+    "gold": 120
+  },
+  "respawnTime": 80000,
+  "drops": [
+    {
+      "itemId": "desert_legs",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

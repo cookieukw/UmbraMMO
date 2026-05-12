@@ -1,0 +1,17 @@
+{
+  "id": "plate_mail",
+  "numericId": 216,
+  "name": "Plate Mail",
+  "type": "equipment",
+  "slot": "chest",
+  "rarity": "common",
+  "icon": "🦺",
+  "description": "Heavy plate armor offering excellent protection.",
+  "stats": {
+    "armor": 14
+  },
+  "levelGuide": 35,
+  "stackable": false,
+  "maxStack": 1,
+  "sellPrice": 70
+}

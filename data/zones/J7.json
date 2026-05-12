@@ -1,0 +1,56 @@
+﻿{
+    "id":  "J7",
+    "name":  "Witch Latiarix\u0027s Sanctum",
+    "coord":  "J7",
+    "biome":  "grasslands",
+    "level":  20,
+    "width":  20,
+    "height":  15,
+    "isBossZone":  true,
+    "isSafeZone":  false,
+    "tiles":  [
+
+              ],
+    "exits":  {
+                  "east":  "K7"
+              },
+    "entryPoints":  {
+                        "west":  {
+                                     "x":  38,
+                                     "y":  15
+                                 }
+                    },
+    "spawns":  [
+
+               ],
+    "mobType":  null,
+    "mobSpawns":  [
+
+                  ],
+    "bossSpawns":  [
+                       {
+                           "bossId":  "witch_latiarix",
+                           "x":  20,
+                           "y":  20
+                       }
+                   ],
+    "objects":  [
+                    {
+                        "type":  "cauldron",
+                        "x":  18,
+                        "y":  22
+                    },
+                    {
+                        "type":  "magic_circle",
+                        "x":  20,
+                        "y":  15
+                    }
+                ],
+    "npcs":  [
+
+             ],
+    "shops":  [
+
+              ],
+    "background":  "/assets/zones/J7.jpg"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "goblin_scout",
+  "name": "Goblin Scout",
+  "level": 5,
+  "biome": "grasslands",
+  "camp": "goblin_camp",
+  "description": "A goblin with a spear",
+  "sprite": "👺",
+  "color": "#228B22",
+  "spriteUrl": "assets/sprites/mobs/goblin_scout.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 60,
+    "stamina": 35,
+    "str": 4,
+    "vit": 3,
+    "agi": 4,
+    "dex": 3,
+    "def": 2,
+    "int": 1,
+    "end": 3
+  },
+  "combat": {
+    "baseDamage": 8,
+    "armor": 3,
+    "attackSpeed": 1500,
+    "moveSpeed": 700,
+    "aggroRange": 5
+  },
+  "behavior": {
+    "type": "patrol",
+    "aggressiveness": "hostile"
+  },
+  "rewards": {
+    "exp": 38,
+    "gold": 22
+  },
+  "respawnTime": 50000,
+  "drops": [
+    {
+      "itemId": "leather_shorts",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}

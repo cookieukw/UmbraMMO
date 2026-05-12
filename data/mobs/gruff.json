@@ -1,0 +1,45 @@
+{
+  "id": "gruff",
+  "name": "Gruff",
+  "level": 5,
+  "biome": "grasslands",
+  "description": "A tired looking ox",
+  "sprite": "🐂",
+  "color": "#8B4513",
+  "spriteUrl": "assets/sprites/mobs/gruff.png",
+  "_scaling_note": "Stats use mobConfig.json scaling. Base: 3 pts/level, 6% exponential growth",
+  "baseStats": {
+    "hp": 80,
+    "stamina": 35,
+    "str": 4,
+    "vit": 6,
+    "agi": 1,
+    "dex": 1,
+    "def": 4,
+    "int": 0,
+    "end": 4
+  },
+  "combat": {
+    "baseDamage": 7,
+    "armor": 5,
+    "attackSpeed": 2200,
+    "moveSpeed": 1100,
+    "aggroRange": 3
+  },
+  "behavior": {
+    "type": "wander",
+    "aggressiveness": "neutral"
+  },
+  "rewards": {
+    "exp": 38,
+    "gold": 20
+  },
+  "respawnTime": 50000,
+  "drops": [
+    {
+      "itemId": "hide_cape",
+      "chance": 5,
+      "rarity": "common"
+    }
+  ]
+}
