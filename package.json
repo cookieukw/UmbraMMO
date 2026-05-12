@@ -1,0 +1,9 @@
+{
+  "name": "umbrammo",
+  "version": "1.0.0",
+  "description": "UmbraMMO - Multi-player browser RPG",
+  "scripts": {
+    "start": "cd server && npm install && (test -f .env || cp .env.example .env) && node server.js",
+    "dev": "cd server && npm install && (test -f .env || cp .env.example .env) && node --watch server.js"
+  }
+}
